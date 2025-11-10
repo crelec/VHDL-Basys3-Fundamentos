@@ -28,7 +28,8 @@
 * **Ejemplo Cronometro.** [Ver -> GitHub](https://github.com/ceroma1/VHDL-Basys3/tree/main/Aplicaciones/Cronometro)
 * **Ejemplo Reloj formato 24h.** [Ver -> GitHub](https://github.com/ceroma1/VHDL-Basys3/tree/main/Aplicaciones/cronometroV2)
 * **Ejemplo Display Calculadora.** [Ver -> GitHub](https://github.com/ceroma1/VHDL-Basys3/tree/main/Aplicaciones/Display_calculadora)
-
+* **Ejemplo PWM 50Hz.** [Ver -> GitHub](https://github.com/crelec/VHDL-Basys3/tree/main/Aplicaciones/PWM_Servo)
+  
 ## **Maquinas de Estado.**
 * **Ejemplo Máquina de Estados sin entradas externas caso uno: Contador más circuito combinacional.** [Ver -> GitHub](https://github.com/ceroma1/VHDL-Basys3/tree/main/MaquinaEstados/MaqEstadoUno)
 * **Ejemplo Máquina de Estados sin entradas externas caso unoA: Uso plantilla maquina de estados tipo Moore.** [Ver -> GitHub](https://github.com/ceroma1/VHDL-Basys3/tree/main/MaquinaEstados/MaqEstadoUnoA)
