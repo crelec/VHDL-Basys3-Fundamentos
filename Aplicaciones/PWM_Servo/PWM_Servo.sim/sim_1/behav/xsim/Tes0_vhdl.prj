@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PWM_Servo.srcs/sources_1/new/ModuloPWM.vhd" \
+"../../../../PWM_Servo.srcs/sources_1/new/TopPWM.vhd" \
+"../../../../PWM_Servo.srcs/sources_1/new/divisorPWM.vhd" \
+"../../../../PWM_Servo.srcs/sim_1/new/Tes0.vhd" \
+
+# Do not sort compile order
+nosort
