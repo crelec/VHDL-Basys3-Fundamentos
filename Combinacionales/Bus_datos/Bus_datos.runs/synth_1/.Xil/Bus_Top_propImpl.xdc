@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc rfile:../../../Bus_datos.srcs/constrs_1/new/pines.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc rfile:../../../Bus_datos.srcs/constrs_1/new/pines.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33 } [get_ports {DatoInA[0]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

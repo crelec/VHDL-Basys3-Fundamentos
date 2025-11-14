@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1689024682" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Bus_Top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763144863" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Bus_Top.dcp">
   <File Type="PA-TCL" Name="Bus_Top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Bus_Top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Bus_Top_reports.tcl"/>
   <File Type="RDS-RDS" Name="Bus_Top.vds"/>
   <File Type="RDS-UTIL" Name="Bus_Top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Bus_Top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Bus_Top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Bus_Top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Bus_Top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Display.vhd">
@@ -68,9 +65,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Bus_datos.srcs/sources_1/new/Bus_Top.vhd" \
+"../../../../Bus_datos.srcs/sources_1/new/Display.vhd" \
+"../../../../Bus_datos.srcs/sources_1/new/Mux_anodos.vhd" \
+"../../../../Bus_datos.srcs/sources_1/new/Mux_dato.vhd" \
+"../../../../Bus_datos.srcs/sim_1/new/tes0.vhd" \
+
+# Do not sort compile order
+nosort

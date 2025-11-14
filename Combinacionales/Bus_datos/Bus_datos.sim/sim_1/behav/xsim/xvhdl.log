@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Bus_Top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Mux_anodos'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Mux_dato'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sim_1/new/tes0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tes0'

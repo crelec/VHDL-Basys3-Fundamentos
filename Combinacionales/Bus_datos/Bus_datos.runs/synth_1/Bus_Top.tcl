@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.tcl"
+  variable script "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,8 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5812-LenovoCesar/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-24460-Cesar/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -81,20 +80,20 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.cache/wt [current_project]
-set_property parent.project_path D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.cache/wt [current_project]
+set_property parent.project_path C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo d:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.cache/ip [current_project]
+set_property ip_output_repo c:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd
+  C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd
+  C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd
+  C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd
+  C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -105,12 +104,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc
-set_property used_in_implementation false [get_files D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
+read_xdc C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc
+set_property used_in_implementation false [get_files C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
