@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Aplicaciones/PWM_Servo/PWM_Servo.srcs/sources_1/new/ModuloPWM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ModuloPWM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Aplicaciones/PWM_Servo/PWM_Servo.srcs/sources_1/new/TopPWM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TopPWM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Aplicaciones/PWM_Servo/PWM_Servo.srcs/sources_1/new/divisorPWM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'divisorPWM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Aplicaciones/PWM_Servo/PWM_Servo.srcs/sim_1/new/Tes0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Tes0'
