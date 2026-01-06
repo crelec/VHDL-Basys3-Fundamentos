@@ -1,7 +1,0 @@
-Running: xsim.dir/tes1_behav/xsimk.exe -simmode gui -wdb tes1_behav.wdb -simrunnum 0 -socket 55885
-Design successfully loaded
-Design Loading Memory Usage: 8596 KB (Peak: 8596 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 9228 KB (Peak: 9228 KB)
-Simulation CPU Usage: 15 ms

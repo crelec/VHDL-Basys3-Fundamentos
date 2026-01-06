@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../AbacoSinsigno.srcs/sources_1/new/Complemento.vhd" \
-"../../../../AbacoSinsigno.srcs/sources_1/new/SumaResta.vhd" \
-"../../../../AbacoSinsigno.srcs/sources_1/new/SupAbaco.vhd" \
-"../../../../AbacoSinsigno.srcs/sim_1/new/Tes.vhd" \
-
-# Do not sort compile order
-nosort
