@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Mon Jul 10 07:30:33 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Fri Jan 16 05:24:48 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file deco_timing_summary_routed.rpt -pb deco_timing_summary_routed.pb -rpx deco_timing_summary_routed.rpx -warn_on_violation
 | Design       : deco
 | Device       : 7a35t-cpg236
@@ -214,233 +214,233 @@ Min Delay            16 Endpoints
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 DatoIn[3]
-                            (input port)
-  Destination:            DatoOut[12]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        13.055ns  (logic 5.343ns (40.922%)  route 7.713ns (59.078%))
-  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.471     5.920    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I2_O)        0.152     6.072 r  DatoOut_OBUF[12]_inst_i_1/O
-                         net (fo=1, routed)           3.242     9.313    DatoOut_OBUF[12]
-    P3                   OBUF (Prop_obuf_I_O)         3.742    13.055 r  DatoOut_OBUF[12]_inst/O
-                         net (fo=0)                   0.000    13.055    DatoOut[12]
-    P3                                                                r  DatoOut[12] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
                             (input port)
   Destination:            DatoOut[15]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        12.976ns  (logic 5.330ns (41.076%)  route 7.646ns (58.924%))
+  Data Path Delay:        13.201ns  (logic 5.359ns (40.594%)  route 7.842ns (59.406%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.456     5.905    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I0_O)        0.153     6.058 r  DatoOut_OBUF[15]_inst_i_1/O
-                         net (fo=1, routed)           3.190     9.247    DatoOut_OBUF[15]
-    L1                   OBUF (Prop_obuf_I_O)         3.728    12.976 r  DatoOut_OBUF[15]_inst/O
-                         net (fo=0)                   0.000    12.976    DatoOut[15]
+    V16                                               0.000     0.000 r  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 r  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          4.197     5.659    DatoIn_IBUF[1]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I3_O)        0.152     5.811 r  DatoOut_OBUF[15]_inst_i_1/O
+                         net (fo=1, routed)           3.645     9.455    DatoOut_OBUF[15]
+    L1                   OBUF (Prop_obuf_I_O)         3.745    13.201 r  DatoOut_OBUF[15]_inst/O
+                         net (fo=0)                   0.000    13.201    DatoOut[15]
     L1                                                                r  DatoOut[15] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[2]
                             (input port)
   Destination:            DatoOut[13]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        12.834ns  (logic 5.080ns (39.581%)  route 7.754ns (60.419%))
+  Data Path Delay:        12.846ns  (logic 5.095ns (39.663%)  route 7.751ns (60.337%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.456     5.905    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I3_O)        0.124     6.029 r  DatoOut_OBUF[13]_inst_i_1/O
-                         net (fo=1, routed)           3.298     9.327    DatoOut_OBUF[13]
-    N3                   OBUF (Prop_obuf_I_O)         3.507    12.834 r  DatoOut_OBUF[13]_inst/O
-                         net (fo=0)                   0.000    12.834    DatoOut[13]
+    W16                                               0.000     0.000 r  DatoIn[2] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[2]
+    W16                  IBUF (Prop_ibuf_I_O)         1.464     1.464 r  DatoIn_IBUF[2]_inst/O
+                         net (fo=16, routed)          4.458     5.922    DatoIn_IBUF[2]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I0_O)        0.124     6.046 r  DatoOut_OBUF[13]_inst_i_1/O
+                         net (fo=1, routed)           3.293     9.339    DatoOut_OBUF[13]
+    N3                   OBUF (Prop_obuf_I_O)         3.507    12.846 r  DatoOut_OBUF[13]_inst/O
+                         net (fo=0)                   0.000    12.846    DatoOut[13]
     N3                                                                r  DatoOut[13] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
+                            (input port)
+  Destination:            DatoOut[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.247ns  (logic 5.103ns (41.672%)  route 7.143ns (58.328%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V16                                               0.000     0.000 f  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 f  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          2.420     3.882    DatoIn_IBUF[1]
+    SLICE_X14Y20         LUT4 (Prop_lut4_I3_O)        0.124     4.006 r  DatoOut_OBUF[12]_inst_i_1/O
+                         net (fo=1, routed)           4.723     8.729    DatoOut_OBUF[12]
+    P3                   OBUF (Prop_obuf_I_O)         3.518    12.247 r  DatoOut_OBUF[12]_inst/O
+                         net (fo=0)                   0.000    12.247    DatoOut[12]
+    P3                                                                r  DatoOut[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DatoIn[2]
                             (input port)
   Destination:            DatoOut[14]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        12.040ns  (logic 5.318ns (44.167%)  route 6.723ns (55.833%))
+  Data Path Delay:        12.223ns  (logic 5.339ns (43.681%)  route 6.884ns (56.319%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.052     5.501    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I2_O)        0.150     5.651 r  DatoOut_OBUF[14]_inst_i_1/O
-                         net (fo=1, routed)           2.670     8.321    DatoOut_OBUF[14]
-    P1                   OBUF (Prop_obuf_I_O)         3.719    12.040 r  DatoOut_OBUF[14]_inst/O
-                         net (fo=0)                   0.000    12.040    DatoOut[14]
+    W16                                               0.000     0.000 r  DatoIn[2] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[2]
+    W16                  IBUF (Prop_ibuf_I_O)         1.464     1.464 r  DatoIn_IBUF[2]_inst/O
+                         net (fo=16, routed)          4.458     5.922    DatoIn_IBUF[2]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I0_O)        0.153     6.075 r  DatoOut_OBUF[14]_inst_i_1/O
+                         net (fo=1, routed)           2.426     8.501    DatoOut_OBUF[14]
+    P1                   OBUF (Prop_obuf_I_O)         3.722    12.223 r  DatoOut_OBUF[14]_inst/O
+                         net (fo=0)                   0.000    12.223    DatoOut[14]
     P1                                                                r  DatoOut[14] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
                             (input port)
   Destination:            DatoOut[9]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.271ns  (logic 5.307ns (47.081%)  route 5.965ns (52.919%))
+  Data Path Delay:        11.390ns  (logic 5.320ns (46.703%)  route 6.071ns (53.297%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          2.313     3.762    DatoIn_IBUF[3]
-    SLICE_X14Y17         LUT4 (Prop_lut4_I3_O)        0.146     3.908 r  DatoOut_OBUF[9]_inst_i_1/O
-                         net (fo=1, routed)           3.651     7.559    DatoOut_OBUF[9]
-    V3                   OBUF (Prop_obuf_I_O)         3.712    11.271 r  DatoOut_OBUF[9]_inst/O
-                         net (fo=0)                   0.000    11.271    DatoOut[9]
+    V16                                               0.000     0.000 f  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 f  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          4.205     5.667    DatoIn_IBUF[1]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I3_O)        0.146     5.813 r  DatoOut_OBUF[9]_inst_i_1/O
+                         net (fo=1, routed)           1.865     7.678    DatoOut_OBUF[9]
+    V3                   OBUF (Prop_obuf_I_O)         3.712    11.390 r  DatoOut_OBUF[9]_inst/O
+                         net (fo=0)                   0.000    11.390    DatoOut[9]
     V3                                                                r  DatoOut[9] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
-                            (input port)
-  Destination:            DatoOut[11]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.215ns  (logic 5.076ns (45.263%)  route 6.139ns (54.737%))
-  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.471     5.920    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I0_O)        0.124     6.044 r  DatoOut_OBUF[11]_inst_i_1/O
-                         net (fo=1, routed)           1.668     7.711    DatoOut_OBUF[11]
-    U3                   OBUF (Prop_obuf_I_O)         3.504    11.215 r  DatoOut_OBUF[11]_inst/O
-                         net (fo=0)                   0.000    11.215    DatoOut[11]
-    U3                                                                r  DatoOut[11] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
                             (input port)
   Destination:            DatoOut[10]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.011ns  (logic 5.098ns (46.297%)  route 5.913ns (53.703%))
+  Data Path Delay:        11.172ns  (logic 5.111ns (45.744%)  route 6.062ns (54.256%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          4.052     5.501    DatoIn_IBUF[3]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I3_O)        0.124     5.625 r  DatoOut_OBUF[10]_inst_i_1/O
-                         net (fo=1, routed)           1.861     7.486    DatoOut_OBUF[10]
-    W3                   OBUF (Prop_obuf_I_O)         3.525    11.011 r  DatoOut_OBUF[10]_inst/O
-                         net (fo=0)                   0.000    11.011    DatoOut[10]
+    V16                                               0.000     0.000 r  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 r  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          4.205     5.667    DatoIn_IBUF[1]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I2_O)        0.124     5.791 r  DatoOut_OBUF[10]_inst_i_1/O
+                         net (fo=1, routed)           1.856     7.647    DatoOut_OBUF[10]
+    W3                   OBUF (Prop_obuf_I_O)         3.525    11.172 r  DatoOut_OBUF[10]_inst/O
+                         net (fo=0)                   0.000    11.172    DatoOut[10]
     W3                                                                r  DatoOut[10] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
                             (input port)
-  Destination:            DatoOut[8]
+  Destination:            DatoOut[11]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        9.938ns  (logic 5.077ns (51.083%)  route 4.861ns (48.917%))
+  Data Path Delay:        10.812ns  (logic 5.089ns (47.069%)  route 5.723ns (52.931%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 r  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 r  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          2.313     3.762    DatoIn_IBUF[3]
-    SLICE_X14Y17         LUT4 (Prop_lut4_I2_O)        0.124     3.886 r  DatoOut_OBUF[8]_inst_i_1/O
-                         net (fo=1, routed)           2.548     6.434    DatoOut_OBUF[8]
-    V13                  OBUF (Prop_obuf_I_O)         3.504     9.938 r  DatoOut_OBUF[8]_inst/O
-                         net (fo=0)                   0.000     9.938    DatoOut[8]
-    V13                                                               r  DatoOut[8] (OUT)
+    V16                                               0.000     0.000 r  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 r  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          4.197     5.659    DatoIn_IBUF[1]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I3_O)        0.124     5.783 r  DatoOut_OBUF[11]_inst_i_1/O
+                         net (fo=1, routed)           1.525     7.308    DatoOut_OBUF[11]
+    U3                   OBUF (Prop_obuf_I_O)         3.504    10.812 r  DatoOut_OBUF[11]_inst/O
+                         net (fo=0)                   0.000    10.812    DatoOut[11]
+    U3                                                                r  DatoOut[11] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[3]
-                            (input port)
-  Destination:            DatoOut[1]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        9.501ns  (logic 5.102ns (53.699%)  route 4.399ns (46.301%))
-  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 f  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          1.903     3.352    DatoIn_IBUF[3]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I0_O)        0.124     3.476 r  DatoOut_OBUF[1]_inst_i_1/O
-                         net (fo=1, routed)           2.496     5.972    DatoOut_OBUF[1]
-    E19                  OBUF (Prop_obuf_I_O)         3.530     9.501 r  DatoOut_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     9.501    DatoOut[1]
-    E19                                                               r  DatoOut[1] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DatoIn[3]
+  Source:                 DatoIn[1]
                             (input port)
   Destination:            DatoOut[0]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        9.339ns  (logic 5.307ns (56.831%)  route 4.031ns (43.169%))
+  Data Path Delay:        10.459ns  (logic 5.316ns (50.830%)  route 5.143ns (49.170%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    W17                                               0.000     0.000 f  DatoIn[3] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[3]
-    W17                  IBUF (Prop_ibuf_I_O)         1.448     1.448 f  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          1.903     3.352    DatoIn_IBUF[3]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I0_O)        0.152     3.504 r  DatoOut_OBUF[0]_inst_i_1/O
-                         net (fo=1, routed)           2.128     5.632    DatoOut_OBUF[0]
-    U16                  OBUF (Prop_obuf_I_O)         3.707     9.339 r  DatoOut_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     9.339    DatoOut[0]
+    V16                                               0.000     0.000 f  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 f  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          2.420     3.882    DatoIn_IBUF[1]
+    SLICE_X14Y20         LUT4 (Prop_lut4_I3_O)        0.146     4.028 r  DatoOut_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           2.722     6.750    DatoOut_OBUF[0]
+    U16                  OBUF (Prop_obuf_I_O)         3.709    10.459 r  DatoOut_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    10.459    DatoOut[0]
     U16                                                               r  DatoOut[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DatoIn[1]
+                            (input port)
+  Destination:            DatoOut[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.437ns  (logic 5.316ns (56.337%)  route 4.120ns (43.663%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V16                                               0.000     0.000 r  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 r  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          2.021     3.482    DatoIn_IBUF[1]
+    SLICE_X0Y29          LUT4 (Prop_lut4_I2_O)        0.152     3.634 r  DatoOut_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.099     5.734    DatoOut_OBUF[2]
+    U19                  OBUF (Prop_obuf_I_O)         3.703     9.437 r  DatoOut_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     9.437    DatoOut[2]
+    U19                                                               r  DatoOut[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DatoIn[1]
+                            (input port)
+  Destination:            DatoOut[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.235ns  (logic 5.115ns (55.390%)  route 4.120ns (44.610%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V16                                               0.000     0.000 f  DatoIn[1] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[1]
+    V16                  IBUF (Prop_ibuf_I_O)         1.461     1.461 f  DatoIn_IBUF[1]_inst/O
+                         net (fo=16, routed)          2.021     3.482    DatoIn_IBUF[1]
+    SLICE_X0Y29          LUT4 (Prop_lut4_I3_O)        0.124     3.606 r  DatoOut_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.099     5.705    DatoOut_OBUF[1]
+    E19                  OBUF (Prop_obuf_I_O)         3.530     9.235 r  DatoOut_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.235    DatoOut[1]
+    E19                                                               r  DatoOut[1] (OUT)
   -------------------------------------------------------------------    -------------------
 
 
@@ -456,7 +456,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.302ns  (logic 1.471ns (63.910%)  route 0.831ns (36.090%))
+  Data Path Delay:        2.314ns  (logic 1.471ns (63.573%)  route 0.843ns (36.427%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -464,22 +464,22 @@ Slack:                    inf
     W17                                               0.000     0.000 f  DatoIn[3] (IN)
                          net (fo=0)                   0.000     0.000    DatoIn[3]
     W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 f  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          0.512     0.729    DatoIn_IBUF[3]
-    SLICE_X0Y17          LUT4 (Prop_lut4_I0_O)        0.045     0.774 r  DatoOut_OBUF[4]_inst_i_1/O
-                         net (fo=1, routed)           0.319     1.093    DatoOut_OBUF[4]
-    W18                  OBUF (Prop_obuf_I_O)         1.210     2.302 r  DatoOut_OBUF[4]_inst/O
-                         net (fo=0)                   0.000     2.302    DatoOut[4]
+                         net (fo=16, routed)          0.518     0.735    DatoIn_IBUF[3]
+    SLICE_X0Y17          LUT4 (Prop_lut4_I1_O)        0.045     0.780 r  DatoOut_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           0.325     1.105    DatoOut_OBUF[4]
+    W18                  OBUF (Prop_obuf_I_O)         1.210     2.314 r  DatoOut_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     2.314    DatoOut[4]
     W18                                                               r  DatoOut[4] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 DatoIn[3]
                             (input port)
-  Destination:            DatoOut[5]
+  Destination:            DatoOut[3]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.310ns  (logic 1.477ns (63.952%)  route 0.833ns (36.048%))
+  Data Path Delay:        2.331ns  (logic 1.472ns (63.134%)  route 0.859ns (36.866%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -487,35 +487,12 @@ Slack:                    inf
     W17                                               0.000     0.000 f  DatoIn[3] (IN)
                          net (fo=0)                   0.000     0.000    DatoIn[3]
     W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 f  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          0.412     0.628    DatoIn_IBUF[3]
-    SLICE_X0Y11          LUT4 (Prop_lut4_I0_O)        0.045     0.673 r  DatoOut_OBUF[5]_inst_i_1/O
-                         net (fo=1, routed)           0.421     1.094    DatoOut_OBUF[5]
-    U15                  OBUF (Prop_obuf_I_O)         1.216     2.310 r  DatoOut_OBUF[5]_inst/O
-                         net (fo=0)                   0.000     2.310    DatoOut[5]
-    U15                                                               r  DatoOut[5] (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 DatoIn[0]
-                            (input port)
-  Destination:            DatoOut[2]
-                            (output port)
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.320ns  (logic 1.468ns (63.274%)  route 0.852ns (36.726%))
-  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V17                                               0.000     0.000 f  DatoIn[0] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[0]
-    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 f  DatoIn_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.527     0.748    DatoIn_IBUF[0]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I3_O)        0.045     0.793 r  DatoOut_OBUF[2]_inst_i_1/O
-                         net (fo=1, routed)           0.325     1.118    DatoOut_OBUF[2]
-    U19                  OBUF (Prop_obuf_I_O)         1.202     2.320 r  DatoOut_OBUF[2]_inst/O
-                         net (fo=0)                   0.000     2.320    DatoOut[2]
-    U19                                                               r  DatoOut[2] (OUT)
+                         net (fo=16, routed)          0.517     0.734    DatoIn_IBUF[3]
+    SLICE_X0Y17          LUT4 (Prop_lut4_I1_O)        0.045     0.779 r  DatoOut_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           0.342     1.121    DatoOut_OBUF[3]
+    V19                  OBUF (Prop_obuf_I_O)         1.210     2.331 r  DatoOut_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     2.331    DatoOut[3]
+    V19                                                               r  DatoOut[3] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -525,7 +502,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.406ns  (logic 1.534ns (63.755%)  route 0.872ns (36.245%))
+  Data Path Delay:        2.382ns  (logic 1.469ns (61.670%)  route 0.913ns (38.330%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -534,34 +511,34 @@ Slack:                    inf
                          net (fo=0)                   0.000     0.000    DatoIn[3]
     W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 f  DatoIn_IBUF[3]_inst/O
                          net (fo=16, routed)          0.412     0.628    DatoIn_IBUF[3]
-    SLICE_X0Y11          LUT4 (Prop_lut4_I0_O)        0.048     0.676 r  DatoOut_OBUF[6]_inst_i_1/O
-                         net (fo=1, routed)           0.460     1.137    DatoOut_OBUF[6]
-    U14                  OBUF (Prop_obuf_I_O)         1.269     2.406 r  DatoOut_OBUF[6]_inst/O
-                         net (fo=0)                   0.000     2.406    DatoOut[6]
+    SLICE_X0Y11          LUT4 (Prop_lut4_I1_O)        0.045     0.673 r  DatoOut_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           0.501     1.175    DatoOut_OBUF[6]
+    U14                  OBUF (Prop_obuf_I_O)         1.207     2.382 r  DatoOut_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     2.382    DatoOut[6]
     U14                                                               r  DatoOut[6] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[0]
+  Source:                 DatoIn[3]
                             (input port)
-  Destination:            DatoOut[3]
+  Destination:            DatoOut[8]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.421ns  (logic 1.547ns (63.889%)  route 0.874ns (36.111%))
+  Data Path Delay:        2.434ns  (logic 1.532ns (62.935%)  route 0.902ns (37.065%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    V17                                               0.000     0.000 r  DatoIn[0] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[0]
-    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  DatoIn_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.527     0.748    DatoIn_IBUF[0]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I2_O)        0.049     0.797 r  DatoOut_OBUF[3]_inst_i_1/O
-                         net (fo=1, routed)           0.347     1.144    DatoOut_OBUF[3]
-    V19                  OBUF (Prop_obuf_I_O)         1.277     2.421 r  DatoOut_OBUF[3]_inst/O
-                         net (fo=0)                   0.000     2.421    DatoOut[3]
-    V19                                                               r  DatoOut[3] (OUT)
+    W17                                               0.000     0.000 r  DatoIn[3] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[3]
+    W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 r  DatoIn_IBUF[3]_inst/O
+                         net (fo=16, routed)          0.412     0.628    DatoIn_IBUF[3]
+    SLICE_X0Y11          LUT4 (Prop_lut4_I0_O)        0.048     0.676 r  DatoOut_OBUF[8]_inst_i_1/O
+                         net (fo=1, routed)           0.491     1.167    DatoOut_OBUF[8]
+    V13                  OBUF (Prop_obuf_I_O)         1.267     2.434 r  DatoOut_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     2.434    DatoOut[8]
+    V13                                                               r  DatoOut[8] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -571,7 +548,7 @@ Slack:                    inf
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.574ns  (logic 1.528ns (59.386%)  route 1.045ns (40.614%))
+  Data Path Delay:        2.578ns  (logic 1.528ns (59.288%)  route 1.050ns (40.712%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -579,68 +556,68 @@ Slack:                    inf
     W17                                               0.000     0.000 f  DatoIn[3] (IN)
                          net (fo=0)                   0.000     0.000    DatoIn[3]
     W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 f  DatoIn_IBUF[3]_inst/O
-                         net (fo=16, routed)          0.512     0.729    DatoIn_IBUF[3]
-    SLICE_X0Y17          LUT4 (Prop_lut4_I1_O)        0.048     0.777 r  DatoOut_OBUF[7]_inst_i_1/O
-                         net (fo=1, routed)           0.533     1.310    DatoOut_OBUF[7]
-    V14                  OBUF (Prop_obuf_I_O)         1.264     2.574 r  DatoOut_OBUF[7]_inst/O
-                         net (fo=0)                   0.000     2.574    DatoOut[7]
+                         net (fo=16, routed)          0.517     0.734    DatoIn_IBUF[3]
+    SLICE_X0Y17          LUT4 (Prop_lut4_I1_O)        0.048     0.782 r  DatoOut_OBUF[7]_inst_i_1/O
+                         net (fo=1, routed)           0.532     1.314    DatoOut_OBUF[7]
+    V14                  OBUF (Prop_obuf_I_O)         1.264     2.578 r  DatoOut_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     2.578    DatoOut[7]
     V14                                                               r  DatoOut[7] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[1]
+  Source:                 DatoIn[3]
                             (input port)
-  Destination:            DatoOut[0]
+  Destination:            DatoOut[5]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.603ns  (logic 1.545ns (59.367%)  route 1.058ns (40.633%))
+  Data Path Delay:        2.642ns  (logic 1.548ns (58.605%)  route 1.094ns (41.395%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    V16                                               0.000     0.000 f  DatoIn[1] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[1]
-    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 f  DatoIn_IBUF[1]_inst/O
-                         net (fo=16, routed)          0.525     0.755    DatoIn_IBUF[1]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I3_O)        0.048     0.803 r  DatoOut_OBUF[0]_inst_i_1/O
-                         net (fo=1, routed)           0.532     1.335    DatoOut_OBUF[0]
-    U16                  OBUF (Prop_obuf_I_O)         1.268     2.603 r  DatoOut_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     2.603    DatoOut[0]
-    U16                                                               r  DatoOut[0] (OUT)
+    W17                                               0.000     0.000 f  DatoIn[3] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[3]
+    W17                  IBUF (Prop_ibuf_I_O)         0.217     0.217 f  DatoIn_IBUF[3]_inst/O
+                         net (fo=16, routed)          0.518     0.735    DatoIn_IBUF[3]
+    SLICE_X0Y17          LUT4 (Prop_lut4_I1_O)        0.049     0.784 r  DatoOut_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           0.575     1.359    DatoOut_OBUF[5]
+    U15                  OBUF (Prop_obuf_I_O)         1.283     2.642 r  DatoOut_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     2.642    DatoOut[5]
+    U15                                                               r  DatoOut[5] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[1]
+  Source:                 DatoIn[0]
                             (input port)
   Destination:            DatoOut[1]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        2.747ns  (logic 1.505ns (54.778%)  route 1.242ns (45.222%))
+  Data Path Delay:        2.720ns  (logic 1.497ns (55.024%)  route 1.223ns (44.976%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    V16                                               0.000     0.000 f  DatoIn[1] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[1]
-    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 f  DatoIn_IBUF[1]_inst/O
-                         net (fo=16, routed)          0.525     0.755    DatoIn_IBUF[1]
-    SLICE_X0Y19          LUT4 (Prop_lut4_I3_O)        0.045     0.800 r  DatoOut_OBUF[1]_inst_i_1/O
-                         net (fo=1, routed)           0.717     1.517    DatoOut_OBUF[1]
-    E19                  OBUF (Prop_obuf_I_O)         1.231     2.747 r  DatoOut_OBUF[1]_inst/O
-                         net (fo=0)                   0.000     2.747    DatoOut[1]
+    V17                                               0.000     0.000 r  DatoIn[0] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  DatoIn_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.709     0.930    DatoIn_IBUF[0]
+    SLICE_X0Y29          LUT4 (Prop_lut4_I2_O)        0.045     0.975 r  DatoOut_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           0.515     1.489    DatoOut_OBUF[1]
+    E19                  OBUF (Prop_obuf_I_O)         1.231     2.720 r  DatoOut_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.720    DatoOut[1]
     E19                                                               r  DatoOut[1] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 DatoIn[0]
                             (input port)
-  Destination:            DatoOut[8]
+  Destination:            DatoOut[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        3.003ns  (logic 1.471ns (48.990%)  route 1.532ns (51.010%))
+  Data Path Delay:        2.756ns  (logic 1.527ns (55.407%)  route 1.229ns (44.593%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -648,34 +625,57 @@ Slack:                    inf
     V17                                               0.000     0.000 f  DatoIn[0] (IN)
                          net (fo=0)                   0.000     0.000    DatoIn[0]
     V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 f  DatoIn_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.789     1.010    DatoIn_IBUF[0]
-    SLICE_X14Y17         LUT4 (Prop_lut4_I0_O)        0.045     1.055 r  DatoOut_OBUF[8]_inst_i_1/O
-                         net (fo=1, routed)           0.743     1.798    DatoOut_OBUF[8]
-    V13                  OBUF (Prop_obuf_I_O)         1.205     3.003 r  DatoOut_OBUF[8]_inst/O
-                         net (fo=0)                   0.000     3.003    DatoOut[8]
-    V13                                                               r  DatoOut[8] (OUT)
+                         net (fo=16, routed)          0.709     0.930    DatoIn_IBUF[0]
+    SLICE_X0Y29          LUT4 (Prop_lut4_I3_O)        0.042     0.972 r  DatoOut_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           0.520     1.492    DatoOut_OBUF[2]
+    U19                  OBUF (Prop_obuf_I_O)         1.264     2.756 r  DatoOut_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     2.756    DatoOut[2]
+    U19                                                               r  DatoOut[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 DatoIn[1]
+  Source:                 DatoIn[2]
+                            (input port)
+  Destination:            DatoOut[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.233ns  (logic 1.550ns (47.932%)  route 1.683ns (52.068%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    W16                                               0.000     0.000 f  DatoIn[2] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[2]
+    W16                  IBUF (Prop_ibuf_I_O)         0.232     0.232 f  DatoIn_IBUF[2]_inst/O
+                         net (fo=16, routed)          0.860     1.092    DatoIn_IBUF[2]
+    SLICE_X14Y20         LUT4 (Prop_lut4_I0_O)        0.046     1.138 r  DatoOut_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           0.823     1.961    DatoOut_OBUF[0]
+    U16                  OBUF (Prop_obuf_I_O)         1.272     3.233 r  DatoOut_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     3.233    DatoOut[0]
+    U16                                                               r  DatoOut[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 DatoIn[0]
                             (input port)
   Destination:            DatoOut[11]
                             (output port)
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        3.482ns  (logic 1.479ns (42.486%)  route 2.002ns (57.514%))
+  Data Path Delay:        3.573ns  (logic 1.471ns (41.167%)  route 2.102ns (58.833%))
   Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    V16                                               0.000     0.000 r  DatoIn[1] (IN)
-                         net (fo=0)                   0.000     0.000    DatoIn[1]
-    V16                  IBUF (Prop_ibuf_I_O)         0.229     0.229 r  DatoIn_IBUF[1]_inst/O
-                         net (fo=16, routed)          1.666     1.895    DatoIn_IBUF[1]
-    SLICE_X64Y31         LUT4 (Prop_lut4_I3_O)        0.045     1.940 r  DatoOut_OBUF[11]_inst_i_1/O
-                         net (fo=1, routed)           0.337     2.277    DatoOut_OBUF[11]
-    U3                   OBUF (Prop_obuf_I_O)         1.205     3.482 r  DatoOut_OBUF[11]_inst/O
-                         net (fo=0)                   0.000     3.482    DatoOut[11]
+    V17                                               0.000     0.000 r  DatoIn[0] (IN)
+                         net (fo=0)                   0.000     0.000    DatoIn[0]
+    V17                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  DatoIn_IBUF[0]_inst/O
+                         net (fo=16, routed)          1.822     2.043    DatoIn_IBUF[0]
+    SLICE_X64Y32         LUT4 (Prop_lut4_I2_O)        0.045     2.088 r  DatoOut_OBUF[11]_inst_i_1/O
+                         net (fo=1, routed)           0.280     2.368    DatoOut_OBUF[11]
+    U3                   OBUF (Prop_obuf_I_O)         1.205     3.573 r  DatoOut_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     3.573    DatoOut[11]
     U3                                                                r  DatoOut[11] (OUT)
   -------------------------------------------------------------------    -------------------
 

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Mon Jul 10 07:30:33 2023
-| Host             : LenovoCesar running 64-bit major release  (build 9200)
+| Date             : Fri Jan 16 05:24:48 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file deco_power_routed.rpt -pb deco_power_summary_routed.pb -rpx deco_power_routed.rpx
 | Design           : deco
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.067        |
+| Total On-Chip Power (W)  | 5.070        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.976        |
+| Dynamic (W)              | 4.980        |
 | Device Static (W)        | 0.090        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 59.7         |
@@ -54,10 +54,10 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.040 |       16 |       --- |             --- |
 |   LUT as Logic |     0.040 |        8 |     20800 |            0.04 |
-| Signals        |     0.095 |       20 |       --- |             --- |
+| Signals        |     0.099 |       20 |       --- |             --- |
 | I/O            |     4.841 |       20 |       106 |           18.87 |
 | Static Power   |     0.090 |          |           |                 |
-| Total          |     5.067 |          |           |                 |
+| Total          |     5.070 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,7 +67,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.177 |       0.152 |      0.025 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.180 |       0.155 |      0.025 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.191 |       0.177 |      0.014 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     1.367 |       1.366 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +134,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| deco |     4.976 |
+| deco |     4.980 |
 +------+-----------+
 
 
