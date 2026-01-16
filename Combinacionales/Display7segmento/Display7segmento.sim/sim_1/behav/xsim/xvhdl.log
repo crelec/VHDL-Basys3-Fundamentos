@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ModuloDisplay'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.srcs/sim_1/new/tes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.srcs/sim_1/new/tes.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'tes'
