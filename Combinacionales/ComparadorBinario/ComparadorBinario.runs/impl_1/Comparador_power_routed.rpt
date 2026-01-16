@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Sat Jul  8 05:41:25 2023
-| Host             : DESKTOP-J1PNU36 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date             : Fri Jan 16 06:25:37 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file Comparador_power_routed.rpt -pb Comparador_power_summary_routed.pb -rpx Comparador_power_routed.rpx
 | Design           : Comparador
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.979        |
+| Total On-Chip Power (W)  | 3.121        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.899        |
-| Device Static (W)        | 0.080        |
+| Dynamic (W)              | 3.040        |
+| Device Static (W)        | 0.081        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 70.1         |
-| Junction Temperature (C) | 39.9         |
+| Max Ambient (C)          | 69.4         |
+| Junction Temperature (C) | 40.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,14 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.078 |       25 |       --- |             --- |
-|   LUT as Logic |     0.075 |       13 |     20800 |            0.06 |
-|   CARRY4       |     0.003 |        2 |      8150 |            0.02 |
+| Slice Logic    |     0.053 |       16 |       --- |             --- |
+|   LUT as Logic |     0.052 |       10 |     20800 |            0.05 |
+|   CARRY4       |     0.001 |        1 |      8150 |            0.01 |
 |   Others       |     0.000 |        1 |       --- |             --- |
-| Signals        |     0.159 |       24 |       --- |             --- |
-| I/O            |     2.662 |       19 |       106 |           17.92 |
-| Static Power   |     0.080 |          |           |                 |
-| Total          |     2.979 |          |           |                 |
+| Signals        |     0.153 |       23 |       --- |             --- |
+| I/O            |     2.834 |       19 |       106 |           17.92 |
+| Static Power   |     0.081 |          |           |                 |
+| Total          |     3.121 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.318 |       0.301 |      0.017 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.108 |       0.095 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.736 |       0.735 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.288 |       0.270 |      0.017 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.115 |       0.101 |      0.013 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.785 |       0.784 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -136,7 +136,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| Comparador |     2.899 |
+| Comparador |     3.040 |
 +------------+-----------+
 
 

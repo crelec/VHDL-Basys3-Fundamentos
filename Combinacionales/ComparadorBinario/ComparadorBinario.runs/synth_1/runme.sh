@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/gitVHDL2023/VHDL-Basys3/Combinacionales/ComparadorBinario/ComparadorBinario.runs/synth_1'
+HD_PWD='C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/ComparadorBinario/ComparadorBinario.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

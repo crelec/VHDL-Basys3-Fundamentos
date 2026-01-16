@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1688812735">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1768562591">
   <File Type="ROUTE-PWR" Name="Comparador_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Comparador.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Comparador_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Comparador_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="Comparador.msk"/>
-  <File Type="ROUTE-CLK" Name="Comparador_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="Comparador.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Comparador_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Comparador.bit"/>
-  <File Type="BG-DRC" Name="Comparador.drc"/>
-  <File Type="BG-BGN" Name="Comparador.bgn"/>
-  <File Type="BG-BIN" Name="Comparador.bin"/>
-  <File Type="BITSTR-RBT" Name="Comparador.rbt"/>
-  <File Type="BITSTR-NKY" Name="Comparador.nky"/>
-  <File Type="BITSTR-BMM" Name="Comparador_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="Comparador_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="Comparador.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Comparador_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="Comparador.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Comparador.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Comparador_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Comparador_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Comparador_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Comparador_opt.dcp"/>
   <File Type="OPT-DRC" Name="Comparador_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Comparador.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Comparador_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Comparador_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Comparador_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Comparador_placed.dcp"/>
   <File Type="PLACE-IO" Name="Comparador_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Comparador_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Comparador_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Comparador_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Comparador_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Comparador_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Comparador_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Comparador.bin"/>
+  <File Type="PLACE-TIMING" Name="Comparador_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Comparador_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Comparador_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Comparador_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Comparador.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Comparador_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Comparador_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Comparador_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Comparador.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Comparador_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Comparador_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Comparador_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Comparador_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Comparador_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Comparador_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Comparador_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Comparador_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Comparador_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Comparador_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Comparador_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Comparador_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Comparador_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Comparador_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="Comparador_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Comparador_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Comparador_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Comparador_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Comparador_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Comparador_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Comparador_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Comparador_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Comparador_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Comparador_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Comparador_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="Comparador_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="Comparador_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="Comparador_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Comparador_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="Comparador_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Comparador_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Comparador_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Comparador_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Comparador_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Comparador_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Comparador_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Comparador.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Comparador_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Comparador_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Comparador_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Comparador_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Comparador_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="Comparador.nky"/>
+  <File Type="BITSTR-BMM" Name="Comparador_bd.bmm"/>
   <File Type="PDI-FILE" Name="Comparador.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Comparador_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Comparador_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="Comparador.rnpi"/>
   <File Type="NPI_FILE" Name="Comparador.npi"/>
   <File Type="RBD_FILE" Name="Comparador.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Comparador.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Comparador.sysdef"/>
+  <File Type="BG-BGN" Name="Comparador.bgn"/>
+  <File Type="BG-DRC" Name="Comparador.drc"/>
+  <File Type="RDI-RDI" Name="Comparador.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Comparador_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Comparador_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -121,6 +135,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
