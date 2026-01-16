@@ -1,97 +1,66 @@
+-- ** Simulacion opción tres **
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
+-- Testbench para el codificador genérico
 entity Tes is
---  Port ( );
 end Tes;
 
 architecture Behavioral of Tes is
 
-component Codi is
-    generic(n:integer :=4);
-    Port ( DatoIn : in STD_LOGIC_VECTOR (15 downto 0);
-           Valido : out STD_LOGIC;
-           DatoOut : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
---Inputs
-   signal DatoIn : std_logic_vector(15 downto 0) := (others => '0');
+-- Parámetro del test
+constant n : integer := 4;
+-- Cambiar  a 5, 6, 7, etc.
 
- 	--Outputs
-   signal valido : std_logic;
-   signal DatoOut : std_logic_vector(3 downto 0);
- 
-BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
-   uut: codi PORT MAP (
-          DatoIn => DatoIn,
-          valido => valido,
-          DatoOut => DatoOut
-        );
+-- Señales de estímulo y observación
+signal DatoIn  : std_logic_vector((2**n)-1 downto 0) := (others => '0');
+signal Valido  : std_logic;
+signal DatoOut : std_logic_vector(n-1 downto 0);
 
+begin
 
-s_entrada0: process
-begin		
-DatoIn(0)<='0';
-wait for 1 ns;	
-DatoIn(0)<='1';
-wait for 1 ns;
-end process;
+-- Instancio del DUT : Device Under Test
+    
+dut: entity work.Codi
+     generic map (n => n)
+        port map (DatoIn  => DatoIn,
+                  Valido  => Valido,
+                  DatoOut => DatoOut);
+    
+    -- Proceso de estimulación
 
-s_entrada1: process
-begin		
-DatoIn(1)<='0';
-wait for 2 ns;	
-DatoIn(1)<='1';
-wait for 2 ns;
-end process;
+    stim_proc : process
+    begin
+        -- CASO 0: Todas las entradas en cero
+        DatoIn <= (others => '0');
+        wait for 10 ns;
 
-s_entrada2: process
-begin		
-DatoIn(2)<='0';
-wait for 4 ns;	
-DatoIn(2)<='1';
-wait for 4 ns;
-end process;
+        -- CASO 1: Un solo bit activo (barrido completo)
+        for i in 0 to (2**n)-1 loop
+            DatoIn <= (others => '0');
+            DatoIn(i) <= '1';
+            wait for 10 ns;
+        end loop;
 
-s_entrada3: process
-begin		
-DatoIn(3)<='0';
-wait for 8 ns;	
-DatoIn(3)<='1';
-wait for 8 ns;
-end process;
+        -- CASO 2: Dos bits activos (prueba de prioridad)
+        DatoIn <= (others => '0');
+        DatoIn(1) <= '1';
+        DatoIn((2**n)-1) <= '1';  -- MSB
+        wait for 10 ns;
 
-s_entrada4: process
-begin		
-DatoIn(4)<='0';
-wait for 16 ns;	
-DatoIn(4)<='1';
-wait for 16 ns;
-end process;
+        -- CASO 3: Múltiples bits activos (patrón genérico)
+        DatoIn <= (others => '0');
+        for i in 0 to (2**n)-1 loop
+            if (i mod 3 = 0) then
+                DatoIn(i) <= '1';
+            end if;
+        end loop;
+        wait for 10 ns;
 
-s_entrada5: process
-begin		
-DatoIn(5)<='0';
-wait for 32 ns;	
-DatoIn(5)<='1';
-wait for 32 ns;
-end process;
+   -- FIN DE SIMULACIÓN
+        wait;
 
-s_entrada6: process
-begin		
-DatoIn(6)<='0';
-wait for 64 ns;	
-DatoIn(6)<='1';
-wait for 64 ns;
-end process;
-
-s_entrada7: process
-begin		
-DatoIn(7)<='0';
-wait for 128 ns;	
-DatoIn(7)<='1';
-wait for 128 ns;
-end process;
-
+    end process;
 end Behavioral;

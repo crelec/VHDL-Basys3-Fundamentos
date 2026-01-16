@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Mon Jul 10 06:34:39 2023
-# Process ID: 3084
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1
+# Start of session at: Fri Jan 16 05:02:21 2026
+# Process ID: 22060
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1
 # Command line: vivado.exe -log Codi.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Codi.tcl -notrace
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1/Codi.vdi
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1/Codi.vdi
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codificador/Codificador.runs/impl_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source Codi.tcl -notrace
