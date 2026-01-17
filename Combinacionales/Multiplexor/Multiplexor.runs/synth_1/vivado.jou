@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Jul  8 06:28:58 2023
-# Process ID: 1108
-# Current directory: C:/gitVHDL2023/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sat Jan 17 04:47:31 2026
+# Process ID: 9892
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1
 # Command line: vivado.exe -log ModuloMux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ModuloMux.tcl
-# Log file: C:/gitVHDL2023/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1/ModuloMux.vds
-# Journal file: C:/gitVHDL2023/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1\vivado.jou
-# Running On: DESKTOP-J1PNU36, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1/ModuloMux.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source ModuloMux.tcl -notrace

@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1688815735">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1768643245">
   <File Type="ROUTE-PWR" Name="ModuloMux_power_routed.rpt"/>
   <File Type="PA-TCL" Name="ModuloMux.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="ModuloMux_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="ModuloMux_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="ModuloMux.msk"/>
-  <File Type="ROUTE-CLK" Name="ModuloMux_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="ModuloMux.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ModuloMux_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="ModuloMux.bit"/>
-  <File Type="BG-DRC" Name="ModuloMux.drc"/>
-  <File Type="BG-BGN" Name="ModuloMux.bgn"/>
-  <File Type="BG-BIN" Name="ModuloMux.bin"/>
-  <File Type="BITSTR-RBT" Name="ModuloMux.rbt"/>
-  <File Type="BITSTR-NKY" Name="ModuloMux.nky"/>
-  <File Type="BITSTR-BMM" Name="ModuloMux_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="ModuloMux_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="ModuloMux.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ModuloMux_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="ModuloMux.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ModuloMux.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ModuloMux_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ModuloMux_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="ModuloMux_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ModuloMux_opt.dcp"/>
   <File Type="OPT-DRC" Name="ModuloMux_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="ModuloMux.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ModuloMux_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ModuloMux_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ModuloMux_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ModuloMux_placed.dcp"/>
   <File Type="PLACE-IO" Name="ModuloMux_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ModuloMux_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="ModuloMux_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="ModuloMux_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="ModuloMux_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ModuloMux_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ModuloMux_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="ModuloMux.bin"/>
+  <File Type="PLACE-TIMING" Name="ModuloMux_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ModuloMux_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="ModuloMux_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ModuloMux_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="ModuloMux.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ModuloMux_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ModuloMux_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ModuloMux_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="ModuloMux.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="ModuloMux_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ModuloMux_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ModuloMux_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ModuloMux_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="ModuloMux_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="ModuloMux_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="ModuloMux_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="ModuloMux_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ModuloMux_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ModuloMux_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ModuloMux_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="ModuloMux_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="ModuloMux_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="ModuloMux_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="ModuloMux_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ModuloMux_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ModuloMux_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="ModuloMux_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="ModuloMux_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="ModuloMux_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="ModuloMux_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ModuloMux_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="ModuloMux_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="ModuloMux_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="ModuloMux_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="ModuloMux_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="ModuloMux_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="ModuloMux_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ModuloMux_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="ModuloMux_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="ModuloMux_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ModuloMux_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ModuloMux_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ModuloMux_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ModuloMux_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ModuloMux_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="ModuloMux.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ModuloMux_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ModuloMux_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ModuloMux_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="ModuloMux_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ModuloMux_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="ModuloMux.nky"/>
+  <File Type="BITSTR-BMM" Name="ModuloMux_bd.bmm"/>
   <File Type="PDI-FILE" Name="ModuloMux.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="ModuloMux_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="ModuloMux_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="ModuloMux.rnpi"/>
   <File Type="NPI_FILE" Name="ModuloMux.npi"/>
   <File Type="RBD_FILE" Name="ModuloMux.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ModuloMux.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ModuloMux.sysdef"/>
+  <File Type="BG-BGN" Name="ModuloMux.bgn"/>
+  <File Type="BG-DRC" Name="ModuloMux.drc"/>
+  <File Type="RDI-RDI" Name="ModuloMux.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="ModuloMux_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="ModuloMux_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -73,7 +87,7 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/ModuloMux.vhd">
-      <FileInfo>
+      <FileInfo SFType="VHDL2008">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -98,6 +112,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ModuloMux.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -113,6 +135,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

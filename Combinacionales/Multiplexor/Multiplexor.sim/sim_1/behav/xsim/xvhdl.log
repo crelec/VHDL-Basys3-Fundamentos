@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.srcs/sources_1/new/ModuloMux.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ModuloMux'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.srcs/sim_1/new/Tes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Multiplexor/Multiplexor.srcs/sim_1/new/Tes.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Tes'

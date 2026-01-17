@@ -1,61 +1,61 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Tes is
-end Tes;
+end entity Tes;
 
-architecture Behavioral of Tes is
+architecture sim of Tes is
 
-component ModuloMux is
-    Port ( EntradaA : in STD_LOGIC_VECTOR (3 downto 0);
-           EntradaB : in STD_LOGIC_VECTOR (3 downto 0);
-           EntradaC : in STD_LOGIC_VECTOR (3 downto 0);
-           EntradaD : in STD_LOGIC_VECTOR (3 downto 0);
-           Sel : in STD_LOGIC_VECTOR (1 downto 0);
-           DatoSalida : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
+    -- Parámetro del testbench
+    constant N : positive := 4;
+    -- Cambiar a 5, 8, 10, etc.
+    
+    -- Señales de entrada
+    signal EntradaA   : std_logic_vector(N-1 downto 0);
+    signal EntradaB   : std_logic_vector(N-1 downto 0);
+    signal EntradaC   : std_logic_vector(N-1 downto 0);
+    signal EntradaD   : std_logic_vector(N-1 downto 0);
+    signal Sel        : std_logic_vector(1 downto 0);
 
- --Inputs
-   signal EntradaA : std_logic_vector(3 downto 0) := (others => '0');
-   signal EntradaB : std_logic_vector(3 downto 0) := (others => '0');
-   signal EntradaC : std_logic_vector(3 downto 0) := (others => '0');
-   signal EntradaD : std_logic_vector(3 downto 0) := (others => '0');
-   signal sel : std_logic_vector(1 downto 0) := (others => '0');
+    -- Señal de salida
+    signal DatoSalida : std_logic_vector(N-1 downto 0);
 
- 	--Outputs
-   signal DatoSalida : std_logic_vector(3 downto 0);
- 
-BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
-   uut: ModuloMux PORT MAP (
-          EntradaA => EntradaA,
-          EntradaB => EntradaB,
-          EntradaC => EntradaC,
-          EntradaD => EntradaD,
-          sel => sel,
-          DatoSalida => DatoSalida
-        );
+begin
+    -- Instancia del DUT: Device Under Test) 
+    
+    dut : entity work.ModuloMux
+        generic map (N => N )
+        port map (EntradaA   => EntradaA,
+                  EntradaB   => EntradaB,
+                  EntradaC   => EntradaC,
+                  EntradaD   => EntradaD,
+                  Sel        => Sel,
+                  DatoSalida => DatoSalida );
+    
+    -- Proceso de estímulos
+    stim_proc : process
+    begin
+        -- Asignación de valores dependientes de N
+        EntradaA <= (others => '1');                                  -- Todos 1
+        EntradaB <= (others => '0');                                  -- Todos 0
+        EntradaC <= std_logic_vector(to_unsigned(2**(N-1), N));      -- MSB = 1
+        EntradaD <= std_logic_vector(to_unsigned(3, N));             -- Valor 3
 
-EntradaA <= "1111";
-EntradaB <= "0000";
-EntradaC <= "0110";
-EntradaD <= "1001";
+        -- Prueba de cada selección
+        Sel <= "00";
+        wait for 10 ns;
 
-S_selec0:PROCESS
-BEGIN
-sel(0)<= '0';
-WAIT FOR 1ns;
-sel(0)<= '1';
-wait for 1ns;
-end process;
+        Sel <= "01";
+        wait for 10 ns;
 
-S_selec1:PROCESS
-BEGIN
-sel(1)<= '0';
-WAIT FOR 2ns;
-sel(1)<= '1';
-wait for 2ns;
-end process;
+        Sel <= "10";
+        wait for 10 ns;
 
-end Behavioral;
+        Sel <= "11";
+        wait for 10 ns;
+
+        -- Fin de simulación
+        wait;
+    end process;
+end architecture sim;
