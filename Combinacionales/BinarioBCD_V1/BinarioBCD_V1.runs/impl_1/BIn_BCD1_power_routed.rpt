@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Mon Jul 10 14:40:27 2023
-| Host             : LenovoCesar running 64-bit major release  (build 9200)
+| Date             : Sat Jan 17 06:48:19 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file BIn_BCD1_power_routed.rpt -pb BIn_BCD1_power_summary_routed.pb -rpx BIn_BCD1_power_routed.rpx
 | Design           : BIn_BCD1
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 15.610 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 15.571 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 15.334                           |
-| Device Static (W)        | 0.276                            |
+| Dynamic (W)              | 15.297                           |
+| Device Static (W)        | 0.275                            |
 | Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 7.0                              |
-| Junction Temperature (C) | 103.0                            |
+| Max Ambient (C)          | 7.2                              |
+| Junction Temperature (C) | 102.8                            |
 | Confidence Level         | Low                              |
 | Setting File             | ---                              |
 | Simulation Activity File | ---                              |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.069 |       12 |       --- |             --- |
-|   LUT as Logic |     0.069 |       11 |     20800 |            0.05 |
-| Signals        |     0.185 |       20 |       --- |             --- |
-| I/O            |    15.080 |       18 |       106 |           16.98 |
-| Static Power   |     0.276 |          |           |                 |
-| Total          |    15.610 |          |           |                 |
+| Slice Logic    |     0.068 |       12 |       --- |             --- |
+|   LUT as Logic |     0.068 |        9 |     20800 |            0.04 |
+| Signals        |     0.179 |       20 |       --- |             --- |
+| I/O            |    15.049 |       18 |       106 |           16.98 |
+| Static Power   |     0.275 |          |           |                 |
+| Total          |    15.571 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.459 |       0.285 |      0.174 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.584 |       0.551 |      0.032 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     4.260 |       4.259 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.452 |       0.279 |      0.173 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.582 |       0.550 |      0.032 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     4.252 |       4.251 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +134,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| BIn_BCD1 |    15.334 |
+| BIn_BCD1 |    15.297 |
 +----------+-----------+
 
 
