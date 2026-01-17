@@ -16,7 +16,7 @@ begin
 -- Habilitación de un solo display (ánodo común, activo en '0')
 anodos<="1110";
 
-process(DatoIn)
+process(all)  -- Solo validoc VHDL-2008 incluye automaticamente todas las señales leidas se usa sie,bre en logica combinacional
 	begin
 	-- Valor por defecto: display apagado
     segmento <= "1111111"; -- Segmentos apagados

@@ -70,11 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10480-Cesar/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -84,13 +80,13 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Decodificador/Decodificador.cache/wt [current_project]
 set_property parent.project_path C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Decodificador/Decodificador.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo c:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Decodificador/Decodificador.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Decodificador/Decodificador.srcs/sources_1/new/deco.vhd
+read_vhdl -vhdl2008 -library xil_defaultlib C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Decodificador/Decodificador.srcs/sources_1/new/deco.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

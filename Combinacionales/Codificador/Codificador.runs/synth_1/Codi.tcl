@@ -70,10 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10480-Cesar/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -89,7 +86,7 @@ set_property ip_output_repo c:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codifi
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codificador/Codificador.srcs/sources_1/new/Codi.vhd
+read_vhdl -vhdl2008 -library xil_defaultlib C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Codificador/Codificador.srcs/sources_1/new/Codi.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

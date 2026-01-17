@@ -12,7 +12,7 @@ end deco;
 architecture Behavioral of deco is
 begin
     -- Proceso combinacional
-    process(DatoIn)
+    process(all)  -- Solo validoc VHDL-2008 incluye automaticamente todas las señales leidas se usa sie,bre en logica combinacional
         variable idx : integer;
     begin
         -- Valor por defecto

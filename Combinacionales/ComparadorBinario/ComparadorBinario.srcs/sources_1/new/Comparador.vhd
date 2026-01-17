@@ -17,7 +17,7 @@ end Comparador;
 architecture Behavioral of Comparador is
 begin
 
-     process(EntradaA, EntradaB)
+     process(all)  -- Solo validoc VHDL-2008 incluye automaticamente todas las señales leidas se usa sie,bre en logica combinacional
         variable A_u : unsigned(n-1 downto 0);
         variable B_u : unsigned(n-1 downto 0);
     begin

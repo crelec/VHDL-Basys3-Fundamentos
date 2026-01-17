@@ -15,7 +15,7 @@ end Codi;
 architecture Behavioral of Codi is
 begin
 --Proceso combinacional
-process(DatoIn)
+process(all)  -- Solo valido VHDL-2008 incluye automaticamente todas las señales leidas se usa siempre en logica combinacional
 	begin
 		--valores por defecto
 		DatoOut <= (others => '0');  

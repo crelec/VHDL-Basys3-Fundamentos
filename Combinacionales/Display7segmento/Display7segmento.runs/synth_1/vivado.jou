@@ -3,8 +3,8 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Fri Jan 16 06:01:08 2026
-# Process ID: 15908
+# Start of session at: Sat Jan 17 06:19:56 2026
+# Process ID: 13112
 # Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.runs/synth_1
 # Command line: vivado.exe -log ModuloDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ModuloDisplay.tcl
 # Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Display7segmento/Display7segmento.runs/synth_1/ModuloDisplay.vds
