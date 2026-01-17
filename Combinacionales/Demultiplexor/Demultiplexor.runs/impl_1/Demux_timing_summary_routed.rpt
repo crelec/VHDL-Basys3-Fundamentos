@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Mon Jul 10 05:16:28 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Sat Jan 17 05:37:30 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Demux_timing_summary_routed.rpt -pb Demux_timing_summary_routed.pb -rpx Demux_timing_summary_routed.rpx -warn_on_violation
 | Design       : Demux
 | Device       : 7a35t-cpg236
@@ -260,7 +260,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutD[1]
                             (output port)
@@ -271,10 +271,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          3.839     5.280    sel_IBUF[1]
+    U18                                               0.000     0.000 r  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          3.839     5.280    Sel_IBUF[1]
     SLICE_X60Y31         LUT3 (Prop_lut3_I0_O)        0.150     5.430 r  DatoOutD_OBUF[1]_inst_i_1/O
                          net (fo=1, routed)           3.146     8.576    DatoOutD_OBUF[1]
     N3                   OBUF (Prop_obuf_I_O)         3.711    12.288 r  DatoOutD_OBUF[1]_inst/O
@@ -283,7 +283,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutD[2]
                             (output port)
@@ -294,10 +294,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          3.836     5.277    sel_IBUF[1]
+    U18                                               0.000     0.000 r  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          3.836     5.277    Sel_IBUF[1]
     SLICE_X60Y31         LUT3 (Prop_lut3_I0_O)        0.150     5.427 r  DatoOutD_OBUF[2]_inst_i_1/O
                          net (fo=1, routed)           2.813     8.240    DatoOutD_OBUF[2]
     P1                   OBUF (Prop_obuf_I_O)         3.739    11.979 r  DatoOutD_OBUF[2]_inst/O
@@ -306,7 +306,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutC[1]
                             (output port)
@@ -317,10 +317,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          3.839     5.280    sel_IBUF[1]
+    U18                                               0.000     0.000 r  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          3.839     5.280    Sel_IBUF[1]
     SLICE_X60Y31         LUT3 (Prop_lut3_I0_O)        0.124     5.404 r  DatoOutC_OBUF[1]_inst_i_1/O
                          net (fo=1, routed)           2.044     7.448    DatoOutC_OBUF[1]
     V3                   OBUF (Prop_obuf_I_O)         3.508    10.957 r  DatoOutC_OBUF[1]_inst/O
@@ -329,7 +329,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutC[2]
                             (output port)
@@ -340,10 +340,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          3.836     5.277    sel_IBUF[1]
+    U18                                               0.000     0.000 r  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          3.836     5.277    Sel_IBUF[1]
     SLICE_X60Y31         LUT3 (Prop_lut3_I0_O)        0.124     5.401 r  DatoOutC_OBUF[2]_inst_i_1/O
                          net (fo=1, routed)           1.870     7.271    DatoOutC_OBUF[2]
     W3                   OBUF (Prop_obuf_I_O)         3.525    10.796 r  DatoOutC_OBUF[2]_inst/O
@@ -450,7 +450,7 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutB[0]
                             (output port)
@@ -461,10 +461,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 f  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 f  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          0.415     0.624    sel_IBUF[1]
+    U18                                               0.000     0.000 f  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 f  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          0.415     0.624    Sel_IBUF[1]
     SLICE_X0Y15          LUT3 (Prop_lut3_I2_O)        0.045     0.669 r  DatoOutB_OBUF[0]_inst_i_1/O
                          net (fo=1, routed)           0.357     1.026    DatoOutB_OBUF[0]
     W18                  OBUF (Prop_obuf_I_O)         1.210     2.235 r  DatoOutB_OBUF[0]_inst/O
@@ -473,7 +473,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutA[2]
                             (output port)
@@ -484,10 +484,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 f  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.521     0.740    sel_IBUF[0]
+    T17                                               0.000     0.000 f  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.521     0.740    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I0_O)        0.045     0.785 r  DatoOutA_OBUF[2]_inst_i_1/O
                          net (fo=1, routed)           0.325     1.110    DatoOutA_OBUF[2]
     U19                  OBUF (Prop_obuf_I_O)         1.202     2.312 r  DatoOutA_OBUF[2]_inst/O
@@ -496,7 +496,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutA[3]
                             (output port)
@@ -507,10 +507,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 f  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.588     0.808    sel_IBUF[0]
+    T17                                               0.000     0.000 f  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.588     0.808    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I0_O)        0.045     0.853 r  DatoOutA_OBUF[3]_inst_i_1/O
                          net (fo=1, routed)           0.333     1.185    DatoOutA_OBUF[3]
     V19                  OBUF (Prop_obuf_I_O)         1.210     2.395 r  DatoOutA_OBUF[3]_inst/O
@@ -519,7 +519,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutC[0]
                             (output port)
@@ -530,10 +530,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 f  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.446     0.665    sel_IBUF[0]
+    T17                                               0.000     0.000 f  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.446     0.665    Sel_IBUF[0]
     SLICE_X0Y15          LUT3 (Prop_lut3_I2_O)        0.045     0.710 r  DatoOutC_OBUF[0]_inst_i_1/O
                          net (fo=1, routed)           0.514     1.224    DatoOutC_OBUF[0]
     V13                  OBUF (Prop_obuf_I_O)         1.205     2.429 r  DatoOutC_OBUF[0]_inst/O
@@ -542,7 +542,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[1]
+  Source:                 Sel[1]
                             (input port)
   Destination:            DatoOutA[0]
                             (output port)
@@ -553,10 +553,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 f  sel[1] (IN)
-                         net (fo=0)                   0.000     0.000    sel[1]
-    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 f  sel_IBUF[1]_inst/O
-                         net (fo=16, routed)          0.415     0.624    sel_IBUF[1]
+    U18                                               0.000     0.000 f  Sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[1]
+    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 f  Sel_IBUF[1]_inst/O
+                         net (fo=16, routed)          0.415     0.624    Sel_IBUF[1]
     SLICE_X0Y15          LUT3 (Prop_lut3_I2_O)        0.048     0.672 r  DatoOutA_OBUF[0]_inst_i_1/O
                          net (fo=1, routed)           0.510     1.182    DatoOutA_OBUF[0]
     U16                  OBUF (Prop_obuf_I_O)         1.268     2.450 r  DatoOutA_OBUF[0]_inst/O
@@ -565,7 +565,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutB[1]
                             (output port)
@@ -576,10 +576,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 r  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.532     0.751    sel_IBUF[0]
+    T17                                               0.000     0.000 r  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.532     0.751    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I1_O)        0.042     0.793 r  DatoOutB_OBUF[1]_inst_i_1/O
                          net (fo=1, routed)           0.578     1.370    DatoOutB_OBUF[1]
     U15                  OBUF (Prop_obuf_I_O)         1.278     2.648 r  DatoOutB_OBUF[1]_inst/O
@@ -588,7 +588,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutB[3]
                             (output port)
@@ -599,10 +599,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 r  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.588     0.808    sel_IBUF[0]
+    T17                                               0.000     0.000 r  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.588     0.808    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I1_O)        0.044     0.852 r  DatoOutB_OBUF[3]_inst_i_1/O
                          net (fo=1, routed)           0.544     1.396    DatoOutB_OBUF[3]
     V14                  OBUF (Prop_obuf_I_O)         1.267     2.663 r  DatoOutB_OBUF[3]_inst/O
@@ -611,7 +611,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutB[2]
                             (output port)
@@ -622,10 +622,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 r  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.521     0.740    sel_IBUF[0]
+    T17                                               0.000     0.000 r  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.521     0.740    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I1_O)        0.043     0.783 r  DatoOutB_OBUF[2]_inst_i_1/O
                          net (fo=1, routed)           0.622     1.404    DatoOutB_OBUF[2]
     U14                  OBUF (Prop_obuf_I_O)         1.274     2.679 r  DatoOutB_OBUF[2]_inst/O
@@ -634,7 +634,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutA[1]
                             (output port)
@@ -645,10 +645,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 f  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          0.532     0.751    sel_IBUF[0]
+    T17                                               0.000     0.000 f  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          0.532     0.751    Sel_IBUF[0]
     SLICE_X0Y19          LUT3 (Prop_lut3_I0_O)        0.045     0.796 r  DatoOutA_OBUF[1]_inst_i_1/O
                          net (fo=1, routed)           0.717     1.513    DatoOutA_OBUF[1]
     E19                  OBUF (Prop_obuf_I_O)         1.231     2.744 r  DatoOutA_OBUF[1]_inst/O
@@ -657,7 +657,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 sel[0]
+  Source:                 Sel[0]
                             (input port)
   Destination:            DatoOutC[3]
                             (output port)
@@ -668,10 +668,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    T17                                               0.000     0.000 f  sel[0] (IN)
-                         net (fo=0)                   0.000     0.000    sel[0]
-    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  sel_IBUF[0]_inst/O
-                         net (fo=16, routed)          1.728     1.948    sel_IBUF[0]
+    T17                                               0.000     0.000 f  Sel[0] (IN)
+                         net (fo=0)                   0.000     0.000    Sel[0]
+    T17                  IBUF (Prop_ibuf_I_O)         0.219     0.219 f  Sel_IBUF[0]_inst/O
+                         net (fo=16, routed)          1.728     1.948    Sel_IBUF[0]
     SLICE_X60Y31         LUT3 (Prop_lut3_I2_O)        0.045     1.993 r  DatoOutC_OBUF[3]_inst_i_1/O
                          net (fo=1, routed)           0.388     2.380    DatoOutC_OBUF[3]
     U3                   OBUF (Prop_obuf_I_O)         1.205     3.585 r  DatoOutC_OBUF[3]_inst/O
