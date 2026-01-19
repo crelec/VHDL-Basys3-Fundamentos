@@ -1,34 +1,58 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_unsigned.all;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Conversor Binario a BCD genérico
+-- Implementación combinacional del algoritmo Double Dabble
 
 entity Bin_BCD2 is
-    Port ( DatoIn : in STD_LOGIC_VECTOR (13 downto 0);
-           DatoOut : out STD_LOGIC_VECTOR (15 downto 0));
+    generic (
+        -- Número de bits del valor binario de entrada
+        N : integer := 14;
+        -- Número de dígitos decimales necesarios
+        -- Aproximación:
+        --   log10(2) ? 0.301 ? 301 / 1000
+        -- Dígitos ? floor(N * log10(2)) + 1
+        -- Dígitos ? (N * 301) / 1000 + 1
+        ------------------------------------------------------------------
+        DIGITOS : integer := (N * 301) / 1000 + 1
+    );
+    port (DatoIn  : in  STD_LOGIC_VECTOR(N-1 downto 0);
+          DatoOut : out STD_LOGIC_VECTOR(DIGITOS*4-1 downto 0));
 end Bin_BCD2;
 
 architecture Behavioral of Bin_BCD2 is
 
+    -- Ancho total del registro auxiliar:
+    -- bits binarios + bits BCD
+    constant Z_WIDTH : integer := N + DIGITOS*4;
+
 begin
-process(DatoIn)  
-    variable z:STD_LOGIC_VECTOR(29 downto 0);
-	begin
-	   for i in 0 to 29 loop
-	       z(i):='0';
-	   end loop;
-	   z(16 downto 3):=DatoIn;
-	   for i in 0 to 10 loop
-        if z(17 downto 14) > 4 then
-		  z(17 downto 14):=z(17 downto 14)+3;
-		end if;
-		if z(21 downto 18) > 4 then
-		  z(21 downto 18):=z(21 downto 18)+3;
-		end if;
-		if z(25 downto 22) > 4 then
-		  z(25 downto 22):=z(25 downto 22)+3;
-		end if;
-	z(29 downto 1):=z(28 downto 0);
-	end loop;
-	DatoOut<=z(29 downto 14);
-end process;
+
+    process(all)  -- Sensibilidad automática (VHDL-2008)
+        variable z : unsigned(Z_WIDTH-1 downto 0);
+    begin
+        -- Inicialización
+        z := (others => '0');
+
+        -- Carga del dato binario en la parte baja
+        z(N-1 downto 0) := unsigned(DatoIn);
+
+        -- Algoritmo Double Dabble
+        for i in 0 to N-1 loop
+
+            -- Corrección BCD (sumar 3 si el dígito > 4)
+            for d in 0 to DIGITOS-1 loop
+                if z(N + d*4 + 3 downto N + d*4) > 4 then
+                    z(N + d*4 + 3 downto N + d*4) :=
+                        z(N + d*4 + 3 downto N + d*4) + 3;
+                end if;
+            end loop;
+
+            -- Desplazamiento a la izquierda
+            z := z sll 1;
+        end loop;
+        -- Salida BCD
+        DatoOut <= std_logic_vector(z(Z_WIDTH-1 downto N));
+    end process;
 end Behavioral;

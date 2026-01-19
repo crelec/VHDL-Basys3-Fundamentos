@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Mon Jul 10 15:36:58 2023
-| Host             : LenovoCesar running 64-bit major release  (build 9200)
+| Date             : Mon Jan 19 07:20:49 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file Bin_BCD2_power_routed.rpt -pb Bin_BCD2_power_summary_routed.pb -rpx Bin_BCD2_power_routed.rpx
 | Design           : Bin_BCD2
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 41.987 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 43.501 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 41.501                           |
+| Dynamic (W)              | 43.015                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 5.0                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,12 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.862 |       56 |       --- |             --- |
-|   LUT as Logic |     0.862 |       49 |     20800 |            0.24 |
-| Signals        |     1.807 |       70 |       --- |             --- |
-| I/O            |    38.833 |       30 |       106 |           28.30 |
+| Slice Logic    |     1.092 |       61 |       --- |             --- |
+|   LUT as Logic |     1.092 |       50 |     20800 |            0.24 |
+|   Others       |     0.000 |        1 |       --- |             --- |
+| Signals        |     2.081 |       74 |       --- |             --- |
+| I/O            |    39.841 |       34 |       106 |           32.08 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    41.987 |          |           |                 |
+| Total          |    43.501 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     3.065 |       2.724 |      0.341 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.474 |       1.421 |      0.053 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |    10.976 |      10.975 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     3.570 |       3.229 |      0.341 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.511 |       1.458 |      0.053 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |    11.262 |      11.261 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +135,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| Bin_BCD2 |    41.501 |
+| Bin_BCD2 |    43.015 |
 +----------+-----------+
 
 

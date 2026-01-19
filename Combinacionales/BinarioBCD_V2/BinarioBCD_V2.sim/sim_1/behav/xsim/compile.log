@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Bin_BCD2'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sim_1/new/Tes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Tes'

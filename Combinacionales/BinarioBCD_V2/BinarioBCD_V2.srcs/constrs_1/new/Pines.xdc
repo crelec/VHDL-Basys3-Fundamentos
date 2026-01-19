@@ -1,3 +1,6 @@
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+set_property CFGBVS VCCO [current_design]
+
 set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33 } [get_ports {DatoIn[0]}]
 set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports {DatoIn[1]}]
 set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports {DatoIn[2]}]
@@ -29,3 +32,10 @@ set_property -dict { PACKAGE_PIN P3    IOSTANDARD LVCMOS33 } [get_ports {DatoOut
 set_property -dict { PACKAGE_PIN N3    IOSTANDARD LVCMOS33 } [get_ports {DatoOut[13]}]
 set_property -dict { PACKAGE_PIN P1    IOSTANDARD LVCMOS33 } [get_ports {DatoOut[14]}]
 set_property -dict { PACKAGE_PIN L1    IOSTANDARD LVCMOS33 } [get_ports {DatoOut[15]}]
+
+##Pmod Header JB
+set_property -dict { PACKAGE_PIN A14   IOSTANDARD LVCMOS33 } [get_ports {DatoOut[16]}];#Sch name = JB1
+set_property -dict { PACKAGE_PIN A16   IOSTANDARD LVCMOS33 } [get_ports {DatoOut[17]}];#Sch name = JB2
+set_property -dict { PACKAGE_PIN B15   IOSTANDARD LVCMOS33 } [get_ports {DatoOut[18]}];#Sch name = JB3
+set_property -dict { PACKAGE_PIN B16   IOSTANDARD LVCMOS33 } [get_ports {DatoOut[19]}];#Sch name = JB4
+

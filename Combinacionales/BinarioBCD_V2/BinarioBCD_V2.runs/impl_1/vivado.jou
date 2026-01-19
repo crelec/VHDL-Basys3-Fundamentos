@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Mon Jul 10 15:37:20 2023
-# Process ID: 12320
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1
+# Start of session at: Mon Jan 19 07:21:11 2026
+# Process ID: 10152
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1
 # Command line: vivado.exe -log Bin_BCD2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Bin_BCD2.tcl -notrace
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1/Bin_BCD2.vdi
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1/Bin_BCD2.vdi
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.runs/impl_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source Bin_BCD2.tcl -notrace

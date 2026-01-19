@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Mon Jul 10 15:35:44 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Mon Jan 19 07:19:08 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Bin_BCD2_utilization_synth.rpt -pb Bin_BCD2_utilization_synth.pb
 | Design       : Bin_BCD2
 | Device       : xc7a35tcpg236-1
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   30 |     0 |          0 |       106 | 28.30 |
+| Bonded IOB                  |   34 |     0 |          0 |       106 | 32.08 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -151,14 +151,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   40 |                 LUT |
-| OBUF     |   16 |                  IO |
+| LUT6     |   37 |                 LUT |
+| OBUF     |   20 |                  IO |
+| LUT5     |   19 |                 LUT |
 | IBUF     |   14 |                  IO |
-| LUT5     |    9 |                 LUT |
-| LUT4     |    4 |                 LUT |
 | LUT2     |    2 |                 LUT |
+| LUT4     |    1 |                 LUT |
 | LUT3     |    1 |                 LUT |
-| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 
