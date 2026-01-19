@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763145013">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1768826563">
   <File Type="ROUTE-PWR" Name="Bus_Top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Bus_Top.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Bus_Top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Bus_Top_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="Bus_Top.msk"/>
-  <File Type="ROUTE-CLK" Name="Bus_Top_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="Bus_Top.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Bus_Top_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Bus_Top.bit"/>
-  <File Type="BG-DRC" Name="Bus_Top.drc"/>
-  <File Type="BG-BGN" Name="Bus_Top.bgn"/>
-  <File Type="BG-BIN" Name="Bus_Top.bin"/>
-  <File Type="BITSTR-RBT" Name="Bus_Top.rbt"/>
-  <File Type="BITSTR-NKY" Name="Bus_Top.nky"/>
-  <File Type="BITSTR-BMM" Name="Bus_Top_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="Bus_Top_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="Bus_Top.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Bus_Top_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="Bus_Top.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Bus_Top.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Bus_Top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Bus_Top_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Bus_Top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Bus_Top_opt.dcp"/>
   <File Type="OPT-DRC" Name="Bus_Top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Bus_Top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Bus_Top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Bus_Top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Bus_Top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Bus_Top_placed.dcp"/>
   <File Type="PLACE-IO" Name="Bus_Top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Bus_Top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Bus_Top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Bus_Top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Bus_Top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Bus_Top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Bus_Top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Bus_Top.bin"/>
+  <File Type="PLACE-TIMING" Name="Bus_Top_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Bus_Top_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Bus_Top_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Bus_Top_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Bus_Top.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Bus_Top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Bus_Top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Bus_Top_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Bus_Top.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Bus_Top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Bus_Top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Bus_Top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Bus_Top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Bus_Top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Bus_Top_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Bus_Top_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Bus_Top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Bus_Top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Bus_Top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Bus_Top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Bus_Top_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Bus_Top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Bus_Top_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="Bus_Top_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Bus_Top_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Bus_Top_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Bus_Top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Bus_Top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Bus_Top_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Bus_Top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Bus_Top_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Bus_Top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Bus_Top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Bus_Top_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="Bus_Top_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="Bus_Top_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="Bus_Top_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Bus_Top_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="Bus_Top_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Bus_Top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Bus_Top_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Bus_Top_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Bus_Top_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Bus_Top_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Bus_Top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Bus_Top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Bus_Top_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Bus_Top_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Bus_Top_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Bus_Top_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Bus_Top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="Bus_Top.nky"/>
+  <File Type="BITSTR-BMM" Name="Bus_Top_bd.bmm"/>
   <File Type="PDI-FILE" Name="Bus_Top.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Bus_Top_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Bus_Top_pld.pdi"/>
@@ -66,32 +73,39 @@
   <File Type="RNPI_FILE" Name="Bus_Top.rnpi"/>
   <File Type="NPI_FILE" Name="Bus_Top.npi"/>
   <File Type="RBD_FILE" Name="Bus_Top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Bus_Top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Bus_Top.sysdef"/>
+  <File Type="BG-BGN" Name="Bus_Top.bgn"/>
+  <File Type="BG-DRC" Name="Bus_Top.drc"/>
+  <File Type="RDI-RDI" Name="Bus_Top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Bus_Top_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Bus_Top_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Mux_dato.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Display.vhd">
-      <FileInfo>
+      <FileInfo SFType="VHDL2008">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Mux_anodos.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Mux_dato.vhd">
-      <FileInfo>
+      <FileInfo SFType="VHDL2008">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Bus_Top.vhd">
-      <FileInfo>
+      <FileInfo SFType="VHDL2008">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -139,6 +153,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

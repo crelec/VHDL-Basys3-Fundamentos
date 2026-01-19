@@ -3,18 +3,18 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Fri Nov 14 13:27:47 2025
-# Process ID: 24940
-# Current directory: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1
+# Start of session at: Mon Jan 19 07:42:48 2026
+# Process ID: 13324
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1
 # Command line: vivado.exe -log Bus_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bus_Top.tcl
-# Log file: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.vds
-# Journal file: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1\vivado.jou
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1\vivado.jou
 # Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source Bus_Top.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 484.242 ; gain = 199.207
-Command: read_checkpoint -auto_incremental -incremental C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 484.633 ; gain = 200.090
+Command: read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/utils_1/imports/synth_1/Bus_Top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Bus_Top -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,70 +25,67 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18844
+INFO: [Synth 8-7075] Helper process launched with PID 6936
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.500 ; gain = 410.988
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1299.535 ; gain = 411.613
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Bus_Top' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:15]
-INFO: [Synth 8-3491] module 'Mux_dato' declared at 'C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:4' bound to instance 'u0' of component 'Mux_dato' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'Mux_dato' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:13]
-INFO: [Synth 8-226] default block is never used [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'Mux_dato' (0#1) [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:13]
-INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd:4' bound to instance 'u1' of component 'Display' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'Display' (0#1) [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd:9]
-INFO: [Synth 8-3491] module 'Mux_anodos' declared at 'C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd:4' bound to instance 'u2' of component 'Mux_anodos' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'Mux_anodos' [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'Mux_anodos' (0#1) [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'Bus_Top' (0#1) [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'Bus_Top' [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'Mux_dato' [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Mux_dato' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_dato.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Display' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Display.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'Mux_anodos' [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Mux_anodos' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Mux_anodos.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Bus_Top' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/sources_1/new/Bus_Top.vhd:15]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1388.430 ; gain = 500.918
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1391.195 ; gain = 503.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.430 ; gain = 500.918
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1391.195 ; gain = 503.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.430 ; gain = 500.918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1391.195 ; gain = 503.273
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1388.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.195 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
-Finished Parsing XDC File [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Bus_Top_propImpl.xdc].
+Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
+Finished Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Bus_Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Bus_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1427.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1404.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1427.152 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1404.969 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -113,25 +110,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1404.969 ; gain = 517.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -149,37 +146,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -202,24 +199,24 @@ Report Cell Usage:
 |5     |OBUF |    11|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1427.152 ; gain = 500.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1427.152 ; gain = 539.641
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1414.109 ; gain = 512.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1414.109 ; gain = 526.188
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1427.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1426.176 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1429.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1431.797 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: f84a00c8
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 1429.742 ; gain = 920.656
-INFO: [Common 17-1381] The checkpoint 'C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1431.797 ; gain = 922.312
+INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Bus_Top_utilization_synth.rpt -pb Bus_Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 14 13:29:15 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 19 07:44:01 2026...

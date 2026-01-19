@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
 
 entity tes0 is
 --  Port ( );
@@ -7,28 +8,18 @@ end tes0;
 
 architecture Behavioral of tes0 is
 
-component Bus_Top is
-    Port ( DatoInA : in STD_LOGIC_VECTOR (3 downto 0);
-           DatoInB : in STD_LOGIC_VECTOR (3 downto 0);
-           DatoInC : in STD_LOGIC_VECTOR (3 downto 0);
-           DatoInD : in STD_LOGIC_VECTOR (3 downto 0);
-           sel_dato : in STD_LOGIC_VECTOR (1 downto 0);
-           sel_display: in STD_LOGIC_VECTOR (1 downto 0);
-           segmento : out STD_LOGIC_VECTOR (6 downto 0);
-           anodo : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
-
-signal DatoInA : STD_LOGIC_VECTOR (3 downto 0);
-signal DatoInB :  STD_LOGIC_VECTOR (3 downto 0);
-signal DatoInC :  STD_LOGIC_VECTOR (3 downto 0);
-signal DatoInD :  STD_LOGIC_VECTOR (3 downto 0);
-signal sel_dato :  STD_LOGIC_VECTOR (1 downto 0);
-signal sel_display:  STD_LOGIC_VECTOR (1 downto 0);
+signal DatoInA : STD_LOGIC_VECTOR (3 downto 0):="0110";
+signal DatoInB : STD_LOGIC_VECTOR (3 downto 0):="1001";
+signal DatoInC : STD_LOGIC_VECTOR (3 downto 0):="0111";
+signal DatoInD : STD_LOGIC_VECTOR (3 downto 0):="0001";
+signal sel_dato :  STD_LOGIC_VECTOR (1 downto 0):="00";
+signal sel_display:  STD_LOGIC_VECTOR (1 downto 0):="00";
 signal segmento :  STD_LOGIC_VECTOR (6 downto 0);
 signal anodo : STD_LOGIC_VECTOR (3 downto 0);
 
 begin
-u0:component Bus_Top Port map( DatoInA =>DatoInA,
+
+u0:entity work.Bus_Top Port map( DatoInA =>DatoInA,
            DatoInB =>DatoInB,
            DatoInC =>DatoInC,
            DatoInD =>DatoInD,
@@ -37,41 +28,17 @@ u0:component Bus_Top Port map( DatoInA =>DatoInA,
            segmento =>segmento,
            anodo =>anodo);
 
-DatoInA <="0110";
-DatoInB <="1001";
-DatoInC <="1100";
-DatoInD <="0001";
+stim_proc : process
+    begin
+        -- Recorre selecciones de datos y displays
+        for d in 0 to 3 loop
+            sel_dato <= std_logic_vector(to_unsigned(d, 2));
 
-S_sel_display0:PROCESS
-BEGIN
-sel_display(0)<= '0';
-WAIT FOR 1ns;
-sel_display(0)<= '1';
-wait for 1ns;
-end process;
-
-S_sel_display1:PROCESS
-BEGIN
-sel_display(1)<= '0';
-WAIT FOR 2ns;
-sel_display(1)<= '1';
-wait for 2ns;
-end process;
-
-S_sel_dato0:PROCESS
-BEGIN
-sel_dato(0)<= '0';
-WAIT FOR 4ns;
-sel_dato(0)<= '1';
-wait for 4ns;
-end process;
-
-S_sel_dato1:PROCESS
-BEGIN
-sel_dato(1)<= '0';
-WAIT FOR 8ns;
-sel_dato(1)<= '1';
-wait for 8ns;
-end process;
-
+            for s in 0 to 3 loop
+                sel_display <= std_logic_vector(to_unsigned(s, 2));
+                wait for 10 ns;
+            end loop;
+        end loop;
+        wait; -- Fin de simulación
+    end process;
 end Behavioral;

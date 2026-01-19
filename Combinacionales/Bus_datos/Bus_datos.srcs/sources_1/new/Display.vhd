@@ -8,7 +8,7 @@ end Display;
 
 architecture Behavioral of Display is
 begin
-process(DatoIn)
+process(all)
 	begin
 		case DatoIn is
 			when "0000" =>segmento<="1000000";

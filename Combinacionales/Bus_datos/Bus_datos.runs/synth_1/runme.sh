@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1'
+HD_PWD='C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

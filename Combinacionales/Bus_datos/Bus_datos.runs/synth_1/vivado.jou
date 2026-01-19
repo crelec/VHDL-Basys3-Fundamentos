@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Fri Nov 14 13:27:47 2025
-# Process ID: 24940
-# Current directory: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1
+# Start of session at: Mon Jan 19 07:42:48 2026
+# Process ID: 13324
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1
 # Command line: vivado.exe -log Bus_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bus_Top.tcl
-# Log file: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.vds
-# Journal file: C:/Users/cerom/OneDrive/Documentos/Repo-ASUS/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1\vivado.jou
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1/Bus_Top.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Combinacionales/Bus_datos/Bus_datos.runs/synth_1\vivado.jou
 # Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source Bus_Top.tcl -notrace
