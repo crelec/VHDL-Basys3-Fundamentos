@@ -2,7 +2,7 @@
 ## Diseño digital en FPGA con Basys3 (Vivado 2023.1)
 
 Este repositorio contiene **ejemplos fundamentales de diseño digital en VHDL**
-implementados sobre la **FPGA Basys3** utilizando **Xilinx Vivado 2023.1**.
+implementados sobre la **FPGA Basys3** utilizando **Xilinx Vivado 2023.1.1** y **VHDL – IEEE 1076-2008**.
 
 El material está orientado a **estudiantes universitarios**, docentes y personas
 que inician en el diseño digital, y cubre los **conceptos clásicos y esenciales**
@@ -41,7 +41,8 @@ Ejemplos de circuitos sin memoria, enfocados en:
 
 > Estos ejemplos permiten dominar la descripción concurrente en VHDL
 > y la relación directa entre lógica booleana y hardware.
-
+> 
+> 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales
 ---
 
 ### 🔹 Secuenciales
@@ -92,9 +93,9 @@ El objetivo aquí es que el estudiante:
 ## 🛠 Requisitos
 
 - FPGA **Basys3**
-- **Xilinx Vivado** (recomendado: 2023.x)
+- **Xilinx Vivado 2023.1.1**
 - Conocimientos básicos de lógica digital
-- Conocimientos iniciales de VHDL
+- Conocimientos iniciales de **VHDL – IEEE 1076-2008**
 
 ---
 
