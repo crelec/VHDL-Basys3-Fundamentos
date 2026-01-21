@@ -63,6 +63,8 @@ El codificador implementado en este repositorio es **genérico**, **parametrizab
 **Ejemplo implementado:**
 - **Codificador genérico con prioridad (2ⁿ → n)**  
   Entidad: `Codi`
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Codificador  
 
 ---
 
@@ -119,6 +121,8 @@ El decodificador implementado en este repositorio es **genérico**, **parametriz
 **Ejemplo implementado:**
 - **Decodificador genérico n → 2ⁿ**  
   Entidad: `deco`
+  
+👉https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Decodificador  
 
 ---
 
@@ -169,6 +173,8 @@ En este repositorio se implementa un **multiplexor genérico 4 a 1**, completame
 **Ejemplo implementado:**
 - **Multiplexor genérico 4 → 1**  
   Entidad: `ModuloMux`
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Multiplexor
 
 ---
 
@@ -221,6 +227,8 @@ En este repositorio se implementa un **demultiplexor genérico 1 a 4**, con anch
 **Ejemplo implementado:**
 - **Demultiplexor genérico 1 → 4**  
   Entidad: `Demux`
+  
+  👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Demultiplexor
 
 ---
 
@@ -272,6 +280,8 @@ En este repositorio se implementa un **comparador binario genérico de n bits**,
 **Ejemplo implementado:**
 - **Comparador binario genérico n bits**  
   Entidad: `Comparador`
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/ComparadorBinario
 
 ---
 
@@ -329,6 +339,8 @@ En este repositorio se implementa un **decodificador hexadecimal (4 bits) a disp
 **Ejemplo implementado:**
 - **Decodificador hexadecimal a display de 7 segmentos**  
   Entidad: `ModuloDisplay`
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Display7segmento
 
 ---
 
@@ -389,6 +401,8 @@ En este repositorio se implementa un **conversor Binario a BCD genérico**, basa
 **Ejemplo implementado:**
 - **Conversor Binario a BCD genérico**  
   Entidad: `Bin_BCD2`
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/BinarioBCD_V2  
 
 ---
 
@@ -442,12 +456,42 @@ Cada grupo de 4 bits en DatoOut representa un dígito decimal en formato BCD.
 
 1. Se inicializa un registro auxiliar con ceros.
 2. El dato binario se carga en la parte baja del registro.
-3. Para cada bit del dato binario:
-   - Se revisa cada dígito BCD.
+3. Repetición de `N` iteraciones:
+   - Para cada dígito BCD:
    - Si el valor del dígito es mayor que 4, se suma 3.
    - Se realiza un desplazamiento a la izquierda del registro.
+   - En código es:
+     
+```vhdl   
+for i in 0 to N-1 loop
+    for d in 0 to DIGITOS-1 loop
+        if z(N + d*4 + 3 downto N + d*4) > 4 then
+            z(N + d*4 + 3 downto N + d*4) :=
+                z(N + d*4 + 3 downto N + d*4) + 3;
+        end if;
+    end loop;
+    z := z sll 1;
+end loop;
+```
+
+El desplazamiento se logra con:
+
+```vhdl
+z := z sll 1;
+```
+
+lo que es equivalente a:  
+
+```vhdl
+z(Z_WIDTH-1 downto 1) := z(Z_WIDTH-2 downto 0);
+```
+     
 4. Al finalizar, la parte alta del registro contiene el número en BCD.
-   
+
+```vhdl
+   DatoOut <= std_logic_vector(z(Z_WIDTH-1 downto N));
+```
+
 Este método garantiza una conversión correcta sin utilizar divisiones ni operaciones complejas.
 
 ---
@@ -470,6 +514,9 @@ Este método garantiza una conversión correcta sin utilizar divisiones ni opera
 ---
 
 ### 4.6 Aplicación integradora: Bus de datos
+
+  
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Bus_datos  
 
 ---
 
