@@ -513,10 +513,109 @@ Este método garantiza una conversión correcta sin utilizar divisiones ni opera
 
 ---
 
-### 4.6 Aplicación integradora: Bus de datos
+### 4.8 Aplicación integradora: Bus de datos
 
-  
+**Descripción:**  
+Este proyecto implementa una **aplicación integradora de lógica combinacional** basada en un **bus de datos**, cuyo objetivo es seleccionar uno de varios datos de entrada y visualizarlo en un **display de 7 segmentos**, controlando además cuál display se habilita mediante multiplexación de ánodos. El diseño se desarrolla íntegramente en **VHDL 2008**, utilizando una arquitectura **modular y jerárquica**, donde cada bloque cumple una función específica dentro del sistema.  
+
+---
+
+**Arquitectura del sistema:**
+
+El sistema está compuesto por los siguientes módulos:
+
+| Módulo        | Función principal |
+|--------------|------------------|
+| `Bus_Top`    | Entidad integradora del sistema |
+| `Mux_dato`   | Selector del bus de datos |
+| `Display`    | Decodificador a 7 segmentos |
+| `Mux_anodos` | Selector de display activo |
+
+La interconexión de estos módulos permite construir un sistema completo de visualización multiplexada.
+
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Bus_datos  
+
+---
+
+**Descripción de los módulos.**
+
+Módulo `Bus_Top` (Entidad principal)
+
+**Función:**  
+Integra todos los módulos del sistema y define el flujo de datos desde las entradas hasta el display.
+
+**Entradas:**
+- `DatoInA` – `DatoInD`: cuatro fuentes de datos de 4 bits
+- `sel_dato`: selector del bus de datos (2 bits)
+- `sel_display`: selector del display activo (2 bits)
+
+**Salidas:**
+- `segmento`: señales del display de 7 segmentos
+- `anodo`: habilitación del display correspondiente
+
+Este módulo implementa la arquitectura jerárquica del diseño.
+
+---
+
+Módulo `Mux_dato` – Multiplexor del bus de datos
+
+**Función:**  
+Selecciona uno de los cuatro datos de entrada según la señal `sel`.
+
+**Características:**
+- Multiplexor 4:1
+- Datos de 4 bits
+- Implementación combinacional
+- Controlado mediante un `case`
+
+Este bloque representa el **bus de datos del sistema**.
+
+---
+
+Módulo `Display` – Decodificador a 7 segmentos
+
+**Función:**  
+Convierte un valor binario de 4 bits (0–9) en el patrón correspondiente para un display de 7 segmentos.
+
+**Características:**
+- Display de **ánodo común**
+- Segmentos activos en nivel bajo (`'0'`)
+- Implementación mediante tabla de verdad con `case`
+
+Este módulo se encarga de la **visualización del dato seleccionado**.
+
+---
+
+Módulo `Mux_anodos` – Selector de displays
+
+**Función:**  
+Habilita uno de los cuatro displays disponibles, desactivando los demás.
+
+**Características:**
+- Multiplexor 1-de-4
+- Salidas activas en bajo
+- Implementación concurrente con operadores `when–else`
+
+Permite la **multiplexación de displays** sin duplicar hardware.
+
+---
+
+**Funcionamiento del sistema**
+
+1. `sel_dato` selecciona uno de los cuatro datos de entrada.
+2. El dato seleccionado viaja por el bus interno `sg_dato`.
+3. El módulo `Display` convierte el dato a señales de 7 segmentos.
+4. `sel_display` habilita el display correspondiente mediante `Mux_anodos`.
+
+---
+
+**Aplicaciones típicas**
+
+- Sistemas digitales educativos
+- Visualización de buses de datos
+- Paneles de control básicos
+- Prácticas de multiplexación
+- Proyectos introductorios de FPGA
 
 ---
 
