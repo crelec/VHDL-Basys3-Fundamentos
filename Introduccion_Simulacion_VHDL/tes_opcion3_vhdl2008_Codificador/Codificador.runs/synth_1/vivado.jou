@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Thu Jan 22 09:36:07 2026
+# Process ID: 13212
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Introduccion_Simulacion_VHDL/tes_opcion3_vhdl2008_Codificador/Codificador.runs/synth_1
+# Command line: vivado.exe -log Codi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Codi.tcl
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Introduccion_Simulacion_VHDL/tes_opcion3_vhdl2008_Codificador/Codificador.runs/synth_1/Codi.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Introduccion_Simulacion_VHDL/tes_opcion3_vhdl2008_Codificador/Codificador.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
+#-----------------------------------------------------------
+source Codi.tcl -notrace

@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../Codificador.srcs/sources_1/new/Codi.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../Codificador.srcs/sim_1/new/Tes.vhd" \
+
+# Do not sort compile order
+nosort
