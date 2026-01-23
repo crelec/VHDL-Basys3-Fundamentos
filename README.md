@@ -17,7 +17,8 @@ Proporcionar una **base sólida y progresiva** en:
 - Lógica combinacional
 - Lógica secuencial
 - Máquinas de estado finitas (FSM)
-
+- Metodologías de **simulación VHDL**
+  
 Todos los ejemplos están pensados para:
 - Comprender el funcionamiento interno del hardware
 - Relacionar teoría con implementación real en FPGA
@@ -27,10 +28,28 @@ Todos los ejemplos están pensados para:
 
 ## 📁 Estructura del repositorio
 
-El repositorio se organiza en tres bloques principales:
+Este repositorio se organiza en **cuatro bloques principales**, cada uno con su propia carpeta y documentación:
 
-### 🔹 Combinacionales
-Ejemplos de circuitos sin memoria, enfocados en:
+### 🔹 1. Introducción a Simulación VHDL
+
+**Carpeta:** `Introduccion_Simulacion_VHDL`  
+**Objetivo:** Mostrar las distintas formas de construir testbench en VHDL y justificar el uso de una metodología estándar (Opción 3) en todo el repositorio.
+
+Esta carpeta incluye:
+
+- Explicación de tres metodologías de simulación
+- Comparación pedagógica de opciones
+- Proyectos reutilizables con sus testbench 
+>🔗 Enlace directo:
+> 
+>👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL  
+>
+---
+
+### 🔹 Combinacionales  
+
+**Carpeta:** `Combinacionales`  
+Este bloque contiene implementaciones de circuitos lógicos sin elemento de memoria. Entre los ejemplos incluidos se encuentran:
 
 - Codificadores y decodificadores
 - Multiplexores y demultiplexores
@@ -42,11 +61,16 @@ Ejemplos de circuitos sin memoria, enfocados en:
 > Estos ejemplos permiten dominar la descripción concurrente en VHDL
 > y la relación directa entre lógica booleana y hardware.
 > 
+> 🔗 Enlace directo:
+> 
 > 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales
+> 
 ---
 
-### 🔹 Secuenciales
-Ejemplos con uso de reloj y memoria, incluyendo:
+### 🔹 Secuenciales  
+
+**Carpeta:** `Secuenciales`  
+Incluye ejemplos que utilizan **reloj y elementos de memoria**, donde la salida depende del estado previo del sistema, entre ellos:
 
 - Divisores de frecuencia
 - Temporizadores
@@ -56,11 +80,18 @@ Ejemplos con uso de reloj y memoria, incluyendo:
 
 > Aquí se introducen conceptos críticos como:
 > flanco de reloj, reset, temporización y diseño síncrono correcto.
+> 
+> 🔗 Enlace directo:
+> 
+> https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Secuenciales
+> 
 
 ---
 
-### 🔹 Máquinas de Estado (FSM)
-Ejemplos de máquinas de estado tipo Moore y Mealy:
+### 🔹 Máquinas de Estado (FSM)  
+
+**Carpeta:** `MaquinaEstados`  
+Ejemplos de **máquinas de estado finitas**, incluyendo variantes Moore y Mealy, tales como:
 
 - FSM sin entradas externas
 - Detección de flancos
@@ -71,7 +102,11 @@ Ejemplos de máquinas de estado tipo Moore y Mealy:
 
 > Esta sección conecta directamente el diseño digital
 > con aplicaciones reales de control.
-
+> 
+> 🔗 Enlace directo:
+> 
+> https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/MaquinaEstados
+> 
 ---
 
 ## 🧩 Alcance del nivel “Fundamentos”
@@ -92,7 +127,7 @@ El objetivo aquí es que el estudiante:
 
 ## 🛠 Requisitos
 
-- FPGA **Basys3**
+- FPGA (Artix®-7 XC7A35T-1CPG236C) **Basys3**
 - **Xilinx Vivado 2023.1.1**
 - Conocimientos básicos de lógica digital
 - Conocimientos iniciales de **VHDL – IEEE 1076-2008**
