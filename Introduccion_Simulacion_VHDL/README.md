@@ -42,58 +42,116 @@ Las tres opciones simulan el **mismo bloque funcional**, pero con enfoques metod
 ## 🔹 Opción 1 – Simulación básica
 
 ### Descripción
-La simulación se realiza dentro del mismo archivo o con un testbench mínimo, enfocado únicamente en observar señales.
 
-### Características
-- Testbench muy simple
-- Poca o ninguna reutilización
-- No escalable
-- Útil solo para ejemplos rápidos
+La simulación se construye mediante **múltiples procesos independientes**, cada uno generando estímulos sobre una sola señal de entrada, con tiempos distintos.
 
+El testbench se centra en **forzar cambios en señales individuales**, sin una secuencia global claramente definida.
+
+### Características observables en el código
+
+- Un proceso por cada bit de entrada
+- Estímulos distribuidos en el tiempo mediante `wait for`
+- No existe un control central de los casos de prueba
+- No se definen escenarios funcionales explícitos
+- Difícil lectura del comportamiento esperado
+
+### Ventajas
+
+- Muy simple de implementar
+- Útil para comprender cómo actúan los procesos concurrentes
+- Adecuada como **primer contacto con simulación**
+ 
+### Limitaciones
+
+- Poco escalable (el número de procesos crece rápidamente)
+- Difícil de mantener
+- No reutilizable
+- No permite definir claramente casos de prueba funcionales
+
+---
+>
+>🔗 Enlace directo:
+>
+>👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL/tes_opcion1_clasica_Codificador
+>
 ---
 
 ## 🔹 Opción 2 – Simulación estructurada
 
 ### Descripción
-Separación clara entre el **diseño (DUT)** y el **testbench**, con estímulos más organizados.
 
-### Características
-- Mayor claridad que la opción 1
-- Testbench dedicado
-- Simulación funcional correcta
-- Limitada reutilización
+Se introduce una **separación clara entre el diseño (DUT) y el testbench**, con un único proceso de estimulación que controla todos los estímulos.
 
+Se utilizan **genéricos** para parametrizar el test, mejorando la flexibilidad respecto a la opción 1.
+
+### Características observables en el código
+
+- Uso de `constant` para definir el tamaño del sistema
+- Instanciación explícita del DUT con `generic map`
+- Un solo proceso de estímulos
+- Uso de bucles `for` para barrido de entradas
+- Inclusión de casos funcionales específicos 
+
+### Ventajas
+
+- Mucho más legible que la opción 1
+- Permite definir secuencias de prueba coherentes
+- Facilita la verificación funcional
+- Menor duplicación de código
+
+### Limitaciones
+
+- El testbench aún depende fuertemente del módulo específico
+- La reutilización en otros proyectos es limitada
+- No se formaliza una estructura estándar de casos de prueba
+
+---  
+>
+>🔗 Enlace directo:
+>
+>👉https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL/tes_opcion2_parametrizada_Codificador
+>
 ---
 
 ## 🔹 Opción 3 – Simulación estándar (Metodología adoptada)
 
 ### Descripción
-Metodología de simulación **formal y reutilizable**, basada en buenas prácticas académicas y profesionales.
+
+Metodología de simulación **formal, clara y reutilizable**, basada en buenas prácticas académicas y profesionales.
+
+El testbench está organizado alrededor de **casos de prueba funcionales claramente definidos**, independientes del detalle interno del diseño.
 
 Esta opción es la **metodología oficial utilizada en todo el repositorio**.
 
-### Características
-- Separación estricta entre:
-  - Diseño (DUT)
-  - Testbench
-- Uso de:
-  - Procesos independientes
-  - Señales de estímulo bien definidas
-  - Temporización clara
-- Compatible con:
-  - Lógica combinacional
-  - Lógica secuencial
-  - FSM
-- Fácil de extender y reutilizar
+### Características observables en el código
+
+- Uso explícito del concepto **DUT (Device Under Test)**
+- Parámetros claramente definidos y fáciles de modificar
+- Un único proceso de estimulación bien estructurado
+- Casos de prueba documentados y secuenciales:
+  - Estado inicial
+  - Barrido completo
+  - Casos de prioridad
+  - Patrones múltiples
+- Independencia entre el testbench y la implementación interna
 
 ### Ventajas
+
+- Alta legibilidad
+- Fácil mantenimiento
 - Escalable
-- Clara
-- Mantenible
-- Ideal para enseñanza y proyectos reales
+- Reutilizable en múltiples proyectos
+- Facilita la depuración y validación funcional
+- Ideal para lógica combinacional, secuencial y FSM
 
-✔ **Metodología seleccionada para todo el repositorio**
+✔ **Metodología seleccionada para todo el repositorio**  
 
+---  
+>
+>🔗 Enlace directo:
+>
+>👉https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL/tes_opcion3_vhdl2008_Codificador
+>
 ---
 
 ## 📌 Decisión metodológica
