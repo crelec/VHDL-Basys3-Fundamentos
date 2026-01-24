@@ -105,11 +105,11 @@ Se utilizan **genéricos** para parametrizar el test, mejorando la flexibilidad 
 - La reutilización en otros proyectos es limitada
 - No se formaliza una estructura estándar de casos de prueba
 
----  
+---
 >
 >🔗 Enlace directo:
 >
->👉https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL/tes_opcion2_parametrizada_Codificador
+>👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL/tes_opcion2_parametrizada_Codificador
 >
 ---
 
@@ -186,6 +186,7 @@ Cada uno de esos bloques utiliza testbench derivados directamente de la **Opció
 
 ## 🛠 Requisitos
 
+- FPGA (Artix®-7 XC7A35T-1CPG236C) **Basys3**
 - Xilinx Vivado 2023.1.1
 - Conocimientos básicos de lógica digital
 - Conocimientos iniciales de VHDL
