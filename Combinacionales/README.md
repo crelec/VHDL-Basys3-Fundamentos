@@ -7,7 +7,9 @@
 
 La lógica combinacional constituye la base del diseño digital. En este directorio se presentan ejemplos de circuitos combinacionales implementados en **VHDL**, siguiendo estrictamente el estándar **IEEE 1076-2008**.
 
-Todos los diseños aquí contenidos se caracterizan porque sus salidas dependen **únicamente del valor instantáneo de las entradas**, sin utilizar elementos de memoria ni señales de reloj.
+Todos los diseños aquí contenidos se caracterizan porque sus salidas dependen **únicamente del valor instantáneo de las entradas**, sin utilizar elementos de memoria ni señales de reloj.  
+
+Todos los diseños de este bloque utiliza **la metodología de simulación Opción 3** (testbench reutilizables, barrido de casos y cobertura automática de genéricos) para verificar cada ejemplo presentado.
 
 El objetivo de esta carpeta es proporcionar una colección estructurada de ejemplos fundamentales, que sirvan como referencia para el estudio posterior de sistemas secuenciales y diseños digitales más complejos.
 
