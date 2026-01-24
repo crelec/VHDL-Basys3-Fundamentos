@@ -1,8 +1,6 @@
-# En Construcción...  
-
-
 # Lógica Secuencial en VHDL  
-**Implementaciones bajo IEEE 1076-2008**
+**Implementaciones bajo IEEE 1076-2008**  
+📌 Repositorio en construcción – Los ejemplos y documentación se irán ampliando progresivamente.
 
 ## 1. Introducción
 
@@ -47,18 +45,20 @@ Todos los módulos cumplen:
 - Uso de tipos `unsigned` y `signed` para operaciones aritméticas
 - Código completamente compatible con VHDL-2008
 - Testbench bajo metodología Opción 3
-- Ausencia de lógica inferida
+- Ausencia de lógica inferida (latches, memorias implícitas)
 
 ---
 
 ## 3. Metodología de simulación
 
-Todos los ejemplos secuenciales utilizan una **metodología de simulación homogénea**, basada en la Opción 3 definida en la carpeta **Introduccion_Simulacion_VHDL**.  
+Todos los ejemplos secuenciales utilizan una **metodología de simulación homogénea**, basada en la Opción 3 definida en la carpeta  
+
+👉 **Introduccion_Simulacion_VHDL**.  
 
 Características:
 
 - Testbench independiente del diseño
-- Instanciación directa mediante:
+- Instanciación directa mediante `entity work.<nombre>`
   - Generación sistemática de estímulos
   - Control explícito de reloj y reset
   - Cobertura funcional completa
