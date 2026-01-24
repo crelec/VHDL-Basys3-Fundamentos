@@ -63,7 +63,9 @@ El codificador implementado en este repositorio es **genérico**, **parametrizab
 **Ejemplo implementado:**
 - **Codificador genérico con prioridad (2ⁿ → n)**  
   Entidad: `Codi`
-  
+
+🔗 Enlace directo:  
+
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Codificador  
 
 ---
@@ -121,6 +123,8 @@ El decodificador implementado en este repositorio es **genérico**, **parametriz
 **Ejemplo implementado:**
 - **Decodificador genérico n → 2ⁿ**  
   Entidad: `deco`
+
+🔗 Enlace directo:  
   
 👉https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Decodificador  
 
@@ -173,6 +177,8 @@ En este repositorio se implementa un **multiplexor genérico 4 a 1**, completame
 **Ejemplo implementado:**
 - **Multiplexor genérico 4 → 1**  
   Entidad: `ModuloMux`
+
+🔗 Enlace directo:
   
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Multiplexor
 
@@ -227,8 +233,10 @@ En este repositorio se implementa un **demultiplexor genérico 1 a 4**, con anch
 **Ejemplo implementado:**
 - **Demultiplexor genérico 1 → 4**  
   Entidad: `Demux`
-  
-  👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Demultiplexor
+
+🔗 Enlace directo:  
+
+👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Demultiplexor
 
 ---
 
@@ -280,7 +288,9 @@ En este repositorio se implementa un **comparador binario genérico de n bits**,
 **Ejemplo implementado:**
 - **Comparador binario genérico n bits**  
   Entidad: `Comparador`
-  
+
+🔗 Enlace directo:  
+
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/ComparadorBinario
 
 ---
@@ -339,7 +349,9 @@ En este repositorio se implementa un **decodificador hexadecimal (4 bits) a disp
 **Ejemplo implementado:**
 - **Decodificador hexadecimal a display de 7 segmentos**  
   Entidad: `ModuloDisplay`
-  
+
+🔗 Enlace directo:  
+
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Display7segmento
 
 ---
@@ -401,7 +413,9 @@ En este repositorio se implementa un **conversor Binario a BCD genérico**, basa
 **Ejemplo implementado:**
 - **Conversor Binario a BCD genérico**  
   Entidad: `Bin_BCD2`
-  
+
+🔗 Enlace directo:  
+
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/BinarioBCD_V2  
 
 ---
@@ -532,6 +546,8 @@ El sistema está compuesto por los siguientes módulos:
 | `Mux_anodos` | Selector de display activo |
 
 La interconexión de estos módulos permite construir un sistema completo de visualización multiplexada.
+
+🔗 Enlace directo:  
 
 👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Combinacionales/Bus_datos  
 
