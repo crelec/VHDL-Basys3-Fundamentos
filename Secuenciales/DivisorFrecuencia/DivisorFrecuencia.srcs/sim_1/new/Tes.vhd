@@ -7,32 +7,24 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Divisor is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           FoutDivide : out STD_LOGIC);
-end component;
+-- Señales de estímulo y observación
+signal clk        : std_logic := '0';
+signal reset      : std_logic := '1';
+signal FoutDivide : std_logic;
 
---Inputs
-   signal clk : std_logic := '0';
-   signal reset : std_logic := '0';
-
- 	--Outputs
-   signal Foutdivide : std_logic;
-
-   -- Clock period definitions
-   constant clk_period : time := 10 ns;
+-- Definición del periodo de reloj
+constant clk_period : time := 10 ns;
  
 BEGIN
  
-	-- Instantiate the Unit Under Test (UUT)
-   uut: Divisor PORT MAP (
+-- Instantiate the Unit Under Test (UUT)
+uut: entity work.Divisor PORT MAP (
           clk => clk,
           reset => reset,
           Foutdivide => Foutdivide
         );
 
-   -- Clock process definitions
+   -- proceso generación de reloj
    clk_process :process
    begin
 		clk <= '0';
@@ -41,12 +33,18 @@ BEGIN
 		wait for clk_period/2;
    end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6ns;
-reset<= '0';
-wait;
-end process;
+-- Proceso de estímulo del reset
+    
+    stim_proc : process
+    begin
+        -- Reset activo al inicio
+        reset <= '1';
+        wait for 5 ms;
+        -- Liberación del reset
+        reset <= '0';
+
+        -- simulación continua
+        wait;
+    end process;
 
 end Behavioral;

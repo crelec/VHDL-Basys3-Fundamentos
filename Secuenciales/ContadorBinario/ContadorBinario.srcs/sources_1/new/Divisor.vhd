@@ -9,28 +9,31 @@ entity Divisor is
 end Divisor;
 
 architecture Behavioral of Divisor is
-constant DIVIDER_TIME : natural := 50000000; -- Divisor para 0.5 seg
-constant COUNTER_WIDTH : natural := 26; -- Ancho suficiente para el contador
-constant fincuenta : unsigned(COUNTER_WIDTH-1 downto 0) := to_unsigned(DIVIDER_TIME, COUNTER_WIDTH);
+constant DIVIDER_TIME : natural := 50000; -- Número de ciclos para medio periodo
+constant COUNTER_WIDTH : natural := 16;   -- Debe cumplirse: 2^N ? DIVIDER_TIME
+
+-- fincuenta: valor límite del contador expresado en binario unsigned
+constant fincuenta : unsigned(COUNTER_WIDTH-1 downto 0) :=
+                      to_unsigned(DIVIDER_TIME, COUNTER_WIDTH);
 
 signal cuenta : unsigned(COUNTER_WIDTH-1 downto 0) := (others => '0');
-signal aux : std_logic := '0';
+signal aux    : std_logic := '0';
 
 begin 
 
-	Process (reset,clk)
-  
+Process (reset, clk)
 begin
-	if reset = '1' then
-		cuenta <= (others => '0');
-	elsif clk'event and clk = '1' then
-		if cuenta = fincuenta-1 then 
-			cuenta <= (others => '0');
-			aux <= not aux;
-		else
-			cuenta <= cuenta + 1;
-		end if;
-	end if;
+    if reset = '1' then
+        cuenta <= (others => '0');
+        aux    <= '0';
+    elsif rising_edge(clk) then
+        if cuenta = fincuenta - 1 then 
+            cuenta <= (others => '0');
+            aux    <= not aux;      -- conmuta cada medio periodo
+        else
+            cuenta <= cuenta + 1;
+        end if;
+    end if;
 end process;
-Foutdivide <= aux;
+FoutDivide <= aux;
 end Behavioral;

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.runs/impl_1/SupContador.tcl"
+  variable script "C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.runs/impl_1/SupContador.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -126,7 +127,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint SupContador_routed.dcp
-  set_property webtalk.parent_dir C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.cache/wt [current_project]
 set_property TOP SupContador [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

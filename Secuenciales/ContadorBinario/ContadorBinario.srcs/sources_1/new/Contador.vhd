@@ -14,12 +14,12 @@ signal cuenta: unsigned(7 downto 0);
 
 begin
 	process(clk,reset)
-		begin
-		if reset = '1' then
-		cuenta <= (others =>'0');
-		elsif clk' event and clk ='1' then
-		cuenta <= (cuenta + 1);
-		end if; 
+	begin
+	   if reset = '1' then
+	       cuenta <= (others =>'0');
+	   elsif rising_edge(clk) then  --elsif clk' event and clk ='1' then
+	       cuenta <= (cuenta + 1);
+	   end if; 
 	end process;
 	FoutCuenta<=std_logic_vector(cuenta);
 end Behavioral;

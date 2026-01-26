@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.srcs/sources_1/new/Contador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Contador'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.srcs/sim_1/new/Tes.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Tes'
