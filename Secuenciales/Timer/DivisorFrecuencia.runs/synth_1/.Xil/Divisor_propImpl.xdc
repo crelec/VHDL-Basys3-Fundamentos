@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc rfile:../../../DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc rfile:../../../DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W5   IOSTANDARD LVCMOS33 } [get_ports clk]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]

@@ -7,13 +7,6 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Divisor is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           ce : in STD_LOGIC;
-           FoutDivide : out STD_LOGIC);
-end component;
-
 --Inputs
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
@@ -28,7 +21,7 @@ end component;
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Divisor PORT MAP (
+   uut: entity work.Divisor PORT MAP (
           clk => clk,
           reset => reset,
           ce=>ce,
@@ -44,20 +37,26 @@ BEGIN
 		wait for clk_period/2;
    end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6ns;
-reset<= '0';
-wait;
-end process;
+-- Estímulos
+    stim_proc : process
+    begin
+        -- Reset inicial
+        reset <= '1';
+        wait for 100 ns;
+        reset <= '0';
 
-S_ce:PROCESS
-BEGIN
-ce<= '1';
-WAIT FOR 6ns;
-ce<= '0';
-wait;
-end process;
+        -- Habilitar temporizador
+        ce <= '1';
+        wait for 5 ms;
 
+        -- Inhibir temporizador
+        ce <= '0';
+        wait for 2 ms;
+
+        -- Reactivar temporizador
+        ce <= '1';
+        wait for 5 ms;
+
+        wait;
+    end process;
 end Behavioral;

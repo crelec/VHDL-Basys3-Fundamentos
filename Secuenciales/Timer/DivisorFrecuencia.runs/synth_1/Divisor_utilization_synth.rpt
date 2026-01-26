@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Nov 28 09:53:21 2024
+| Date         : Mon Jan 26 10:13:05 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Divisor_utilization_synth.rpt -pb Divisor_utilization_synth.pb
 | Design       : Divisor
@@ -34,8 +34,8 @@ Table of Contents
 | Slice LUTs*             |   21 |     0 |          0 |     20800 |  0.10 |
 |   LUT as Logic          |   21 |     0 |          0 |     20800 |  0.10 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |   17 |     0 |          0 |     41600 |  0.04 |
-|   Register as Flip Flop |   17 |     0 |          0 |     41600 |  0.04 |
+| Slice Registers         |   18 |     0 |          0 |     41600 |  0.04 |
+|   Register as Flip Flop |   18 |     0 |          0 |     41600 |  0.04 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 17    |          Yes |           - |        Reset |
+| 18    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -151,14 +151,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |   17 |        Flop & Latch |
-| LUT5     |   15 |                 LUT |
-| LUT4     |    4 |                 LUT |
+| LUT5     |   18 |                 LUT |
+| FDCE     |   18 |        Flop & Latch |
 | CARRY4   |    4 |          CarryLogic |
+| LUT4     |    3 |                 LUT |
 | IBUF     |    3 |                  IO |
-| LUT1     |    2 |                 LUT |
 | OBUF     |    1 |                  IO |
-| LUT6     |    1 |                 LUT |
+| LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

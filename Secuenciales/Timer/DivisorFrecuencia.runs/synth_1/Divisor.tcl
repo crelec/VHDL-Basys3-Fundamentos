@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.runs/synth_1/Divisor.tcl"
+  variable script "C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.runs/synth_1/Divisor.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,23 +71,22 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.cache/wt [current_project]
-set_property parent.project_path C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.xpr [current_project]
+set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.cache/wt [current_project]
+set_property parent.project_path C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo c:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.cache/ip [current_project]
+set_property ip_output_repo c:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/sources_1/new/Divisor.vhd
+read_vhdl -vhdl2008 -library xil_defaultlib C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/sources_1/new/Divisor.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -97,12 +96,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc
-set_property used_in_implementation false [get_files C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc]
+read_xdc C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc
+set_property used_in_implementation false [get_files C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/constrs_1/new/Pines.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Repo-Asus/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/utils_1/imports/synth_1/Divisor.dcp
+read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/Timer/DivisorFrecuencia.srcs/utils_1/imports/synth_1/Divisor.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

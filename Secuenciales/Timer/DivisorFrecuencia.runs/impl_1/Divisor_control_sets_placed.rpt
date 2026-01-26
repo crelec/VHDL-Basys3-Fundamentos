@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Nov 28 09:54:39 2024
+| Date         : Mon Jan 26 10:14:26 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Divisor_control_sets_placed.rpt
 | Design       : Divisor
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     2 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     7 |
+| Unused register locations in slices containing registers |    14 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -62,7 +62,7 @@ Table of Contents
 | No           | No                    | Yes                    |               1 |            1 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              16 |            6 |
+| Yes          | No                    | Yes                    |              17 |            6 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,11 +70,11 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+--------------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |                    | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | cuenta[15]_i_1_n_0 | reset_IBUF       |                6 |             16 |         2.67 |
-+----------------+--------------------+------------------+------------------+----------------+--------------+
++----------------+---------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |               | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | ce_IBUF       | reset_IBUF       |                6 |             17 |         2.83 |
++----------------+---------------+------------------+------------------+----------------+--------------+
 
 

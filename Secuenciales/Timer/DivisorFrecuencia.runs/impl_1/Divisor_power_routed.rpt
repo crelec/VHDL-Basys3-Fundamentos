@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Thu Nov 28 09:55:36 2024
+| Date             : Mon Jan 26 10:15:08 2026
 | Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file Divisor_power_routed.rpt -pb Divisor_power_summary_routed.pb -rpx Divisor_power_routed.rpx
 | Design           : Divisor
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.069        |
+| Total On-Chip Power (W)  | 0.073        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.001        |
-| Device Static (W)        | 0.068        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.7         |
-| Junction Temperature (C) | 25.3         |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       45 |       --- |             --- |
+| Slice Logic    |    <0.001 |       46 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       21 |     20800 |            0.10 |
 |   CARRY4       |    <0.001 |        4 |      8150 |            0.05 |
-|   Register     |    <0.001 |       17 |     41600 |            0.04 |
+|   Register     |    <0.001 |       18 |     41600 |            0.04 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       42 |       --- |             --- |
+| Signals        |    <0.001 |       43 |       --- |             --- |
 | I/O            |    <0.001 |        4 |       106 |            3.77 |
-| Static Power   |     0.068 |          |           |                 |
-| Total          |     0.069 |          |           |                 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.073 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,10 +137,8 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------+-----------+
-| Name    | Power (W) |
-+---------+-----------+
-| Divisor |     0.001 |
-+---------+-----------+
++------+-----------+
+| Name | Power (W) |
++------+-----------+
 
 
