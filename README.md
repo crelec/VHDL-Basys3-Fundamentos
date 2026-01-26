@@ -39,7 +39,7 @@ Esta carpeta incluye:
 
 - Explicación de tres metodologías de simulación
 - Comparación pedagógica de opciones
-- Proyectos reutilizables con sus testbench 
+- Testbench reutilizables basados en la Opción 3, que es la metodología oficial adoptada para todos los bloques del repositorio.
 >🔗 Enlace directo:
 > 
 >👉 https://github.com/crelec/VHDL-Basys3-Fundamentos/tree/main/Introduccion_Simulacion_VHDL  
