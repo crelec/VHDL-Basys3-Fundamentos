@@ -19,7 +19,7 @@ begin
 		begin
 		if reset = '1' then
 		  dato <= (others=>'0');
-		elsif clk' event and clk ='1' then
+		elsif rising_edge(clk) then
 		  if load='1' then
 		      dato<=unsigned(datoIn); 
 		  else

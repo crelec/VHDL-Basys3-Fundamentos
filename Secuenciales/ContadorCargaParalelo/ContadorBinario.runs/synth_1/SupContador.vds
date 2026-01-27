@@ -3,18 +3,18 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Mon Oct  7 17:06:54 2024
-# Process ID: 18764
-# Current directory: C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1
+# Start of session at: Tue Jan 27 05:14:58 2026
+# Process ID: 11144
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1
 # Command line: vivado.exe -log SupContador.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SupContador.tcl
-# Log file: C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1/SupContador.vds
-# Journal file: C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1\vivado.jou
-# Running On: Cesar, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 16407 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1/SupContador.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source SupContador.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 486.602 ; gain = 200.820
-Command: read_checkpoint -auto_incremental -incremental C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/utils_1/imports/synth_1/SupContador.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/utils_1/imports/synth_1/SupContador.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 483.184 ; gain = 197.648
+Command: read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/utils_1/imports/synth_1/SupContador.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/utils_1/imports/synth_1/SupContador.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top SupContador -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,80 +25,78 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16376
+INFO: [Synth 8-7075] Helper process launched with PID 21832
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1298.523 ; gain = 410.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1299.969 ; gain = 411.777
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SupContador' [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:12]
-INFO: [Synth 8-3491] module 'Divisor' declared at 'C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Divisor.vhd:5' bound to instance 'uo' of component 'Divisor' [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:32]
-INFO: [Synth 8-638] synthesizing module 'Divisor' [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Divisor.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'Divisor' (0#1) [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Divisor.vhd:11]
-INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Contador.vhd:5' bound to instance 'u1' of component 'Contador' [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Contador.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Contador.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'SupContador' (0#1) [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'SupContador' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Divisor' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Divisor.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Divisor' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Divisor.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Contador.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/Contador.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'SupContador' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/sources_1/new/SupContador.vhd:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1389.246 ; gain = 500.793
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1392.375 ; gain = 504.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.246 ; gain = 500.793
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1392.375 ; gain = 504.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.246 ; gain = 500.793
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1392.375 ; gain = 504.184
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1392.375 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]
-Finished Parsing XDC File [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SupContador_propImpl.xdc].
+Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]
+Finished Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SupContador_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SupContador_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1459.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1459.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1448.137 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   26 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
 	   2 Input    8 Bit       Adders := 1     
 +---Registers : 
-	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -117,25 +115,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -153,37 +151,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -200,39 +198,37 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     7|
+|2     |CARRY4 |     4|
 |3     |LUT1   |     1|
-|4     |LUT2   |    25|
-|5     |LUT3   |     3|
-|6     |LUT4   |     8|
-|7     |LUT5   |     3|
-|8     |LUT6   |     4|
-|9     |FDCE   |    34|
-|10    |FDRE   |     1|
-|11    |IBUF   |    11|
-|12    |OBUF   |     8|
+|4     |LUT3   |     2|
+|5     |LUT4   |     6|
+|6     |LUT5   |    19|
+|7     |LUT6   |     3|
+|8     |FDCE   |    25|
+|9     |IBUF   |    11|
+|10    |OBUF   |     8|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1459.859 ; gain = 500.793
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1459.859 ; gain = 571.406
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1448.137 ; gain = 504.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1448.137 ; gain = 559.945
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1459.859 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1448.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1459.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: f30abbb6
+Synth Design complete | Checksum: b3dc8108
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1459.859 ; gain = 948.391
-INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1/SupContador.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1448.137 ; gain = 940.086
+INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/synth_1/SupContador.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SupContador_utilization_synth.rpt -pb SupContador_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 17:08:01 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 05:16:15 2026...

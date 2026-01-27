@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/impl_1'
+HD_PWD='C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorCargaParalelo/ContadorBinario.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

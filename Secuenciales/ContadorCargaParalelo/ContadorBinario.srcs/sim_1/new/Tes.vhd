@@ -7,18 +7,10 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Contador is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           load : in STD_LOGIC;
-           DatoIn: in STD_LOGIC_VECTOR (7 downto 0);
-           DatoOut : out STD_LOGIC_VECTOR (7 downto 0));
-end component;
-
 --Inputs
 signal clk : std_logic := '0';
 signal reset : std_logic := '0';
-signal load : std_logic := '1';
+signal load : std_logic := '0';
 signal DatoIn: STD_LOGIC_VECTOR (7 downto 0):= "00000000";
 
 --Outputs
@@ -30,7 +22,7 @@ constant clk_period : time := 10 ns;
 begin
 
 -- Instantiate the Unit Under Test (UUT)
-   uut: Contador PORT MAP (
+   uut: Entity work.SupContador PORT MAP (
           clk => clk,
           reset => reset,
           load=>load,
@@ -47,28 +39,43 @@ begin
 		wait for clk_period/2;
    end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6ns;
-reset<= '0';
-wait;
-end process;
+stim_proc : process
+    begin
+        -- CASO 0: Reset inicial estable
+        reset <= '1';
+        load  <= '0';
+        wait for 5 ms;
+        reset <= '0';
 
-S_load:PROCESS
-BEGIN
-load<= '1';
-WAIT FOR 40 ns;
-load<= '0';
-wait for 100 ns;
-end process;
+        -- CASO 1: Conteo normal sin carga
+        wait for 20 ms;
 
-sig_DatoIn :process
-begin
-Datoin<="00011111";
-wait for 172 ns;
-Datoin<="11000000";
-wait for 100 ns;
-end process;
+        -- CASO 2: Carga paralela de un valor
+        load   <= '1';
+        DatoIn <= "01010101";  -- 85 decimal
+        wait for 2 ms;
+        load   <= '0';
 
+        -- CASO 3: Conteo posterior a la carga
+        wait for 20 ms;
+
+        -- CASO 4: Nueva carga paralela
+        load   <= '1';
+        DatoIn <= "11110000";  -- 240 decimal
+        wait for 2 ms;
+        load   <= '0';
+
+        -- CASO 5: Reset durante operación
+        wait for 10 ms;
+        reset <= '1';
+        wait for 5 ms;
+        reset <= '0';
+
+        -- CASO 6: Conteo posterior al reset
+        wait for 20 ms;
+
+        -- FIN DE SIMULACIÓN
+        wait;
+    end process;
+    
 end Behavioral;
