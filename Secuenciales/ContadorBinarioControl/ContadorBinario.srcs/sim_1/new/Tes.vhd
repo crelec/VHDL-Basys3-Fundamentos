@@ -6,28 +6,21 @@ entity Tes is
 end Tes;
 
 architecture Behavioral of Tes is
-
-component contadorupdow is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           led : out  STD_LOGIC_VECTOR (3 downto 0);
-           up_dow : in  STD_LOGIC);
-end component;
-
+ 
 --Inputs
 signal clk : std_logic := '0';
 signal reset : std_logic := '0';
 signal up_dow : std_logic := '1';
 
 --Outputs
-signal led : STD_LOGIC_VECTOR (3 downto 0);
+signal FoutCuenta : STD_LOGIC_VECTOR (3 downto 0);
 
 -- Clock period definitions
 constant clk_period : time := 10 ns;
    
 begin
 
-uut: contadorupdow PORT MAP(clk =>clk,reset => reset,up_dow=>up_dow,led=>led);
+uut: entity work.SupContador PORT MAP(clk =>clk,reset => reset,up_dow=>up_dow,FoutCuenta=>FoutCuenta);
 
 -- Clock process definitions
 clk_process :process
@@ -38,20 +31,32 @@ clk <= '1';
 wait for clk_period/2;
 end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6 ns;
-reset<= '0';
-wait;
-end process;
+ stim_proc : process
+    begin
+        -- CASO 0: Reset inicial estable
+        reset <= '1';
+        wait for 5 ms;
+        reset <= '0';
 
-S_up_dow:PROCESS
-BEGIN
-up_dow<= '1';
-WAIT FOR 110 ns;
-up_dow<= '0';
-wait for 200 ns;
-end process;
+        -- CASO 1: Conteo ascendente durante un ciclo completo
+        up_dow <= '1';
+        wait for 20 ms;  
 
+        -- CASO 2: Cambio a conteo descendente
+        up_dow <= '0';
+        wait for 20 ms;
+
+        -- CASO 3: Reset durante operación
+        reset <= '1';
+        wait for 5 ms;
+        reset <= '0';
+
+        -- CASO 4: Conteo ascendente nuevamente
+        up_dow <= '1';
+        wait for 20 ms;
+
+        -- FIN DE SIMULACIÓN
+        wait;
+    end process;
+    
 end Behavioral;

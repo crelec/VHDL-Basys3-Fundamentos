@@ -9,8 +9,8 @@ entity Divisor is
 end Divisor;
 
 architecture Behavioral of Divisor is
-constant DIVIDER_TIME : natural := 50000000; -- Divisor para 0.5 seg
-constant COUNTER_WIDTH : natural := 26; -- Ancho suficiente para el contador
+constant DIVIDER_TIME : natural := 50000; -- 50000000==Divisor para 0.5 seg
+constant COUNTER_WIDTH : natural := 16; -- 26=Ancho suficiente para el contador 0.5 seg
 constant fincuenta : unsigned(COUNTER_WIDTH-1 downto 0) := to_unsigned(DIVIDER_TIME, COUNTER_WIDTH);
 
 signal cuenta : unsigned(COUNTER_WIDTH-1 downto 0) := (others => '0');
@@ -21,7 +21,8 @@ begin
 begin
 	if reset = '1' then
 		cuenta <= (others => '0');
-	elsif clk'event and clk = '1' then
+		aux    <= '0';
+	elsif rising_edge(clk) then
 		if cuenta = fincuenta-1 then 
 			cuenta <= (others => '0');
 			aux <= not aux;
