@@ -7,44 +7,48 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component TopMuxDisplay is
-    Port ( EntA : in STD_LOGIC_VECTOR (3 downto 0);
-           EntB : in STD_LOGIC_VECTOR (3 downto 0);
-           sel : in STD_LOGIC;
-           segmento : out STD_LOGIC_VECTOR (6 downto 0);
-           anodos : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
+-- Señales de estímulo
+signal EntA : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+signal EntB : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+signal sel  : STD_LOGIC := '0';
 
---Inputs
-   signal EntA : STD_LOGIC_VECTOR (3 downto 0);
-   signal EntB : STD_LOGIC_VECTOR (3 downto 0);
-   signal sel : std_logic;
-   
- 	--Outputs
-   signal segmento : STD_LOGIC_VECTOR (6 downto 0);
-   signal anodos   : STD_LOGIC_VECTOR (3 downto 0);
-   
+-- Señales de observación
+signal segmento : STD_LOGIC_VECTOR (6 downto 0);
+signal anodos   : STD_LOGIC_VECTOR (3 downto 0);
+
 begin
 
--- Instantiate the Unit Under Test (UUT)
-   uut: TopMuxDisplay PORT MAP (
-          EntA => EntA,
-          EntB => EntB,
-          sel => sel,
-          segmento=>segmento,
-          anodos => anodos
-        );
+dut: entity work.TopMuxDisplay port map(EntA=>EntA,EntB=>EntB,sel=>sel,segmento=>segmento,anodos=>anodos);
 
-EntA<="0110";
-EntB<="1001";
-
-S_sel:PROCESS
-BEGIN
-sel<= '1';
-WAIT FOR 1ns;
-sel<= '0';
-wait for 1ns;
-end process;
-
-
+-- Proceso de estimulación 
+    stim_proc : process
+    begin
+-- CASO 0: Inicialización
+        EntA <= "0000";
+        EntB <= "0000";
+        sel  <= '0';
+        wait for 10 ns;
+-- CASO 1: Selección de EntA
+        EntA <= "0110";  -- 6
+        EntB <= "1001";  -- 9
+        sel  <= '0';     -- Selecciona EntA
+        wait for 20 ns;
+-- CASO 2: Selección de EntB
+        sel <= '1';      -- Selecciona EntB
+        wait for 20 ns;
+-- CASO 3: Cambio dinámico de entradas con sel fijo
+        EntA <= "0011";  -- 3
+        EntB <= "1110";  -- E
+        sel  <= '0';
+        wait for 20 ns;
+-- CASO 4: Cambio rápido de selección
+        sel <= '1';
+        wait for 10 ns;
+        sel <= '0';
+        wait for 10 ns;
+        sel <= '1';
+        wait for 10 ns;
+-- FIN DE SIMULACIÓN
+        wait;
+    end process;
 end Behavioral;

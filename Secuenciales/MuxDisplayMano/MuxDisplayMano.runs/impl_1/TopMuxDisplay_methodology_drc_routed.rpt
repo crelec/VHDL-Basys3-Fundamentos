@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Oct 26 09:15:06 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Tue Jan 27 05:55:40 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TopMuxDisplay_methodology_drc_routed.rpt -pb TopMuxDisplay_methodology_drc_routed.pb -rpx TopMuxDisplay_methodology_drc_routed.rpx
 | Design       : TopMuxDisplay
 | Device       : xc7a35tcpg236-1

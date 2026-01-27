@@ -1,18 +1,16 @@
-
-*** Running vivado
-    with args -log TopMuxDisplay.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopMuxDisplay.tcl -notrace
-
-
-ECHO est  desactivado.
-ECHO est  desactivado.
-
-****** Vivado v2023.1.1 (64-bit)
-  **** SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
-  **** IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
-  **** SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Tue Jan 27 05:54:27 2026
+# Process ID: 24536
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.runs/impl_1
+# Command line: vivado.exe -log TopMuxDisplay.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopMuxDisplay.tcl -notrace
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.runs/impl_1/TopMuxDisplay.vdi
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.runs/impl_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
+#-----------------------------------------------------------
 source TopMuxDisplay.tcl -notrace
 create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 484.727 ; gain = 196.754
 Command: link_design -top TopMuxDisplay -part xc7a35tcpg236-1
@@ -532,65 +530,3 @@ Writing XDEF routing special nets.
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2037.129 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.runs/impl_1/TopMuxDisplay_routed.dcp' has been generated.
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 05:55:42 2026...
-
-*** Running vivado
-    with args -log TopMuxDisplay.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TopMuxDisplay.tcl -notrace
-
-
-ECHO est  desactivado.
-ECHO est  desactivado.
-
-****** Vivado v2023.1.1 (64-bit)
-  **** SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
-  **** IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
-  **** SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source TopMuxDisplay.tcl -notrace
-Command: open_checkpoint TopMuxDisplay_routed.dcp
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.574 ; gain = 0.000
-INFO: [Project 1-479] Netlist was created with Vivado 2023.1.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1557.637 ; gain = 17.562
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1557.637 ; gain = 17.562
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1557.637 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1.1 (64-bit) build 3900603
-open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1557.637 ; gain = 1272.492
-Command: write_bitstream -force TopMuxDisplay.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
-Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado 12-3199] DRC finished with 0 Errors
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./TopMuxDisplay.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-83] Releasing license: Implementation
-20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2110.699 ; gain = 553.062
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 05:57:20 2026...

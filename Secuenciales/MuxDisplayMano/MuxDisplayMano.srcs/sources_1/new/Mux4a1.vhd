@@ -10,12 +10,12 @@ end Mux4a1;
 
 architecture Behavioral of Mux4a1 is
 begin
-process (sel,DatoInA,DatoInB)
+process (all)
 begin
 	case sel is
 		when '0' =>fout<=DatoInA;
 		when '1' =>fout<=DatoInB;
-		when others =>fout<="ZZZZ";
+		when others =>fout<="0000";
 	end case;
 end process;
 

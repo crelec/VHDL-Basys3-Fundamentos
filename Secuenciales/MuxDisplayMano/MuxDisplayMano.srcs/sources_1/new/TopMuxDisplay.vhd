@@ -10,28 +10,11 @@ entity TopMuxDisplay is
 end TopMuxDisplay;
 
 architecture Behavioral of TopMuxDisplay is
-component Mux4a1 is
-    Port ( DatoInA : in STD_LOGIC_VECTOR (3 downto 0);
-           DatoInB : in STD_LOGIC_VECTOR (3 downto 0);
-           sel : in STD_LOGIC;
-           Fout : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
-
-component Display is
-    Port ( digito : in STD_LOGIC_VECTOR (3 downto 0);
-           segmento : out STD_LOGIC_VECTOR (6 downto 0));
-end component;
-
-component negacion is
-    Port ( Btn : in STD_LOGIC;
-           anodo : out STD_LOGIC_VECTOR (3 downto 0));
-end component;
 
 signal sg_dato: STD_LOGIC_VECTOR(3 downto 0);
 
 begin
-u0:mux4a1 Port map(DatoInA=>EntA,DatoInB=>EntB,sel=>sel,fout=>sg_dato);
-u1:negacion Port map(btn=>sel,anodo=>Anodos);
-u2:display Port map(digito=>sg_dato,segmento=>segmento);			 
-
+u0:Entity work.mux4a1 Port map(DatoInA=>EntA,DatoInB=>EntB,sel=>sel,fout=>sg_dato);
+u1:Entity work.negacion Port map(btn=>sel,anodo=>Anodos);
+u2:Entity work.display Port map(digito=>sg_dato,segmento=>segmento);			 
 end Behavioral;

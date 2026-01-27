@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.srcs/constrs_1/new/Pines.xdc rfile:../../../MuxDisplayMano.srcs/constrs_1/new/Pines.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayMano/MuxDisplayMano.srcs/constrs_1/new/Pines.xdc rfile:../../../MuxDisplayMano.srcs/constrs_1/new/Pines.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports sel]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
