@@ -18,7 +18,7 @@ begin
 		begin
 		if reset = '1' then
 		  cuenta <= to_unsigned(1,8);
-		elsif clk' event and clk ='1' then
+		elsif rising_edge(clk) then
 		  if ce='1' then
 		      cuenta<=cuenta(6 downto 0) & cuenta(7); --Desplazamiento circular a izquierda
 		  end if;
