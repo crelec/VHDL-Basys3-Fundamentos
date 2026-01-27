@@ -9,23 +9,11 @@ end SupContador;
 
 architecture Behavioral of SupContador is
 
-component Divisor is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           FoutDivide : out STD_LOGIC);
-end component;
-
-component contadorupdow is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           led : out  STD_LOGIC_VECTOR (3 downto 0));
-end component;
-
 signal sg_clk: Std_logic;
 
 begin
 
-uo:Divisor Port map(clk=>clk,reset=>reset,Foutdivide=>sg_clk);
-u1:contadorupdow Port map(clk=>sg_clk,reset=>reset,led=>FoutCuenta);
+uo:Entity work.Divisor Port map(clk=>clk,reset=>reset,Foutdivide=>sg_clk);
+u1:Entity work.contadorupdow Port map(clk=>sg_clk,reset=>reset,led=>FoutCuenta);
 
 end Behavioral;

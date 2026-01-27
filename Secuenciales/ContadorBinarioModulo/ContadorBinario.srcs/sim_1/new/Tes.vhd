@@ -7,18 +7,12 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component contadorupdow is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           led : out  STD_LOGIC_VECTOR (3 downto 0));
-end component;
-
 --Inputs
 signal clk : std_logic := '0';
 signal reset : std_logic := '0';
 
 --Outputs
-signal led : STD_LOGIC_VECTOR (3 downto 0);
+signal FoutCuenta : STD_LOGIC_VECTOR (3 downto 0);
 
 -- Clock period definitions
 constant clk_period : time := 10 ns;
@@ -26,10 +20,10 @@ constant clk_period : time := 10 ns;
 begin
 
 -- Instantiate the Unit Under Test (UUT)
-uut: contadorupdow PORT MAP (
+uut:Entity work.SupContador PORT MAP (
           clk => clk,
           reset => reset,
-          led => led
+          FoutCuenta => FoutCuenta
         );
 
    -- Clock process definitions
@@ -41,12 +35,27 @@ uut: contadorupdow PORT MAP (
 		wait for clk_period/2;
    end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6ns;
-reset<= '0';
-wait;
-end process;
+stim_proc : process
+    begin
+-- Caso 0: Reset inicial
+   reset <= '1';
+   wait for 5 ms;
+   reset <= '0';
 
+-- Caso 1: Conteo normal
+-- Observa FoutCuenta incrementarse lentamente por el divisor
+   wait for 90 ms;
+
+-- Caso 2: Reset durante operación
+   reset <= '1';
+   wait for 30 ms;
+   reset <= '0';
+
+-- Nuevo periodo de observación
+   wait for 100 ms;
+
+-- Fin de simulación
+   wait;
+ end process;   
+  
 end Behavioral;

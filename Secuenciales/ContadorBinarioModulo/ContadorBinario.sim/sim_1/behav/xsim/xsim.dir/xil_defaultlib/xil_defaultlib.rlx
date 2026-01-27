@@ -2,6 +2,7 @@
 2020.2
 Jun 16 2023
 19:55:58
-C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinario/ContadorBinario.srcs/sources_1/new/Contador.vhd,1728314871,vhdl,,,,contador,,,,,,,,
-C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sim_1/new/Tes.vhd,1728331218,vhdl,,,,tes,,,,,,,,
-C:/Repo-Asus/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/Contador.vhd,1728319274,vhdl,,,,contadorupdow,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sim_1/new/Tes.vhd,1769504818,vhdl,,,,tes,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/Contador.vhd,1766747822,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/SupContador.vhd,,,contadorupdow,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/Divisor.vhd,1769503092,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/SupContador.vhd,,,divisor,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sources_1/new/SupContador.vhd,1769503011,vhdl,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBinarioModulo/ContadorBinario.srcs/sim_1/new/Tes.vhd,,,supcontador,,,,,,,,
