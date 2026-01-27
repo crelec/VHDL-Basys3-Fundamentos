@@ -12,6 +12,8 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Divisor [divisor_default]
 Compiling architecture behavioral of entity xil_defaultlib.Contador [contador_default]
+Compiling architecture behavioral of entity xil_defaultlib.SupContador [supcontador_default]
 Compiling architecture behavioral of entity xil_defaultlib.tes
 Built simulation snapshot Tes_behav

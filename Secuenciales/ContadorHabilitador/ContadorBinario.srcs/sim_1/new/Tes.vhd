@@ -7,13 +7,6 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Contador is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           ce : in STD_LOGIC;
-           FoutCuenta : out STD_LOGIC_VECTOR (7 downto 0));
-end component;
-
 --Inputs
 signal clk : std_logic := '0';
 signal reset : std_logic := '0';
@@ -28,7 +21,7 @@ constant clk_period : time := 10 ns;
 begin
 
 -- Instantiate the Unit Under Test (UUT)
-   uut: Contador PORT MAP (
+   uut:Entity work.SupContador PORT MAP (
           clk => clk,
           reset => reset,
           ce=>ce,
@@ -44,20 +37,32 @@ begin
 		wait for clk_period/2;
    end process;
  
-S_reset:PROCESS
-BEGIN
-reset<= '1';
-WAIT FOR 6ns;
-reset<= '0';
-wait;
-end process;
+ stim_proc : process
+begin
+-- CASO 0: Reset inicial estable
+    reset <= '1';
+    ce    <= '0';
+    wait for 5 ms;
+    reset <= '0';
 
-S_ce:PROCESS
-BEGIN
-ce<= '1';
-WAIT FOR 160 ns;
-ce<= '0';
-wait for 80 ns;
-end process;
+    -- CASO 1: Habilitación del contador 
+    ce <= '1';
+    wait for 20 ms;
 
+    -- CASO 2: Deshabilitación del contador (se congela el estado)
+    ce <= '0';
+    wait for 20 ms;
+
+    -- CASO 3: Reset durante operación
+    reset <= '1';
+    wait for 5 ms;
+    reset <= '0';
+
+    -- CASO 4: Rehabilitación del contador tras reset
+    ce <= '1';
+    wait for 20 ms;
+
+    -- FIN DE SIMULACIÓN
+    wait;
+    end process;
 end Behavioral;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Mon Oct  7 15:41:11 2024
+| Date             : Tue Jan 27 04:57:10 2026
 | Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file SupContador_power_routed.rpt -pb SupContador_power_summary_routed.pb -rpx SupContador_power_routed.rpx
 | Design           : SupContador
@@ -38,7 +38,7 @@ Table of Contents
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
-| Confidence Level         | Medium       |
+| Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       87 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       28 |     20800 |            0.13 |
-|   Register     |    <0.001 |       35 |     41600 |            0.08 |
-|   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
+| Slice Logic    |    <0.001 |       61 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       26 |     20800 |            0.13 |
+|   Register     |    <0.001 |       25 |     41600 |            0.06 |
+|   CARRY4       |    <0.001 |        4 |      8150 |            0.05 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       76 |       --- |             --- |
+| Signals        |    <0.001 |       50 |       --- |             --- |
 | I/O            |     0.012 |       11 |       106 |           10.38 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.084 |          |           |                 |
@@ -94,12 +94,12 @@ Table of Contents
 | User Input Data             | Confidence | Details                                               | Action                                                                                                             |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                      |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                          |                                                                                                                    |
 |                             |            |                                                       |                                                                                                                    |
-| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
+| Overall confidence level    | Low        |                                                       |                                                                                                                    |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
