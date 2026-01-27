@@ -2,11 +2,11 @@
 2020.2
 Jun 16 2023
 19:55:58
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sim_1/new/Tes.vhd,1692617439,vhdl,,,,tes,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd,1689430975,vhdl,,,,bin_bcd2,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd,1689619684,vhdl,,,,modulodisplay,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd,1689618806,vhdl,,,,mux4a1,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,1689620945,vhdl,,,,supmuxdisplayauto,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd,1689618460,vhdl,,,,cuenta1,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd,1689618192,vhdl,,,,divide1,,,,,,,,
-D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd,1689618955,vhdl,,,,negacion,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sim_1/new/Tes.vhd,1769517908,vhdl,,,,tes,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd,1769513461,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,bin_bcd2,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd,1769513050,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,modulodisplay,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd,1769513069,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,mux4a1,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,1769516377,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sim_1/new/Tes.vhd,,,supmuxdisplayauto,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd,1769513639,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,cuenta1,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd,1769517549,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,divide1,,,,,,,,
+C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd,1769513015,vhdl2008,C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd,,,negacion,,,,,,,,

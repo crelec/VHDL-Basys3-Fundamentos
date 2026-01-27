@@ -3,18 +3,18 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Oct 26 09:06:05 2023
-# Process ID: 2560
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1
+# Start of session at: Tue Jan 27 07:39:24 2026
+# Process ID: 18264
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1
 # Command line: vivado.exe -log SupMuxDisplayAuto.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SupMuxDisplayAuto.tcl
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.vds
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source SupMuxDisplayAuto.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 483.535 ; gain = 198.422
-Command: read_checkpoint -auto_incremental -incremental D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 482.613 ; gain = 197.578
+Command: read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top SupMuxDisplayAuto -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,78 +25,72 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16484
+INFO: [Synth 8-7075] Helper process launched with PID 14920
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.965 ; gain = 410.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1298.793 ; gain = 410.066
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SupMuxDisplayAuto' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:12]
-INFO: [Synth 8-3491] module 'Bin_BCD2' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd:5' bound to instance 'u0' of component 'Bin_BCD2' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:56]
-INFO: [Synth 8-638] synthesizing module 'Bin_BCD2' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'Bin_BCD2' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd:10]
-INFO: [Synth 8-3491] module 'Mux4a1' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd:4' bound to instance 'u1' of component 'Mux4a1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'Mux4a1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Mux4a1' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd:13]
-INFO: [Synth 8-3491] module 'ModuloDisplay' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd:4' bound to instance 'u2' of component 'ModuloDisplay' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'ModuloDisplay' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'ModuloDisplay' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd:9]
-INFO: [Synth 8-3491] module 'cuenta1' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd:5' bound to instance 'u3' of component 'cuenta1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'cuenta1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'cuenta1' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd:11]
-INFO: [Synth 8-3491] module 'negacion' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd:4' bound to instance 'u4' of component 'negacion' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'negacion' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'negacion' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd:9]
-INFO: [Synth 8-3491] module 'divide1' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd:5' bound to instance 'u5' of component 'divide1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'divide1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'divide1' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'SupMuxDisplayAuto' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'SupMuxDisplayAuto' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'Bin_BCD2' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Bin_BCD2' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'Mux4a1' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux4a1' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'ModuloDisplay' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'ModuloDisplay' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'cuenta1' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'cuenta1' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'negacion' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'negacion' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/negacion.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'divide1' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'divide1' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/divide1.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SupMuxDisplayAuto' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.656 ; gain = 503.328
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1392.418 ; gain = 503.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.656 ; gain = 503.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1392.418 ; gain = 503.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.656 ; gain = 503.328
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1392.418 ; gain = 503.691
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1391.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1392.418 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]
-Finished Parsing XDC File [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SupMuxDisplayAuto_propImpl.xdc].
+Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]
+Finished Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SupMuxDisplayAuto_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SupMuxDisplayAuto_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1502.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1492.484 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1502.539 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1492.484 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -104,14 +98,14 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   18 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 31    
+	   2 Input    4 Bit       Adders := 28    
 	   2 Input    3 Bit       Adders := 1     
 +---Registers : 
 	               18 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input    4 Bit        Muxes := 22    
+	   2 Input    4 Bit        Muxes := 26    
 	   4 Input    4 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -131,25 +125,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -167,37 +161,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -216,37 +210,37 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
 |3     |LUT1   |     3|
-|4     |LUT2   |     5|
-|5     |LUT3   |     8|
-|6     |LUT4   |    12|
-|7     |LUT5   |    15|
-|8     |LUT6   |    64|
+|4     |LUT2   |     1|
+|5     |LUT3   |     7|
+|6     |LUT4   |    11|
+|7     |LUT5   |    17|
+|8     |LUT6   |    52|
 |9     |FDCE   |     3|
-|10    |FDRE   |    20|
+|10    |FDRE   |    19|
 |11    |IBUF   |    16|
 |12    |OBUF   |    11|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1502.539 ; gain = 503.328
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1502.539 ; gain = 614.211
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1492.484 ; gain = 503.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1492.484 ; gain = 603.758
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1502.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1492.484 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1502.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1492.484 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: d96577ce
+Synth Design complete | Checksum: 3f20d84c
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1502.539 ; gain = 994.141
-INFO: [Common 17-1381] The checkpoint 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1492.484 ; gain = 984.754
+INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SupMuxDisplayAuto_utilization_synth.rpt -pb SupMuxDisplayAuto_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 09:07:02 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 07:40:30 2026...

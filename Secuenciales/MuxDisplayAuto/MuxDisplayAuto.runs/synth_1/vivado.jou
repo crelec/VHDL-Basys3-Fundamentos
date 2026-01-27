@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Oct 26 09:06:05 2023
-# Process ID: 2560
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1
+# Start of session at: Tue Jan 27 07:39:24 2026
+# Process ID: 18264
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1
 # Command line: vivado.exe -log SupMuxDisplayAuto.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SupMuxDisplayAuto.tcl
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.vds
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1/SupMuxDisplayAuto.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxDisplayAuto/MuxDisplayAuto.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source SupMuxDisplayAuto.tcl -notrace

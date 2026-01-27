@@ -13,7 +13,7 @@ end Mux4a1;
 architecture Behavioral of Mux4a1 is
 
 begin
-process (sel,DatoInA,DatoInB,DatoInC,DatoInD)
+process (all)
 begin
 	case sel is
 		when "000" =>FoutDato<="1111";

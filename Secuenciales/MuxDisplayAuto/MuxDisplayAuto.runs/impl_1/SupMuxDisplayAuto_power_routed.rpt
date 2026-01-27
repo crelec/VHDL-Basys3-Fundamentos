@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Thu Oct 26 09:08:17 2023
-| Host             : LenovoCesar running 64-bit major release  (build 9200)
+| Date             : Tue Jan 27 07:41:59 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file SupMuxDisplayAuto_power_routed.rpt -pb SupMuxDisplayAuto_power_summary_routed.pb -rpx SupMuxDisplayAuto_power_routed.rpx
 | Design           : SupMuxDisplayAuto
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.103        |
+| Total On-Chip Power (W)  | 0.102        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.031        |
+| Dynamic (W)              | 0.030        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      138 |       --- |             --- |
-|   LUT as Logic |     0.002 |       90 |     20800 |            0.43 |
-|   Register     |    <0.001 |       23 |     41600 |            0.06 |
+| Slice Logic    |     0.002 |      121 |       --- |             --- |
+|   LUT as Logic |     0.002 |       76 |     20800 |            0.37 |
+|   Register     |    <0.001 |       22 |     41600 |            0.05 |
 |   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |     0.002 |      145 |       --- |             --- |
-| I/O            |     0.027 |       27 |       106 |           25.47 |
+| Signals        |     0.001 |      127 |       --- |             --- |
+| I/O            |     0.026 |       27 |       106 |           25.47 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.103 |          |           |                 |
+| Total          |     0.102 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.013 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,7 +140,7 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| SupMuxDisplayAuto |     0.031 |
+| SupMuxDisplayAuto |     0.030 |
 |   u3              |     0.003 |
 +-------------------+-----------+
 

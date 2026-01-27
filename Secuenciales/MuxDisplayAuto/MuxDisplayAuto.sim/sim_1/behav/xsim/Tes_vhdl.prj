@@ -1,12 +1,14 @@
 # compile vhdl design source files
-vhdl xil_defaultlib  \
+vhdl2008 xil_defaultlib  \
 "../../../../MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/BinarioBCD_V2/BinarioBCD_V2.srcs/sources_1/new/Bin_BCD2.vhd" \
-"../../../../MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd" \
 "../../../../MuxDisplayAuto.srcs/sources_1/new/Mux4a1.vhd" \
-"../../../../MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd" \
+"../../../../MuxDisplayAuto.srcs/sources_1/imports/Combinacionales/Display7segmento/Display7segmento.srcs/sources_1/new/ModuloDisplay.vhd" \
 "../../../../MuxDisplayAuto.srcs/sources_1/new/cuenta1.vhd" \
-"../../../../MuxDisplayAuto.srcs/sources_1/new/divide1.vhd" \
 "../../../../MuxDisplayAuto.srcs/sources_1/new/negacion.vhd" \
+"../../../../MuxDisplayAuto.srcs/sources_1/new/divide1.vhd" \
+"../../../../MuxDisplayAuto.srcs/sources_1/new/SupMuxDisplayAuto.vhd" \
+
+vhdl xil_defaultlib  \
 "../../../../MuxDisplayAuto.srcs/sim_1/new/Tes.vhd" \
 
 # Do not sort compile order
