@@ -9,7 +9,7 @@ end ModuloDisplay;
 architecture Behavioral of ModuloDisplay is
 
 begin
-process(a)
+process(all)
 	begin
 		case a is  --Esta es la tabla de caracteres a mostrar solo uso 9 de 15 posibles.
 			when "0000" =>seg<="1111111";--off
@@ -22,7 +22,7 @@ process(a)
 			when "0111" =>seg<="1000110";--C
 			when "1000" =>seg<="0010010";--S
 			when "1001" =>seg<="0000110";--E
-			when others =>seg<="ZZZZZZZ";
+			when others =>seg<="1111111";
 		end case;
 	end process;
 end Behavioral;

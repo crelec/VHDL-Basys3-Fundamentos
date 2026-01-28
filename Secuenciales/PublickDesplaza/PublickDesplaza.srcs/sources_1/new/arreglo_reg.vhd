@@ -16,8 +16,8 @@ begin
 	begin
 		if(clear='1')then
 			mensa <=men_mostrar;
-		elsif(clk' event and clk ='1')then
-			mensa(83 downto 4) <= mensa(79downto 0);
+		elsif rising_edge(clk)then
+			mensa(83 downto 4) <= mensa(79 downto 0);
 			mensa(3 downto 0) <= mensa(83 downto 80);
 		end if;
 	end process;

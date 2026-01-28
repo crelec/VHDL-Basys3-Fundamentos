@@ -3,18 +3,18 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Oct 26 09:22:10 2023
-# Process ID: 9184
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1
+# Start of session at: Wed Jan 28 15:41:39 2026
+# Process ID: 26408
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1
 # Command line: vivado.exe -log modulotop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source modulotop.tcl
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.vds
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source modulotop.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 485.113 ; gain = 199.234
-Command: read_checkpoint -auto_incremental -incremental D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/utils_1/imports/synth_1/modulotop.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/utils_1/imports/synth_1/modulotop.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 484.344 ; gain = 200.027
+Command: read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/utils_1/imports/synth_1/modulotop.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/utils_1/imports/synth_1/modulotop.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top modulotop -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,78 +25,72 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17412
+INFO: [Synth 8-7075] Helper process launched with PID 26096
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1299.441 ; gain = 411.148
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1298.023 ; gain = 410.719
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'modulotop' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:11]
-INFO: [Synth 8-3491] module 'divfre' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/divfre.vhd:5' bound to instance 'u0' of component 'divfre' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'divfre' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/divfre.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'divfre' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/divfre.vhd:11]
-INFO: [Synth 8-3491] module 'arreglo_reg' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/arreglo_reg.vhd:4' bound to instance 'u1' of component 'arreglo_reg' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'arreglo_reg' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/arreglo_reg.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'arreglo_reg' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/arreglo_reg.vhd:10]
-INFO: [Synth 8-3491] module 'mux4a1' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/mux4a1.vhd:4' bound to instance 'u2' of component 'mux4a1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'mux4a1' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/mux4a1.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'mux4a1' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/mux4a1.vhd:13]
-INFO: [Synth 8-3491] module 'ModuloDisplay' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloDisplay.vhd:4' bound to instance 'u3' of component 'Modulodisplay' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'ModuloDisplay' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloDisplay.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'ModuloDisplay' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloDisplay.vhd:9]
-INFO: [Synth 8-3491] module 'contador' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/contador.vhd:5' bound to instance 'u4' of component 'contador' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'contador' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/contador.vhd:11]
-INFO: [Synth 8-256] done synthesizing module 'contador' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/contador.vhd:11]
-INFO: [Synth 8-3491] module 'ModuloBotones' declared at 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloBotones.vhd:4' bound to instance 'u5' of component 'ModuloBotones' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'ModuloBotones' [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloBotones.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'ModuloBotones' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloBotones.vhd:9]
-INFO: [Synth 8-256] done synthesizing module 'modulotop' (0#1) [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'modulotop' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'divfre' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/divfre.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'divfre' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/divfre.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'arreglo_reg' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/arreglo_reg.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'arreglo_reg' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/arreglo_reg.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'mux4a1' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/mux4a1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'mux4a1' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/mux4a1.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'ModuloDisplay' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloDisplay.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'ModuloDisplay' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloDisplay.vhd:9]
+INFO: [Synth 8-638] synthesizing module 'contador' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/contador.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'contador' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/contador.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'ModuloBotones' [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloBotones.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'ModuloBotones' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/ModuloBotones.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'modulotop' (0#1) [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/sources_1/new/modulotop.vhd:11]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1389.812 ; gain = 501.520
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1389.207 ; gain = 501.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1389.812 ; gain = 501.520
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1389.207 ; gain = 501.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1389.812 ; gain = 501.520
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1389.207 ; gain = 501.902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1389.207 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]
-Finished Parsing XDC File [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/modulotop_propImpl.xdc].
+Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]
+Finished Parsing XDC File [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.srcs/constrs_1/new/pines.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/modulotop_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/modulotop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1488.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1425.879 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1488.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1425.879 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -108,9 +102,8 @@ Detailed RTL Component Info :
 	               84 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	  11 Input    7 Bit        Muxes := 1     
-	   4 Input    4 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -128,25 +121,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -164,37 +157,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -229,8 +222,8 @@ Report Cell Usage:
 |1     |BUFG   |     2|
 |2     |CARRY4 |     7|
 |3     |LUT1   |     2|
-|4     |LUT2   |    10|
-|5     |LUT3   |     1|
+|4     |LUT2   |     6|
+|5     |LUT3   |     4|
 |6     |LUT4   |     7|
 |7     |LUT6   |     4|
 |8     |SRL16E |     5|
@@ -238,29 +231,29 @@ Report Cell Usage:
 |10    |FDPE   |    24|
 |11    |FDRE   |    31|
 |12    |IBUF   |     2|
-|13    |OBUFT  |    11|
+|13    |OBUF   |    11|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.879 ; gain = 538.574
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1488.840 ; gain = 501.520
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1488.840 ; gain = 600.547
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 1425.879 ; gain = 501.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1425.879 ; gain = 538.574
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1488.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1425.879 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1488.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 163a391d
+Synth Design complete | Checksum: 6864f3dc
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1488.840 ; gain = 978.898
-INFO: [Common 17-1381] The checkpoint 'D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 1429.723 ; gain = 920.504
+INFO: [Common 17-1381] The checkpoint 'C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file modulotop_utilization_synth.rpt -pb modulotop_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 09:23:05 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 15:43:06 2026...

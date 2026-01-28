@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Oct 26 09:23:51 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Wed Jan 28 15:44:21 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file modulotop_control_sets_placed.rpt
 | Design       : modulotop
 | Device       : xc7a35t
@@ -59,7 +59,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              31 |            9 |
-| No           | No                    | Yes                    |              73 |           16 |
+| No           | No                    | Yes                    |              73 |           17 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -73,10 +73,10 @@ Table of Contents
 +----------------+---------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------+------------------+------------------+----------------+--------------+
-|  u0/out[0]     |               | anodos_TRI[0]    |                1 |              2 |         2.00 |
+|  u0/out[0]     |               | clear_IBUF       |                1 |              2 |         2.00 |
 |  temp_reg[25]  |               |                  |                2 |             10 |         5.00 |
 |  clk_IBUF_BUFG |               |                  |                7 |             26 |         3.71 |
-|  temp_reg[25]  |               | anodos_TRI[0]    |               15 |             71 |         4.73 |
+|  temp_reg[25]  |               | clear_IBUF       |               16 |             71 |         4.44 |
 +----------------+---------------+------------------+------------------+----------------+--------------+
 
 

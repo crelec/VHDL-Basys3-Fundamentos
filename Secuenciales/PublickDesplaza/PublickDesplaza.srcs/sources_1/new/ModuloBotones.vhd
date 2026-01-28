@@ -9,14 +9,14 @@ end ModuloBotones;
 architecture Behavioral of ModuloBotones is
 
 begin
-process(sel)
+process(all)
 	begin
 		case sel is
 			when "000" =>anodos<="1110";
 			when "001" =>anodos<="1101";
 			when "010" =>anodos<="1011";
 			when "011" =>anodos<="0111";
-			when others =>anodos<="ZZZZ";
+			when others =>anodos<="1111";
 		end case;
 	end process;
 end Behavioral;

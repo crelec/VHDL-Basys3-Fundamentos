@@ -3,12 +3,12 @@
 # SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
 # IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
 # SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Oct 26 09:22:10 2023
-# Process ID: 9184
-# Current directory: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1
+# Start of session at: Wed Jan 28 15:41:39 2026
+# Process ID: 26408
+# Current directory: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1
 # Command line: vivado.exe -log modulotop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source modulotop.tcl
-# Log file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.vds
-# Journal file: D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1\vivado.jou
-# Running On: LenovoCesar, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 21343 MB
+# Log file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1/modulotop.vds
+# Journal file: C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/PublickDesplaza/PublickDesplaza.runs/synth_1\vivado.jou
+# Running On: Cesar, OS: Windows, CPU Frequency: 2794 MHz, CPU Physical cores: 8, Host memory: 16407 MB
 #-----------------------------------------------------------
 source modulotop.tcl -notrace

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Oct 26 09:24:19 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Wed Jan 28 15:45:03 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_methodology -file modulotop_methodology_drc_routed.rpt -pb modulotop_methodology_drc_routed.pb -rpx modulotop_methodology_drc_routed.rpx
 | Design       : modulotop
 | Device       : xc7a35tcpg236-1
