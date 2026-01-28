@@ -9,7 +9,7 @@ end negacion;
 architecture Behavioral of negacion is
 
 begin
-process (btn)
+process (all)
 begin
 	case btn is
 		when "000" =>anodo<="1111";
