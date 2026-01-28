@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_unsigned.all;
+use IEEE.numeric_std.all;
 
 entity cuenta is
     Port ( clk : in STD_LOGIC;
@@ -9,14 +9,14 @@ entity cuenta is
 end cuenta;
 
 architecture Behavioral of cuenta is
-signal cuenta:STD_LOGIC_VECTOR (2 downto 0);
+signal cuenta:unsigned(2 downto 0):= (others => '0');
 
 begin
 	process(clk, clear)
 		begin
 		if clear = '1' then
 			cuenta <= (others =>'0');
-		elsif clk' event and clk ='1' then
+		elsif rising_edge(clk) then
 			if cuenta ="100" then
 				cuenta <= "001";
 			else
@@ -24,5 +24,5 @@ begin
 			end if;
 		end if;
 	end process;
-	salidacuenta<=cuenta;
+	salidacuenta<=std_logic_vector(cuenta);
 end Behavioral;

@@ -9,7 +9,7 @@ end MuxDos;
 architecture Behavioral of MuxDos is
 
 begin
-process (sel)
+process (all)
 begin
 	case sel is
 	when "001" =>fout<="0001000";--a

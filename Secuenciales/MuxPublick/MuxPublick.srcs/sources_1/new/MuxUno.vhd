@@ -9,7 +9,7 @@ end MuxUno;
 architecture Behavioral of MuxUno is
 
 begin
-process (sel)
+process (all)
 begin
 	case sel is
 	when "001" =>fout<="0001100";--p

@@ -8,7 +8,7 @@ end MuxCuatro;
 
 architecture Behavioral of MuxCuatro is
 begin
-process (sel)
+process (all)
 begin
 	case sel is
 	when "001" =>fout<="0010010";--s

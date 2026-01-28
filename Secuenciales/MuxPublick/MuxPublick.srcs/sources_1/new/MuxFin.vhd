@@ -13,7 +13,7 @@ end MuxFin;
 architecture Behavioral of MuxFin is
 
 begin
-process (sel,dato_a,dato_b,dato_c,dato_d)
+process (all)
 begin
 	case sel is
 	when"001" =>dato_fout<=dato_a;

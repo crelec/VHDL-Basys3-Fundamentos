@@ -9,7 +9,7 @@ end MuxTres;
 architecture Behavioral of MuxTres is
 
 begin
-process (sel)
+process (all)
 begin
 	case sel is
 	when "001" =>fout<="1000001";--u

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.runs/synth_1/SupMuxPublick.tcl"
+  variable script "C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.runs/synth_1/SupMuxPublick.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,36 +70,33 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.cache/wt [current_project]
-set_property parent.project_path D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.xpr [current_project]
+set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.cache/wt [current_project]
+set_property parent.project_path C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo d:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.cache/ip [current_project]
+set_property ip_output_repo c:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxCuatro.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxDos.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxFin.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxTres.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxUno.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/cuenta.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/divide.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/negacion.vhd
-  D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/SupMuxPublick.vhd
+read_vhdl -vhdl2008 -library xil_defaultlib {
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxCuatro.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxDos.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxFin.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxTres.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/MuxUno.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/divide.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/cuenta.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/negacion.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/sources_1/new/SupMuxPublick.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,12 +107,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/constrs_1/new/pines.xdc
-set_property used_in_implementation false [get_files D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/constrs_1/new/pines.xdc]
+read_xdc C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/constrs_1/new/pines.xdc
+set_property used_in_implementation false [get_files C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/constrs_1/new/pines.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/utils_1/imports/synth_1/SupMuxPublick.dcp
+read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/MuxPublick/MuxPublick.srcs/utils_1/imports/synth_1/SupMuxPublick.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
