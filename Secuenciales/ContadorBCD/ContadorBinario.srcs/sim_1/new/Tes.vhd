@@ -7,12 +7,6 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Contador is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           FoutCuenta : out STD_LOGIC_VECTOR (13 downto 0));
-end component;
-
 --Inputs
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
@@ -26,7 +20,7 @@ end component;
 begin
 
 -- Instantiate the Unit Under Test (UUT)
-   uut: Contador PORT MAP (
+   uut:entity work.Contador PORT MAP (
           clk => clk,
           reset => reset,
           FoutCuenta => FoutCuenta

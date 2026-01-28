@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.runs/impl_1/SupContador.tcl"
+  variable script "C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.runs/impl_1/SupContador.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,8 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,9 +122,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
-  set_param runs.launchOptions { -jobs 4  }
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
@@ -134,15 +132,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.cache/wt [current_project]
-  set_property parent.project_path D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.xpr [current_project]
-  set_property ip_output_repo D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.cache/wt [current_project]
+  set_property parent.project_path C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.xpr [current_project]
+  set_property ip_output_repo C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.runs/synth_1/SupContador.dcp
+  add_files -quiet C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.runs/synth_1/SupContador.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Repo-Lenovo/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.srcs/constrs_1/new/pines.xdc
+  read_xdc C:/Repo-Asus-2026/VHDL-Basys3/Secuenciales/ContadorBCD/ContadorBinario.srcs/constrs_1/new/pines.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
