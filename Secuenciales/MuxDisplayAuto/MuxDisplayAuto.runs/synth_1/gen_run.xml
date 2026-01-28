@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1769517559" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1769597744" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SupMuxDisplayAuto.dcp">
   <File Type="PA-TCL" Name="SupMuxDisplayAuto.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="SupMuxDisplayAuto_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SupMuxDisplayAuto_reports.tcl"/>

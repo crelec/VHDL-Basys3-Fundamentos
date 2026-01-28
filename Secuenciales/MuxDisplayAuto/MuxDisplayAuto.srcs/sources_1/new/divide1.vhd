@@ -8,10 +8,10 @@ entity divide1 is
 end divide1;
 
 architecture Behavioral of divide1 is
--- Cálculos para divisor a 125Hz
+-- Cálculos para divisor a 250Hz
 -- Reloj de la Basys3: 100 MHz ? periodo = 10 ns
--- Frecuencia deseada: 500Hz ? periodo = 2 ms
--- Medio periodo: 4 ms  
+-- Frecuencia deseada: 250Hz ? periodo = 4 ms
+-- Medio periodo: 2 ms  
 -- fincuenta = 2 ms / 10 ns = 200.000 ciclos
 -- cuenta = log(fincuenta)/log(2) ejemplo cuenta= log(200000)/log(2)= 17.609 se aproxima a 18
 
