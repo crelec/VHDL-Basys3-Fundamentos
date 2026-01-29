@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Tue Oct 24 16:16:25 2023
-| Host             : LenovoCesar running 64-bit major release  (build 9200)
+| Date             : Thu Jan 29 17:04:33 2026
+| Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file SupContador_power_routed.rpt -pb SupContador_power_summary_routed.pb -rpx SupContador_power_routed.rpx
 | Design           : SupContador
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.099        |
+| Total On-Chip Power (W)  | 0.098        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.027        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      215 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      100 |     20800 |            0.48 |
+| Slice Logic    |    <0.001 |      227 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      107 |     20800 |            0.51 |
 |   CARRY4       |    <0.001 |       16 |      8150 |            0.20 |
-|   Register     |    <0.001 |       65 |     41600 |            0.16 |
+|   Register     |    <0.001 |       63 |     41600 |            0.15 |
 |   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |    <0.001 |      191 |       --- |             --- |
-| I/O            |     0.025 |       13 |       106 |           12.26 |
+| Signals        |    <0.001 |      211 |       --- |             --- |
+| I/O            |     0.024 |       13 |       106 |           12.26 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.099 |          |           |                 |
+| Total          |     0.098 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| SupContador |     0.027 |
+| SupContador |     0.026 |
 +-------------+-----------+
 
 

@@ -9,7 +9,7 @@ end ModuloDisplay;
 architecture Behavioral of ModuloDisplay is
 
 begin
-process(DatoIn)
+process(all)
 	begin
 		case DatoIn is
 			when "0000" =>segmento<="1000000";
