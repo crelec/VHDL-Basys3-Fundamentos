@@ -11,9 +11,13 @@ En este directorio se presentan ejemplos de circuitos secuenciales implementados
 
 El objetivo de esta carpeta es proporcionar una colección estructurada y progresiva de ejemplos fundamentales que permitan comprender:
 
-- El funcionamiento del diseño síncrono  
-- El papel del reloj y del reset  
-- La relación entre temporización, estado y comportamiento funcional  
+- El funcionamiento del diseño síncrono
+- El papel del reloj y del reset
+- El uso de contadores como base de temporización
+- El uso de señales de habilitación
+- La integración de bloques secuenciales y combinacionales
+- La visualización dinámica en displays de 7 segmentos
+- La construcción de aplicaciones a partir de bloques reutilizables
 
 Estos ejemplos constituyen la base para el estudio posterior de máquinas de estado finitas (FSM) y sistemas digitales más complejos.
 
@@ -39,13 +43,15 @@ Se emplean exclusivamente librerías estándar:
 Todos los módulos cumplen:
 
 - Diseño síncrono estricto
-- Uso de flanco positivo de reloj
+- Uso de flanco positivo de reloj (`rising_edge`)
 - Reset explícito
 - Separación clara entre lógica secuencial y combinacional
-- Uso de tipos `unsigned` y `signed` para operaciones aritméticas
+- Uso sistematico de tipos `unsigned` y `signed` para operaciones aritméticas
+- Conversión explícita entre `unsigned` y `std_logic_vector`
 - Código completamente compatible con VHDL-2008
-- Testbench bajo metodología Opción 3
-- Ausencia de lógica inferida (latches, memorias implícitas)
+- Estructura jerárquica por bloques
+- Reutilización de módulos
+- Ausencia de librerías no estándar y lógica inferida (latches, memorias implícitas)
 
 ---
 
