@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../when-casoA.srcs/sources_1/new/caso.vhd" \
+"../../../../when-casoA.srcs/sim_1/new/tes.vhd" \
+
+# Do not sort compile order
+nosort
