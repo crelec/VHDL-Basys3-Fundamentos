@@ -28,21 +28,30 @@ begin
         when s0 =>
             if DatoIn = '1' then
                 estadosiguiente <= s1;
+            else
+                estadosiguiente <= s0;
             end if;
+            
         when s1 =>
             if DatoIn = '0' then
                 estadosiguiente <= s2;
             else
-                estadosiguiente <= s0;
+                estadosiguiente <= s1;
             end if;
+            
         when s2 =>
             if DatoIn = '1' then
                 estadosiguiente <= s3;
             else
                 estadosiguiente <= s0;
             end if;
+        
         when s3 =>
-            estadosiguiente <= s0;
+            if DatoIn = '1' then
+                estadosiguiente <= s1;
+            else
+                estadosiguiente <= s2;
+           end if;
     end case;
 end process;
 

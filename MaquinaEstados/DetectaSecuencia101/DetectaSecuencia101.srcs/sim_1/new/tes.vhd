@@ -14,10 +14,10 @@ component DecSecuencia is
            Foutq : out STD_LOGIC);
 end component;
 
-signal clk : STD_LOGIC;
-signal reset : STD_LOGIC;
-signal DatoIn : STD_LOGIC;
-signal Foutq : STD_LOGIC;
+signal clk : STD_LOGIC:='0';
+signal reset : STD_LOGIC:='0';
+signal DatoIn : STD_LOGIC:='0';
+signal Foutq : STD_LOGIC:='0';
 
 constant clk_period : time := 10 ns;
 
@@ -37,33 +37,37 @@ clk_process : process
     begin
         reset <= '1';
         DatoIn <= '0';
-        -- hold reset state for 100 ns.
         wait for 100 ns;  
         
-        reset <= '0'; -- release reset
-        -- wait for sequences to be detected
-        wait for clk_period*10;
+        reset <= '0'; -- reset
+        wait for clk_period*5;
+        
+        -- secuencia: 1 0 1 correcta
+        DatoIn <= '1'; wait for clk_period;
+        DatoIn <= '0'; wait for clk_period;
+        DatoIn <= '1'; wait for clk_period;
+        
+        -- sequence: 1 1 0 incorrecta
+        DatoIn <= '1'; wait for clk_period;
+        DatoIn <= '1'; wait for clk_period;
+        DatoIn <= '0'; wait for clk_period;
+        
+        -- sequence: 0 1 0 incorrecta
+        DatoIn <= '0'; wait for clk_period;
+        DatoIn <= '1'; wait for clk_period;
+        DatoIn <= '0'; wait for clk_period;
         
         -- sequence: 1 0 1
         DatoIn <= '1'; wait for clk_period;
         DatoIn <= '0'; wait for clk_period;
         DatoIn <= '1'; wait for clk_period;
         
-        -- sequence: 1 1 0
-        DatoIn <= '1'; wait for clk_period;
-        DatoIn <= '1'; wait for clk_period;
-        DatoIn <= '0'; wait for clk_period;
-        
-        -- sequence: 0 1 0
-        DatoIn <= '0'; wait for clk_period;
-        DatoIn <= '1'; wait for clk_period;
-        DatoIn <= '0'; wait for clk_period;
-        
-        -- sequence: 1 0 1
+        -- secuencia solapamiento 10101
         DatoIn <= '1'; wait for clk_period;
         DatoIn <= '0'; wait for clk_period;
         DatoIn <= '1'; wait for clk_period;
-        
+        DatoIn <= '0'; wait for clk_period;
+        DatoIn <= '1'; wait for clk_period;
         wait;
     end process;
 end Behavioral;
