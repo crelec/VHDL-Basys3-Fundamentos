@@ -15,7 +15,6 @@ COMPONENT Maq_estado
          Int_ext : IN  std_logic
         );
     END COMPONENT;
-    
 
    --Inputs
    signal Clk : std_logic := '0';
@@ -29,8 +28,7 @@ COMPONENT Maq_estado
    constant Clk_period : time := 10 ns;
  
 BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
+ 	
    uut: Maq_estado PORT MAP (
           Clk => Clk,
           Reset => Reset,
@@ -51,71 +49,29 @@ stim_proc: process
     begin
         reset <= '1';
         Int_ext <= '0';
-        -- hold reset state for 100 ns.
         wait for 100 ns;  
-        
         reset <= '0'; -- release reset
-        -- wait for sequences to be detected
-        wait for clk_period*10;
+        wait for clk_period*5;
         
-        -- sequence: 1 0 1
+        -- secuencia: 1 0 1 0 correcta
         Int_ext <= '1'; wait for clk_period;
-        Int_ext <= '0'; wait for clk_period;
-        Int_ext <= '1'; wait for clk_period;
-        
-        -- sequence: 1 1 0
-        Int_ext <= '1'; wait for clk_period;
-        Int_ext <= '1'; wait for clk_period;
-        Int_ext <= '0'; wait for clk_period;
-        
-        -- sequence: 0 1 0
         Int_ext <= '0'; wait for clk_period;
         Int_ext <= '1'; wait for clk_period;
         Int_ext <= '0'; wait for clk_period;
         
-        -- sequence: 1 0 1
+        -- secuencia: 1 1 0 incorrecta
+        Int_ext <= '1'; wait for clk_period;
+        Int_ext <= '1'; wait for clk_period;
+        Int_ext <= '0'; wait for clk_period;
+                
+        -- secuencia: 1 0 1 0 1 0 solapamiento
         Int_ext <= '1'; wait for clk_period;
         Int_ext <= '0'; wait for clk_period;
         Int_ext <= '1'; wait for clk_period;
-        
+        Int_ext <= '0'; wait for clk_period;
+        Int_ext <= '1'; wait for clk_period;
+        Int_ext <= '0'; wait for clk_period;
+                
         wait;
     end process;
 end Behavioral;
-
-
----- Stimulus process
---sig_reset: process
---begin		
---reset<='1';
---wait for 6 ns;	
---reset<='0';
---wait;
---end process;
-
---sig_int_ext:process
---begin
---int_ext<='0';--00
---wait for 79 ns;
---int_ext<='1';--11
---wait for 10 ns;
---int_ext<='0';--0
---wait for 10 ns;
---int_ext<='1';--1
---wait for 10 ns;
---int_ext<='0';--0
---wait for 10 ns;
---int_ext<='1';--1
---wait for 10 ns;
---int_ext<='0';--0
---wait for 10 ns;
---int_ext<='1';--1
---wait for 10 ns;
---int_ext<='0';--0
---wait for 10 ns;
---int_ext<='1';--1
---wait for 10 ns;
---int_ext<='0';--0
---wait for 10 ns;
---int_ext<='1';--0
---wait for 10 ns;--OJO wait
---end process;

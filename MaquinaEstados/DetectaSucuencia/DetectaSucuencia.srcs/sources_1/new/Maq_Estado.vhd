@@ -34,26 +34,34 @@ begin
 			else
 				estadoSiguiente<=ocio;
 			end if;
+			
 		when s0 =>
 			if int_ext ='0' then
 				estadoSiguiente<=s1;
 			else 
 				estadoSiguiente<=s0;
 			end if;
+			
 		when s1 =>
 			if int_ext ='1' then
 				estadoSiguiente<=s2;
 			else
 				estadoSiguiente<=s1;
 		end if;
+		
 	when s2 =>
 			if int_ext ='0' then
 				estadoSiguiente<=s3;
 			else
 				estadoSiguiente<=s2;
 			end if;
+			
 	when s3 =>
-			estadoSiguiente<=ocio;
+	        if int_ext ='1' then
+				estadoSiguiente<=s2;
+			else
+				estadoSiguiente<=s1;
+			end if;
 	end case;		
 end process;
  

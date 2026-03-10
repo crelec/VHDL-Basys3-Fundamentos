@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Sun Aug 27 04:08:30 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Tue Mar 10 17:01:59 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Maq_Estado_utilization_synth.rpt -pb Maq_Estado_utilization_synth.pb
 | Design       : Maq_Estado
 | Device       : xc7a35tcpg236-1
@@ -151,11 +151,12 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT3     |    4 |                 LUT |
 | FDCE     |    4 |        Flop & Latch |
 | IBUF     |    3 |                  IO |
+| LUT4     |    2 |                 LUT |
+| LUT2     |    2 |                 LUT |
 | OBUF     |    1 |                  IO |
-| LUT2     |    1 |                 LUT |
+| LUT3     |    1 |                 LUT |
 | FDPE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Sun Aug 27 04:12:09 2023
-| Host         : LenovoCesar running 64-bit major release  (build 9200)
+| Date         : Tue Mar 10 17:03:23 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Maq_Estado_timing_summary_routed.rpt -pb Maq_Estado_timing_summary_routed.pb -rpx Maq_Estado_timing_summary_routed.rpx -warn_on_violation
 | Design       : Maq_Estado
 | Device       : 7a35t-cpg236
@@ -42,7 +42,7 @@ Timing Summary Report
 
 Rule       Severity          Description                  Violations  
 ---------  ----------------  ---------------------------  ----------  
-TIMING-17  Critical Warning  Non-clocked sequential cell  6           
+TIMING-17  Critical Warning  Non-clocked sequential cell  5           
 
 Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
 
@@ -52,10 +52,10 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (6)
+1. checking no_clock (5)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (12)
+4. checking unconstrained_internal_endpoints (10)
 5. checking no_input_delay (2)
 6. checking no_output_delay (1)
 7. checking multiple_clock (0)
@@ -65,9 +65,9 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (6)
+1. checking no_clock (5)
 ------------------------
- There are 6 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 5 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
 
 2. checking constant_clock (0)
@@ -80,9 +80,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (12)
+4. checking unconstrained_internal_endpoints (10)
 -------------------------------------------------
- There are 12 pins that are not constrained for maximum delay. (HIGH)
+ There are 10 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -141,7 +141,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-        inf        0.000                      0                   13          inf        0.000                      0                   13           NA           NA                      NA                    NA  
+        inf        0.000                      0                   11          inf        0.000                      0                   11           NA           NA                      NA                    NA  
 
 
 There are no user specified timing constraints.
@@ -210,71 +210,31 @@ Path Group:  (none)
 From Clock:  
   To Clock:  
 
-Max Delay            13 Endpoints
-Min Delay            13 Endpoints
+Max Delay            11 Endpoints
+Min Delay            11 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 FSM_onehot_estadoActual_reg[4]_lopt_replica/C
+  Source:                 FSM_onehot_estadoActual_reg[4]/C
                             (rising edge-triggered cell FDCE)
   Destination:            Foutq
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        4.745ns  (logic 3.055ns (64.383%)  route 1.690ns (35.617%))
+  Data Path Delay:        4.876ns  (logic 3.193ns (65.490%)  route 1.683ns (34.510%))
   Logic Levels:           2  (FDCE=1 OBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[4]_lopt_replica/C
-    SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.456     0.456 r  FSM_onehot_estadoActual_reg[4]_lopt_replica/Q
-                         net (fo=1, routed)           1.690     2.146    FSM_onehot_estadoActual_reg[4]_lopt_replica_1
-    U14                  OBUF (Prop_obuf_I_O)         2.599     4.745 r  Foutq_OBUF_inst/O
-                         net (fo=0)                   0.000     4.745    Foutq
+    SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[4]/C
+    SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.419     0.419 r  FSM_onehot_estadoActual_reg[4]/Q
+                         net (fo=3, routed)           1.683     2.102    Foutq_OBUF
+    U14                  OBUF (Prop_obuf_I_O)         2.774     4.876 r  Foutq_OBUF_inst/O
+                         net (fo=0)                   0.000     4.876    Foutq
     U14                                                               r  Foutq (OUT)
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Int_ext
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[3]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.651ns  (logic 1.083ns (40.854%)  route 1.568ns (59.146%))
-  Logic Levels:           2  (IBUF=1 LUT3=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V14                                               0.000     0.000 r  Int_ext (IN)
-                         net (fo=0)                   0.000     0.000    Int_ext
-    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 r  Int_ext_IBUF_inst/O
-                         net (fo=5, routed)           1.087     2.018    Int_ext_IBUF
-    SLICE_X0Y1           LUT3 (Prop_lut3_I1_O)        0.152     2.170 r  FSM_onehot_estadoActual[3]_i_1/O
-                         net (fo=1, routed)           0.480     2.651    FSM_onehot_estadoActual[3]_i_1_n_0
-    SLICE_X1Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Int_ext
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[4]/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.332ns  (logic 1.055ns (45.237%)  route 1.277ns (54.763%))
-  Logic Levels:           2  (IBUF=1 LUT2=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V14                                               0.000     0.000 f  Int_ext (IN)
-                         net (fo=0)                   0.000     0.000    Int_ext
-    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 f  Int_ext_IBUF_inst/O
-                         net (fo=5, routed)           1.087     2.018    Int_ext_IBUF
-    SLICE_X0Y1           LUT2 (Prop_lut2_I1_O)        0.124     2.142 r  FSM_onehot_estadoActual[4]_i_1/O
-                         net (fo=2, routed)           0.190     2.332    FSM_onehot_estadoActual[4]_i_1_n_0
-    SLICE_X1Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -284,26 +244,6 @@ Slack:                    inf
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
   Data Path Delay:        2.314ns  (logic 1.055ns (45.589%)  route 1.259ns (54.411%))
-  Logic Levels:           2  (IBUF=1 LUT3=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V14                                               0.000     0.000 f  Int_ext (IN)
-                         net (fo=0)                   0.000     0.000    Int_ext
-    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 f  Int_ext_IBUF_inst/O
-                         net (fo=5, routed)           1.259     2.190    Int_ext_IBUF
-    SLICE_X0Y1           LUT3 (Prop_lut3_I1_O)        0.124     2.314 r  FSM_onehot_estadoActual[0]_i_1/O
-                         net (fo=1, routed)           0.000     2.314    FSM_onehot_estadoActual[0]_i_1_n_0
-    SLICE_X0Y1           FDPE                                         r  FSM_onehot_estadoActual_reg[0]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Int_ext
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[4]_lopt_replica/D
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        2.142ns  (logic 1.055ns (49.243%)  route 1.087ns (50.757%))
   Logic Levels:           2  (IBUF=1 LUT2=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -311,10 +251,10 @@ Slack:                    inf
     V14                                               0.000     0.000 f  Int_ext (IN)
                          net (fo=0)                   0.000     0.000    Int_ext
     V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 f  Int_ext_IBUF_inst/O
-                         net (fo=5, routed)           1.087     2.018    Int_ext_IBUF
-    SLICE_X0Y1           LUT2 (Prop_lut2_I1_O)        0.124     2.142 r  FSM_onehot_estadoActual[4]_i_1/O
-                         net (fo=2, routed)           0.000     2.142    FSM_onehot_estadoActual[4]_i_1_n_0
-    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[4]_lopt_replica/D
+                         net (fo=5, routed)           1.259     2.190    Int_ext_IBUF
+    SLICE_X0Y1           LUT2 (Prop_lut2_I1_O)        0.124     2.314 r  FSM_onehot_estadoActual[0]_i_1/O
+                         net (fo=1, routed)           0.000     2.314    FSM_onehot_estadoActual[0]_i_1_n_0
+    SLICE_X0Y1           FDPE                                         r  FSM_onehot_estadoActual_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -323,7 +263,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[0]/PRE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.986ns  (logic 0.934ns (47.047%)  route 1.052ns (52.953%))
+  Data Path Delay:        1.975ns  (logic 0.934ns (47.300%)  route 1.041ns (52.700%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -331,7 +271,7 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           1.052     1.986    Reset_IBUF
+                         net (fo=5, routed)           1.041     1.975    Reset_IBUF
     SLICE_X0Y1           FDPE                                         f  FSM_onehot_estadoActual_reg[0]/PRE
   -------------------------------------------------------------------    -------------------
 
@@ -341,7 +281,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[1]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.986ns  (logic 0.934ns (47.047%)  route 1.052ns (52.953%))
+  Data Path Delay:        1.975ns  (logic 0.934ns (47.300%)  route 1.041ns (52.700%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -349,7 +289,7 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           1.052     1.986    Reset_IBUF
+                         net (fo=5, routed)           1.041     1.975    Reset_IBUF
     SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[1]/CLR
   -------------------------------------------------------------------    -------------------
 
@@ -359,7 +299,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[2]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.986ns  (logic 0.934ns (47.047%)  route 1.052ns (52.953%))
+  Data Path Delay:        1.975ns  (logic 0.934ns (47.300%)  route 1.041ns (52.700%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -367,26 +307,8 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           1.052     1.986    Reset_IBUF
+                         net (fo=5, routed)           1.041     1.975    Reset_IBUF
     SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[2]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Reset
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[4]_lopt_replica/CLR
-  Path Group:             (none)
-  Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.986ns  (logic 0.934ns (47.047%)  route 1.052ns (52.953%))
-  Logic Levels:           1  (IBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V13                                               0.000     0.000 f  Reset (IN)
-                         net (fo=0)                   0.000     0.000    Reset
-    V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           1.052     1.986    Reset_IBUF
-    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[4]_lopt_replica/CLR
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -395,7 +317,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[3]/CLR
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        1.981ns  (logic 0.934ns (47.151%)  route 1.047ns (52.849%))
+  Data Path Delay:        1.975ns  (logic 0.934ns (47.300%)  route 1.041ns (52.700%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -403,8 +325,86 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           1.047     1.981    Reset_IBUF
-    SLICE_X1Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[3]/CLR
+                         net (fo=5, routed)           1.041     1.975    Reset_IBUF
+    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Reset
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[4]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.975ns  (logic 0.934ns (47.300%)  route 1.041ns (52.700%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  Reset (IN)
+                         net (fo=0)                   0.000     0.000    Reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  Reset_IBUF_inst/O
+                         net (fo=5, routed)           1.041     1.975    Reset_IBUF
+    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[4]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Int_ext
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.924ns  (logic 1.055ns (54.829%)  route 0.869ns (45.171%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V14                                               0.000     0.000 f  Int_ext (IN)
+                         net (fo=0)                   0.000     0.000    Int_ext
+    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 f  Int_ext_IBUF_inst/O
+                         net (fo=5, routed)           0.869     1.800    Int_ext_IBUF
+    SLICE_X0Y1           LUT4 (Prop_lut4_I2_O)        0.124     1.924 r  FSM_onehot_estadoActual[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.924    FSM_onehot_estadoActual[2]_i_1_n_0
+    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Int_ext
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.920ns  (logic 1.055ns (54.943%)  route 0.865ns (45.057%))
+  Logic Levels:           2  (IBUF=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V14                                               0.000     0.000 r  Int_ext (IN)
+                         net (fo=0)                   0.000     0.000    Int_ext
+    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 r  Int_ext_IBUF_inst/O
+                         net (fo=5, routed)           0.865     1.796    Int_ext_IBUF
+    SLICE_X0Y1           LUT3 (Prop_lut3_I1_O)        0.124     1.920 r  FSM_onehot_estadoActual[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.920    FSM_onehot_estadoActual[1]_i_1_n_0
+    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Int_ext
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.919ns  (logic 1.050ns (54.711%)  route 0.869ns (45.289%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V14                                               0.000     0.000 r  Int_ext (IN)
+                         net (fo=0)                   0.000     0.000    Int_ext
+    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 r  Int_ext_IBUF_inst/O
+                         net (fo=5, routed)           0.869     1.800    Int_ext_IBUF
+    SLICE_X0Y1           LUT4 (Prop_lut4_I2_O)        0.119     1.919 r  FSM_onehot_estadoActual[3]_i_1/O
+                         net (fo=1, routed)           0.000     1.919    FSM_onehot_estadoActual[3]_i_1_n_0
+    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 
@@ -414,78 +414,21 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 FSM_onehot_estadoActual_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            FSM_onehot_estadoActual_reg[0]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.244ns  (logic 0.186ns (76.126%)  route 0.058ns (23.874%))
-  Logic Levels:           2  (FDCE=1 LUT3=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[4]/C
-    SLICE_X1Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[4]/Q
-                         net (fo=1, routed)           0.058     0.199    Foutq_OBUF
-    SLICE_X0Y1           LUT3 (Prop_lut3_I0_O)        0.045     0.244 r  FSM_onehot_estadoActual[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.244    FSM_onehot_estadoActual[0]_i_1_n_0
-    SLICE_X0Y1           FDPE                                         r  FSM_onehot_estadoActual_reg[0]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 FSM_onehot_estadoActual_reg[3]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            FSM_onehot_estadoActual_reg[4]_lopt_replica/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.284ns  (logic 0.186ns (65.524%)  route 0.098ns (34.476%))
-  Logic Levels:           2  (FDCE=1 LUT2=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[3]/C
-    SLICE_X1Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[3]/Q
-                         net (fo=2, routed)           0.098     0.239    FSM_onehot_estadoActual_reg_n_0_[3]
-    SLICE_X0Y1           LUT2 (Prop_lut2_I0_O)        0.045     0.284 r  FSM_onehot_estadoActual[4]_i_1/O
-                         net (fo=2, routed)           0.000     0.284    FSM_onehot_estadoActual[4]_i_1_n_0
-    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[4]_lopt_replica/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 FSM_onehot_estadoActual_reg[3]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            FSM_onehot_estadoActual_reg[4]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.340ns  (logic 0.186ns (54.772%)  route 0.154ns (45.228%))
-  Logic Levels:           2  (FDCE=1 LUT2=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[3]/C
-    SLICE_X1Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[3]/Q
-                         net (fo=2, routed)           0.098     0.239    FSM_onehot_estadoActual_reg_n_0_[3]
-    SLICE_X0Y1           LUT2 (Prop_lut2_I0_O)        0.045     0.284 r  FSM_onehot_estadoActual[4]_i_1/O
-                         net (fo=2, routed)           0.056     0.340    FSM_onehot_estadoActual[4]_i_1_n_0
-    SLICE_X1Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[4]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
   Source:                 FSM_onehot_estadoActual_reg[1]/C
                             (rising edge-triggered cell FDCE)
   Destination:            FSM_onehot_estadoActual_reg[2]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.356ns  (logic 0.183ns (51.463%)  route 0.173ns (48.537%))
-  Logic Levels:           2  (FDCE=1 LUT3=1)
+  Data Path Delay:        0.359ns  (logic 0.186ns (51.842%)  route 0.173ns (48.158%))
+  Logic Levels:           2  (FDCE=1 LUT4=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[1]/C
     SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[1]/Q
                          net (fo=2, routed)           0.173     0.314    FSM_onehot_estadoActual_reg_n_0_[1]
-    SLICE_X0Y1           LUT3 (Prop_lut3_I0_O)        0.042     0.356 r  FSM_onehot_estadoActual[2]_i_1/O
-                         net (fo=1, routed)           0.000     0.356    FSM_onehot_estadoActual[2]_i_1_n_0
+    SLICE_X0Y1           LUT4 (Prop_lut4_I1_O)        0.045     0.359 r  FSM_onehot_estadoActual[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.359    FSM_onehot_estadoActual[2]_i_1_n_0
     SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
@@ -495,72 +438,74 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.359ns  (logic 0.186ns (51.869%)  route 0.173ns (48.131%))
+  Data Path Delay:        0.370ns  (logic 0.186ns (50.311%)  route 0.184ns (49.689%))
   Logic Levels:           2  (FDCE=1 LUT3=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[1]/C
     SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[1]/Q
-                         net (fo=2, routed)           0.173     0.314    FSM_onehot_estadoActual_reg_n_0_[1]
-    SLICE_X0Y1           LUT3 (Prop_lut3_I2_O)        0.045     0.359 r  FSM_onehot_estadoActual[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.359    FSM_onehot_estadoActual[1]_i_1_n_0
+                         net (fo=2, routed)           0.184     0.325    FSM_onehot_estadoActual_reg_n_0_[1]
+    SLICE_X0Y1           LUT3 (Prop_lut3_I2_O)        0.045     0.370 r  FSM_onehot_estadoActual[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.370    FSM_onehot_estadoActual[1]_i_1_n_0
     SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_estadoActual_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_onehot_estadoActual_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.409ns  (logic 0.184ns (45.030%)  route 0.225ns (54.970%))
+  Logic Levels:           2  (FDCE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[2]/C
+    SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[2]/Q
+                         net (fo=2, routed)           0.225     0.366    FSM_onehot_estadoActual_reg_n_0_[2]
+    SLICE_X0Y1           LUT4 (Prop_lut4_I1_O)        0.043     0.409 r  FSM_onehot_estadoActual[3]_i_1/O
+                         net (fo=1, routed)           0.000     0.409    FSM_onehot_estadoActual[3]_i_1_n_0
+    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_estadoActual_reg[0]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            FSM_onehot_estadoActual_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.427ns  (logic 0.186ns (43.536%)  route 0.241ns (56.464%))
+  Logic Levels:           2  (FDPE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y1           FDPE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[0]/C
+    SLICE_X0Y1           FDPE (Prop_fdpe_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[0]/Q
+                         net (fo=2, routed)           0.241     0.382    FSM_onehot_estadoActual_reg_n_0_[0]
+    SLICE_X0Y1           LUT2 (Prop_lut2_I0_O)        0.045     0.427 r  FSM_onehot_estadoActual[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.427    FSM_onehot_estadoActual[0]_i_1_n_0
+    SLICE_X0Y1           FDPE                                         r  FSM_onehot_estadoActual_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 FSM_onehot_estadoActual_reg[3]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            FSM_onehot_estadoActual_reg[3]/D
+  Destination:            FSM_onehot_estadoActual_reg[4]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.465ns  (logic 0.190ns (40.836%)  route 0.275ns (59.164%))
-  Logic Levels:           2  (FDCE=1 LUT3=1)
+  Data Path Delay:        0.478ns  (logic 0.225ns (47.085%)  route 0.253ns (52.915%))
+  Logic Levels:           2  (FDCE=1 LUT2=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[3]/C
-    SLICE_X1Y1           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_onehot_estadoActual_reg[3]/Q
-                         net (fo=2, routed)           0.098     0.239    FSM_onehot_estadoActual_reg_n_0_[3]
-    SLICE_X0Y1           LUT3 (Prop_lut3_I2_O)        0.049     0.288 r  FSM_onehot_estadoActual[3]_i_1/O
-                         net (fo=1, routed)           0.177     0.465    FSM_onehot_estadoActual[3]_i_1_n_0
-    SLICE_X1Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Reset
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[3]/CLR
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.574ns  (logic 0.163ns (28.489%)  route 0.410ns (71.511%))
-  Logic Levels:           1  (IBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V13                                               0.000     0.000 f  Reset (IN)
-                         net (fo=0)                   0.000     0.000    Reset
-    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           0.410     0.574    Reset_IBUF
-    SLICE_X1Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[3]/CLR
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 Reset
-                            (input port)
-  Destination:            FSM_onehot_estadoActual_reg[4]/CLR
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.574ns  (logic 0.163ns (28.489%)  route 0.410ns (71.511%))
-  Logic Levels:           1  (IBUF=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    V13                                               0.000     0.000 f  Reset (IN)
-                         net (fo=0)                   0.000     0.000    Reset
-    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           0.410     0.574    Reset_IBUF
-    SLICE_X1Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[4]/CLR
+    SLICE_X0Y1           FDCE                         0.000     0.000 r  FSM_onehot_estadoActual_reg[3]/C
+    SLICE_X0Y1           FDCE (Prop_fdce_C_Q)         0.128     0.128 r  FSM_onehot_estadoActual_reg[3]/Q
+                         net (fo=2, routed)           0.253     0.381    FSM_onehot_estadoActual_reg_n_0_[3]
+    SLICE_X0Y1           LUT2 (Prop_lut2_I0_O)        0.097     0.478 r  FSM_onehot_estadoActual[4]_i_1/O
+                         net (fo=1, routed)           0.000     0.478    FSM_onehot_estadoActual[4]_i_1_n_0
+    SLICE_X0Y1           FDCE                                         r  FSM_onehot_estadoActual_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -569,7 +514,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[0]/PRE
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.578ns  (logic 0.163ns (28.274%)  route 0.415ns (71.726%))
+  Data Path Delay:        0.567ns  (logic 0.163ns (28.802%)  route 0.404ns (71.198%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -577,7 +522,7 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           0.415     0.578    Reset_IBUF
+                         net (fo=5, routed)           0.404     0.567    Reset_IBUF
     SLICE_X0Y1           FDPE                                         f  FSM_onehot_estadoActual_reg[0]/PRE
   -------------------------------------------------------------------    -------------------
 
@@ -587,7 +532,7 @@ Slack:                    inf
   Destination:            FSM_onehot_estadoActual_reg[1]/CLR
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.578ns  (logic 0.163ns (28.274%)  route 0.415ns (71.726%))
+  Data Path Delay:        0.567ns  (logic 0.163ns (28.802%)  route 0.404ns (71.198%))
   Logic Levels:           1  (IBUF=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -595,8 +540,62 @@ Slack:                    inf
     V13                                               0.000     0.000 f  Reset (IN)
                          net (fo=0)                   0.000     0.000    Reset
     V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
-                         net (fo=6, routed)           0.415     0.578    Reset_IBUF
+                         net (fo=5, routed)           0.404     0.567    Reset_IBUF
     SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Reset
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[2]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.567ns  (logic 0.163ns (28.802%)  route 0.404ns (71.198%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  Reset (IN)
+                         net (fo=0)                   0.000     0.000    Reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
+                         net (fo=5, routed)           0.404     0.567    Reset_IBUF
+    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Reset
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[3]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.567ns  (logic 0.163ns (28.802%)  route 0.404ns (71.198%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  Reset (IN)
+                         net (fo=0)                   0.000     0.000    Reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
+                         net (fo=5, routed)           0.404     0.567    Reset_IBUF
+    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Reset
+                            (input port)
+  Destination:            FSM_onehot_estadoActual_reg[4]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.567ns  (logic 0.163ns (28.802%)  route 0.404ns (71.198%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  Reset (IN)
+                         net (fo=0)                   0.000     0.000    Reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  Reset_IBUF_inst/O
+                         net (fo=5, routed)           0.404     0.567    Reset_IBUF
+    SLICE_X0Y1           FDCE                                         f  FSM_onehot_estadoActual_reg[4]/CLR
   -------------------------------------------------------------------    -------------------
 
 

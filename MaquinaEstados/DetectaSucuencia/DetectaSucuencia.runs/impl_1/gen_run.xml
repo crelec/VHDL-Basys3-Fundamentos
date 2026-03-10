@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1693127456">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1773180068">
   <File Type="ROUTE-PWR" Name="Maq_Estado_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Maq_Estado.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Maq_Estado_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Maq_Estado_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="Maq_Estado.msk"/>
-  <File Type="ROUTE-CLK" Name="Maq_Estado_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="Maq_Estado.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Maq_Estado_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Maq_Estado.bit"/>
-  <File Type="BG-DRC" Name="Maq_Estado.drc"/>
-  <File Type="BG-BGN" Name="Maq_Estado.bgn"/>
-  <File Type="BG-BIN" Name="Maq_Estado.bin"/>
-  <File Type="BITSTR-RBT" Name="Maq_Estado.rbt"/>
-  <File Type="BITSTR-NKY" Name="Maq_Estado.nky"/>
-  <File Type="BITSTR-BMM" Name="Maq_Estado_bd.bmm"/>
+  <File Type="OPT-RQA-PB" Name="Maq_Estado_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="Maq_Estado.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Maq_Estado_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="Maq_Estado.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Maq_Estado.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Maq_Estado_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Maq_Estado_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Maq_Estado_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Maq_Estado_opt.dcp"/>
   <File Type="OPT-DRC" Name="Maq_Estado_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Maq_Estado.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Maq_Estado_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Maq_Estado_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Maq_Estado_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Maq_Estado_placed.dcp"/>
   <File Type="PLACE-IO" Name="Maq_Estado_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Maq_Estado_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Maq_Estado_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Maq_Estado_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Maq_Estado_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Maq_Estado_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Maq_Estado_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Maq_Estado.bin"/>
+  <File Type="PLACE-TIMING" Name="Maq_Estado_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Maq_Estado_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Maq_Estado_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Maq_Estado_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Maq_Estado.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Maq_Estado_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Maq_Estado_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Maq_Estado_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Maq_Estado.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Maq_Estado_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Maq_Estado_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Maq_Estado_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Maq_Estado_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Maq_Estado_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Maq_Estado_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Maq_Estado_power_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Maq_Estado_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Maq_Estado_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Maq_Estado_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Maq_Estado_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Maq_Estado_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Maq_Estado_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Maq_Estado_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="Maq_Estado_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Maq_Estado_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Maq_Estado_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Maq_Estado_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Maq_Estado_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Maq_Estado_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Maq_Estado_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Maq_Estado_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Maq_Estado_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Maq_Estado_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Maq_Estado_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="Maq_Estado_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="Maq_Estado_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="Maq_Estado_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Maq_Estado_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="Maq_Estado_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Maq_Estado_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Maq_Estado_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Maq_Estado_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Maq_Estado_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Maq_Estado_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Maq_Estado_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Maq_Estado.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Maq_Estado_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Maq_Estado_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Maq_Estado_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Maq_Estado_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Maq_Estado_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="Maq_Estado.nky"/>
+  <File Type="BITSTR-BMM" Name="Maq_Estado_bd.bmm"/>
   <File Type="PDI-FILE" Name="Maq_Estado.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Maq_Estado_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Maq_Estado_pld.pdi"/>
@@ -66,6 +73,13 @@
   <File Type="RNPI_FILE" Name="Maq_Estado.rnpi"/>
   <File Type="NPI_FILE" Name="Maq_Estado.npi"/>
   <File Type="RBD_FILE" Name="Maq_Estado.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Maq_Estado.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Maq_Estado.sysdef"/>
+  <File Type="BG-BGN" Name="Maq_Estado.bgn"/>
+  <File Type="BG-DRC" Name="Maq_Estado.drc"/>
+  <File Type="RDI-RDI" Name="Maq_Estado.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Maq_Estado_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Maq_Estado_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -92,6 +106,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Maq_Estado.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -107,6 +129,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
