@@ -28,13 +28,11 @@ begin
         s_reg <= (others=>'0');
         n_reg <= (others=>'0');
         b_reg <= (others=>'0');
-
-     elsif (clk'event and clk='1') then
+     elsif rising_edge(clk) then
         state_reg <= state_next;
         s_reg <= s_next;
         n_reg <= n_next;
         b_reg <= b_next;
-
      end if;
   end process;
   
@@ -44,57 +42,57 @@ begin
      s_next <= s_reg;
      n_next <= n_reg;
      b_next <= b_reg;
-     EOT <= '1';
-     case state_reg is
-        
-        when idle =>
-           tx <= '1';
-           EOT <='1';
-           if start='1' then
+     
+     Tx<='1';
+     EOT <= '0';
+     
+ case state_reg is
+       when idle =>
+          if start='1' then
               state_next <= inicio;
               s_next <= (others=>'0');
               b_next <= data;
            end if;
+           
         when inicio =>
            tx <= '0';
-           EOT <='0';
-           if (tick = '1') then
-              if s_reg=15 then
-                 state_next <= dato;
-                 s_next <= (others=>'0');
-                 n_next <= (others=>'0');
-              else
-                 s_next <= s_reg + 1;
-              end if;
+         if (tick = '1') then
+           if s_reg=15 then
+              state_next <= dato;
+              s_next <= (others=>'0');
+              n_next <= (others=>'0');
+           else
+              s_next <= s_reg + 1;
            end if;
+         end if;
            
         when dato =>
-           EOT<='0';        
-           tx <= b_reg(0);
-           if (tick = '1') then
-              if s_reg=15 then 
-                 s_next <= (others=>'0');
-                 b_next <= '0' & b_reg(7 downto 1) ;
-                 if n_reg = 7 then 
-                    state_next <= stop ;
-                 else
-                    n_next <= n_reg + 1;
-                 end if;
-              else
-                 s_next <= s_reg + 1;
-              end if;
-           end if;
+         tx <= b_reg(0);
+        if (tick = '1') then
+          if s_reg=15 then 
+             s_next <= (others=>'0');
+             b_next <= '0' & b_reg(7 downto 1) ;
+         if n_reg = 7 then 
+            state_next <= stop ;
+         else
+            n_next <= n_reg + 1;
+         end if;
+        else
+          s_next <= s_reg + 1;
+        end if;
+   end if;
            
         when stop =>
            tx <= '1';
-           EOT <= '0';
-           if (tick = '1') then
-              if s_reg= 15 then 
-                 state_next <= idle;
-              else
-                 s_next <= s_reg + 1;
-              end if;
+        if (tick = '1') then
+           if s_reg= 15 then 
+              state_next <= idle;
+              EOT<='1'; --pulso fon de transmision
+              s_next <= (others=>'0');
+           else
+              s_next <= s_reg + 1;
            end if;
+         end if;
      end case;
   end process;
 end Behavioral;

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.runs/synth_1/Transmisor.tcl"
+  variable script "C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.runs/synth_1/Transmisor.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,33 +70,29 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.cache/wt [current_project]
-set_property parent.project_path C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.xpr [current_project]
+set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.cache/wt [current_project]
+set_property parent.project_path C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo c:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.cache/ip [current_project]
+set_property ip_output_repo c:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/Baudios_tx.vhd
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/Maq_estadoReb.vhd
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/SupReboteTemporizado.vhd
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/TempReb.vhd
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/mod_tx.vhd
-  C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/Transmisor.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/Baudios_tx.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/Maq_estadoReb.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/SupReboteTemporizado.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/imports/new/TempReb.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/mod_tx.vhd
+  C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/sources_1/new/Transmisor.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -107,12 +103,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/constrs_1/new/pines.xdc
-set_property used_in_implementation false [get_files C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/constrs_1/new/pines.xdc]
+read_xdc C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/constrs_1/new/pines.xdc
+set_property used_in_implementation false [get_files C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/constrs_1/new/pines.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Repo-Asus/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/utils_1/imports/synth_1/Transmisor.dcp
+read_checkpoint -auto_incremental -incremental C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-TX/Serial-TX.srcs/utils_1/imports/synth_1/Transmisor.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

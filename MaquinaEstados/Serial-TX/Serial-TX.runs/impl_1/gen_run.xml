@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1732959658">
-  <File Type="OPT-HWDEF" Name="Transmisor.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Transmisor_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="Transmisor.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1773243476">
   <File Type="ROUTE-PWR" Name="Transmisor_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Transmisor.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Transmisor_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Transmisor_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="Transmisor_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="Transmisor.mmi"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Transmisor_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Transmisor_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="Transmisor_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="Transmisor_rqa_opted.pb"/>
-  <File Type="REPORTS-TCL" Name="Transmisor_reports.tcl"/>
   <File Type="OPT-TIMING" Name="Transmisor_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="Transmisor_opt.dcp"/>
   <File Type="OPT-DRC" Name="Transmisor_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Transmisor.hwdef"/>
   <File Type="PWROPT-DCP" Name="Transmisor_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="Transmisor_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="Transmisor_timing_summary_pwropted.rpt"/>
@@ -52,6 +51,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="Transmisor_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Transmisor_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Transmisor_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Transmisor_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Transmisor_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Transmisor_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Transmisor_postroute_physopt.dcp"/>
@@ -65,7 +65,6 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Transmisor_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="Transmisor.nky"/>
   <File Type="BITSTR-BMM" Name="Transmisor_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="Transmisor.mmi"/>
   <File Type="PDI-FILE" Name="Transmisor.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Transmisor_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Transmisor_pld.pdi"/>

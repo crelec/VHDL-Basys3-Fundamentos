@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Sat Nov 30 04:42:40 2024
+| Date             : Wed Mar 11 10:40:26 2026
 | Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file Transmisor_power_routed.rpt -pb Transmisor_power_summary_routed.pb -rpx Transmisor_power_routed.rpx
 | Design           : Transmisor
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.076        |
+| Total On-Chip Power (W)  | 0.075        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.003        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -54,14 +54,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |      130 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       44 |     20800 |            0.21 |
+|   LUT as Logic |    <0.001 |       45 |     20800 |            0.22 |
 |   Register     |    <0.001 |       52 |     41600 |            0.13 |
 |   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |      108 |       --- |             --- |
-| I/O            |     0.003 |       13 |       106 |           12.26 |
+| Signals        |    <0.001 |      106 |       --- |             --- |
+| I/O            |     0.002 |       13 |       106 |           12.26 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.076 |          |           |                 |
+| Total          |     0.075 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| Transmisor |     0.004 |
+| Transmisor |     0.003 |
 +------------+-----------+
 
 
