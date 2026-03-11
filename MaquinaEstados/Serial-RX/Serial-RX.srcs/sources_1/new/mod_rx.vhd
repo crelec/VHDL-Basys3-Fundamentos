@@ -9,7 +9,6 @@ entity mod_rx is
            LineRD_in : in STD_LOGIC;
            Valid_out : out STD_LOGIC;
            code_out : out STD_LOGIC);
-           --store_out : out STD_LOGIC);
 end mod_rx;
 
 architecture Behavioral of mod_rx is
@@ -34,56 +33,56 @@ begin
  end process;
  
  process(state_reg,s_reg,n_reg,tick,LineRD_in) 
+ 
  begin
     state_next <= state_reg;
     s_next <= s_reg;
     n_next <= n_reg;
-    --Store_out <='0';
     valid_out<='0';
     
-    case state_reg is
-       when idle =>
-        code_out<='1';
-         if LineRD_in='0' then
-             state_next <= start;
-             s_next <= (others=>'0');
-             code_out<=LineRD_in;
-          end if;
-       when start =>
-          if (tick = '1') then
-             if s_reg=7 then
-                state_next <= data;
-                s_next <= (others=>'0');
-                n_next <= (others=>'0');
-             else
-                s_next <= s_reg + 1;
-             end if;
-          end if;
-       when data =>
-          if (tick = '1') then
-            if s_reg=15 then
-                valid_out<='1';
-                s_next <= (others=>'0');
-            if n_reg= 7 then 
-               state_next <= stop ;
-               else
-                   n_next <= n_reg + 1;
-               end if;
-               else
-                s_next <= s_reg + 1;
-                code_out<=LineRD_in;
-              end if;
-          end if;
-       when stop =>
-          if (tick = '1') then
-             if s_reg= 15 then 
-                state_next <= idle;
-                --Store_out <='1';
-             else
-                s_next <= s_reg + 1;
-                code_out<=LineRD_in;
-             end if;
-          end if;
+ case state_reg is
+   when idle =>
+    code_out <= '1';
+    if LineRD_in='0' then
+        state_next <= start;
+        s_next <= (others=>'0');
+    end if;
+    
+   when start =>
+    if tick='1' then
+      if s_reg=7 then
+         state_next <= data;
+         s_next <= (others=>'0');
+         n_next <= (others=>'0');
+      else
+         s_next <= s_reg + 1;
+      end if;
+    end if;
+    
+   when data =>
+    if tick='1' then
+      if s_reg=15 then
+        code_out <= LineRD_in;   -- muestreo del bit
+        valid_out <= '1';        -- pulso para desplazar el registro
+        s_next <= (others=>'0');
+       if n_reg=7 then
+          state_next <= stop;
+       else
+          n_next <= n_reg + 1;
+       end if;
+      else
+       s_next <= s_reg + 1;
+     end if;
+   end if;
+
+   when stop =>
+    if tick='1' then
+      if s_reg=15 then
+         state_next <= idle;
+      else
+         s_next <= s_reg + 1;
+      end if;
+    end if;
     end case;
  end process;
 end Behavioral;

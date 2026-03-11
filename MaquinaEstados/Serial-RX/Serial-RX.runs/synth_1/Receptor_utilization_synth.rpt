@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Thu Sep 12 04:01:27 2024
+| Date         : Wed Mar 11 17:19:25 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Receptor_utilization_synth.rpt -pb Receptor_utilization_synth.pb
 | Design       : Receptor
@@ -152,13 +152,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     |   24 |        Flop & Latch |
-| LUT6     |   11 |                 LUT |
+| LUT6     |   10 |                 LUT |
+| LUT4     |   10 |                 LUT |
 | OBUF     |    8 |                  IO |
-| LUT4     |    7 |                 LUT |
-| LUT5     |    5 |                 LUT |
+| LUT5     |    4 |                 LUT |
 | IBUF     |    3 |                  IO |
 | LUT3     |    2 |                 LUT |
-| LUT2     |    1 |                 LUT |
+| LUT2     |    2 |                 LUT |
 | LDCE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
