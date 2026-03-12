@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Wed Mar 11 17:22:00 2026
+| Date         : Wed Mar 11 19:30:23 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Receptor_methodology_drc_routed.rpt -pb Receptor_methodology_drc_routed.pb -rpx Receptor_methodology_drc_routed.rpx
 | Design       : Receptor
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 12
+             Violations found: 13
 +-----------+----------+--------------------------------+------------+
 | Rule      | Severity | Description                    | Violations |
 +-----------+----------+--------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay  | 10         |
+| TIMING-18 | Warning  | Missing input or output delay  | 11         |
 | TIMING-20 | Warning  | Non-clocked latch              | 1          |
 | LATCH-1   | Advisory | Existing latches in the design | 1          |
 +-----------+----------+--------------------------------+------------+
@@ -46,40 +46,45 @@ Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on Byte_rready relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on DatoOut[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+An output delay is missing on DatoOut[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>
 
 TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on DatoOut[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
 Missing input or output delay  
 An output delay is missing on DatoOut[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
 Related violations: <none>

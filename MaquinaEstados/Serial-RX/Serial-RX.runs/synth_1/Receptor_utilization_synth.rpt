@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Wed Mar 11 17:19:25 2026
+| Date         : Wed Mar 11 19:28:07 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Receptor_utilization_synth.rpt -pb Receptor_utilization_synth.pb
 | Design       : Receptor
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   21 |     0 |          0 |     20800 |  0.10 |
-|   LUT as Logic          |   21 |     0 |          0 |     20800 |  0.10 |
+| Slice LUTs*             |   20 |     0 |          0 |     20800 |  0.10 |
+|   LUT as Logic          |   20 |     0 |          0 |     20800 |  0.10 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         |   25 |     0 |          0 |     41600 |  0.06 |
 |   Register as Flip Flop |   24 |     0 |          0 |     41600 |  0.06 |
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   11 |     0 |          0 |       106 | 10.38 |
+| Bonded IOB                  |   12 |     0 |          0 |       106 | 11.32 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -153,12 +153,12 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | FDCE     |   24 |        Flop & Latch |
 | LUT6     |   10 |                 LUT |
-| LUT4     |   10 |                 LUT |
-| OBUF     |    8 |                  IO |
-| LUT5     |    4 |                 LUT |
+| OBUF     |    9 |                  IO |
+| LUT5     |    6 |                 LUT |
+| LUT4     |    6 |                 LUT |
+| LUT3     |    4 |                 LUT |
 | IBUF     |    3 |                  IO |
-| LUT3     |    2 |                 LUT |
-| LUT2     |    2 |                 LUT |
+| LUT2     |    1 |                 LUT |
 | LDCE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

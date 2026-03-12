@@ -14,7 +14,9 @@ set_property -dict { PACKAGE_PIN U14   IOSTANDARD LVCMOS33 } [get_ports {DatoOut
 set_property -dict { PACKAGE_PIN V14   IOSTANDARD LVCMOS33 } [get_ports {DatoOut[7]}]
 
 ##Pmod Header JA
-set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports LineRD_in]
+##set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports LineRD_in]
+set_property -dict { PACKAGE_PIN L2   IOSTANDARD LVCMOS33 } [get_ports Byte_rready]
+
 
 ##USB-RS232 Interface
 #set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports RsRx]

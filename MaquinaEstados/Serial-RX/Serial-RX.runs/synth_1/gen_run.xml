@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1773267466" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Receptor.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1773275181" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Receptor.dcp">
   <File Type="PA-TCL" Name="Receptor.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Receptor_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Receptor_reports.tcl"/>
   <File Type="RDS-RDS" Name="Receptor.vds"/>
   <File Type="RDS-UTIL" Name="Receptor_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Receptor_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Receptor.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Receptor_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Receptor_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Baudios.vhd">
@@ -17,13 +14,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Registro.vhd">
+    <File Path="$PSRCDIR/sources_1/new/mod_rx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/mod_rx.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Registro.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

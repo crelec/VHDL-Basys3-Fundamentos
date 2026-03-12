@@ -127,8 +127,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 2
-  set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15768-Cesar/incrSyn
-  set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache C:/Users/cerom/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-23532-Cesar/incrSyn
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint Receptor_routed.dcp
   set_property webtalk.parent_dir C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-RX/Serial-RX.cache/wt [current_project]

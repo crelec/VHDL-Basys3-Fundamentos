@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date         : Wed Mar 11 17:21:16 2026
+| Date         : Wed Mar 11 19:29:40 2026
 | Host         : Cesar running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Receptor_control_sets_placed.rpt
 | Design       : Receptor
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |              12 |            4 |
+| No           | No                    | Yes                    |              12 |            5 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              19 |            5 |
+| Yes          | No                    | Yes                    |              19 |            7 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -75,8 +75,8 @@ Table of Contents
 +--------------------------+---------------+------------------+------------------+----------------+--------------+
 |  u1/code_out_reg_i_2_n_0 |               |                  |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG           | u1/s_next     | reset_IBUF       |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG           |               | reset_IBUF       |                4 |             12 |         3.00 |
-|  clk_IBUF_BUFG           | u1/E[0]       | reset_IBUF       |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG           |               | reset_IBUF       |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG           | u1/E[0]       | reset_IBUF       |                5 |             15 |         3.00 |
 +--------------------------+---------------+------------------+------------------+----------------+--------------+
 
 

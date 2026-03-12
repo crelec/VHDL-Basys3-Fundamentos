@@ -7,13 +7,7 @@ end Tes;
 
 architecture Behavioral of Tes is
 
-component Receptor is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           LineRD_in : in STD_LOGIC;
-           DatoOut : out STD_LOGIC_VECTOR (7 downto 0));
-end component;
-
+signal Byte_ready : STD_LOGIC;
 signal clk: STD_LOGIC;
 signal reset: STD_LOGIC;
 signal LineRD_in: STD_LOGIC;
@@ -21,7 +15,7 @@ signal DatoOut :STD_LOGIC_VECTOR (7 downto 0);
            
 begin
 
-u0:Receptor Port map(clk=>clk,reset=>reset,LineRD_in=>LineRD_in,DatoOut=>DatoOut);
+u0:entity work.Receptor Port map(clk=>clk,reset=>reset,LineRD_in=>LineRD_in,DatoOut=>DatoOut,Byte_ready=>Byte_ready);
 
 clk_process :process
 begin

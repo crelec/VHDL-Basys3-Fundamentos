@@ -1,9 +1,9 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../Serial-RX.srcs/sources_1/new/Baudios.vhd" \
-"../../../../Serial-RX.srcs/sources_1/new/Receptor.vhd" \
-"../../../../Serial-RX.srcs/sources_1/new/Registro.vhd" \
 "../../../../Serial-RX.srcs/sources_1/new/mod_rx.vhd" \
+"../../../../Serial-RX.srcs/sources_1/new/Registro.vhd" \
+"../../../../Serial-RX.srcs/sources_1/new/Receptor.vhd" \
 "../../../../Serial-RX.srcs/sim_1/new/Tes.vhd" \
 
 # Do not sort compile order

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
-| Date             : Wed Mar 11 17:22:00 2026
+| Date             : Wed Mar 11 19:30:23 2026
 | Host             : Cesar running 64-bit major release  (build 9200)
 | Command          : report_power -file Receptor_power_routed.rpt -pb Receptor_power_summary_routed.pb -rpx Receptor_power_routed.rpx
 | Design           : Receptor
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       64 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       21 |     20800 |            0.10 |
+| Slice Logic    |    <0.001 |       63 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       20 |     20800 |            0.10 |
 |   Register     |    <0.001 |       32 |     41600 |            0.08 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       46 |       --- |             --- |
-| I/O            |    <0.001 |       11 |       106 |           10.38 |
+| Signals        |    <0.001 |       45 |       --- |             --- |
+| I/O            |    <0.001 |       12 |       106 |           11.32 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

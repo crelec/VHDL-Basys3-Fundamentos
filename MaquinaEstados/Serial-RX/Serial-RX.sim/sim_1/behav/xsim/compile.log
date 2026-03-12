@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-RX/Serial-RX.srcs/sources_1/new/mod_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mod_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-RX/Serial-RX.srcs/sources_1/new/Receptor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Receptor'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Repo-Asus-2026/VHDL-Basys3/MaquinaEstados/Serial-RX/Serial-RX.srcs/sim_1/new/Tes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Tes'
