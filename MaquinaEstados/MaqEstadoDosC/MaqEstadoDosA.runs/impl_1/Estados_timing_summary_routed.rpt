@@ -1,0 +1,423 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Tue Mar 10 04:39:24 2026
+| Host         : Cesar running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Estados_timing_summary_routed.rpt -pb Estados_timing_summary_routed.pb -rpx Estados_timing_summary_routed.rpx -warn_on_violation
+| Design       : Estados
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  2           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (2)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (4)
+5. checking no_input_delay (3)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (2)
+------------------------
+ There are 2 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (4)
+------------------------------------------------
+ There are 4 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    5          inf        0.000                      0                    5           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             5 Endpoints
+Min Delay             5 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 FSM_sequential_estadoActual_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Foutq
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.363ns  (logic 3.179ns (59.275%)  route 2.184ns (40.725%))
+  Logic Levels:           3  (FDCE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y2           FDCE                         0.000     0.000 r  FSM_sequential_estadoActual_reg[0]/C
+    SLICE_X0Y2           FDCE (Prop_fdce_C_Q)         0.456     0.456 r  FSM_sequential_estadoActual_reg[0]/Q
+                         net (fo=3, routed)           0.513     0.969    estadoActual[0]
+    SLICE_X0Y2           LUT2 (Prop_lut2_I0_O)        0.124     1.093 r  Foutq_OBUF_inst_i_1/O
+                         net (fo=1, routed)           1.671     2.764    Foutq_OBUF
+    U14                  OBUF (Prop_obuf_I_O)         2.599     5.363 r  Foutq_OBUF_inst/O
+                         net (fo=0)                   0.000     5.363    Foutq
+    U14                                                               r  Foutq (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 int_ext
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.228ns  (logic 1.081ns (48.516%)  route 1.147ns (51.484%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V14                                               0.000     0.000 f  int_ext (IN)
+                         net (fo=0)                   0.000     0.000    int_ext
+    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 f  int_ext_IBUF_inst/O
+                         net (fo=2, routed)           1.147     2.078    int_ext_IBUF
+    SLICE_X0Y2           LUT4 (Prop_lut4_I3_O)        0.150     2.228 r  FSM_sequential_estadoActual[1]_i_1/O
+                         net (fo=1, routed)           0.000     2.228    estadoSiguiente[1]
+    SLICE_X0Y2           FDCE                                         r  FSM_sequential_estadoActual_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 int_ext
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.202ns  (logic 1.055ns (47.908%)  route 1.147ns (52.092%))
+  Logic Levels:           2  (IBUF=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V14                                               0.000     0.000 r  int_ext (IN)
+                         net (fo=0)                   0.000     0.000    int_ext
+    V14                  IBUF (Prop_ibuf_I_O)         0.931     0.931 r  int_ext_IBUF_inst/O
+                         net (fo=2, routed)           1.147     2.078    int_ext_IBUF
+    SLICE_X0Y2           LUT4 (Prop_lut4_I0_O)        0.124     2.202 r  FSM_sequential_estadoActual[0]_i_1/O
+                         net (fo=1, routed)           0.000     2.202    estadoSiguiente[0]
+    SLICE_X0Y2           FDCE                                         r  FSM_sequential_estadoActual_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[0]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.834ns  (logic 0.934ns (50.932%)  route 0.900ns (49.068%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  reset_IBUF_inst/O
+                         net (fo=2, routed)           0.900     1.834    reset_IBUF
+    SLICE_X0Y2           FDCE                                         f  FSM_sequential_estadoActual_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[1]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        1.834ns  (logic 0.934ns (50.932%)  route 0.900ns (49.068%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.934     0.934 f  reset_IBUF_inst/O
+                         net (fo=2, routed)           0.900     1.834    reset_IBUF
+    SLICE_X0Y2           FDCE                                         f  FSM_sequential_estadoActual_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 FSM_sequential_estadoActual_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_sequential_estadoActual_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.367ns  (logic 0.183ns (49.904%)  route 0.184ns (50.096%))
+  Logic Levels:           2  (FDCE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y2           FDCE                         0.000     0.000 r  FSM_sequential_estadoActual_reg[0]/C
+    SLICE_X0Y2           FDCE (Prop_fdce_C_Q)         0.141     0.141 f  FSM_sequential_estadoActual_reg[0]/Q
+                         net (fo=3, routed)           0.184     0.325    estadoActual[0]
+    SLICE_X0Y2           LUT4 (Prop_lut4_I2_O)        0.042     0.367 r  FSM_sequential_estadoActual[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.367    estadoSiguiente[1]
+    SLICE_X0Y2           FDCE                                         r  FSM_sequential_estadoActual_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_sequential_estadoActual_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            FSM_sequential_estadoActual_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.370ns  (logic 0.186ns (50.311%)  route 0.184ns (49.689%))
+  Logic Levels:           2  (FDCE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y2           FDCE                         0.000     0.000 r  FSM_sequential_estadoActual_reg[0]/C
+    SLICE_X0Y2           FDCE (Prop_fdce_C_Q)         0.141     0.141 r  FSM_sequential_estadoActual_reg[0]/Q
+                         net (fo=3, routed)           0.184     0.325    estadoActual[0]
+    SLICE_X0Y2           LUT4 (Prop_lut4_I2_O)        0.045     0.370 r  FSM_sequential_estadoActual[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.370    estadoSiguiente[0]
+    SLICE_X0Y2           FDCE                                         r  FSM_sequential_estadoActual_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[0]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.513ns  (logic 0.163ns (31.825%)  route 0.350ns (68.175%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  reset_IBUF_inst/O
+                         net (fo=2, routed)           0.350     0.513    reset_IBUF
+    SLICE_X0Y2           FDCE                                         f  FSM_sequential_estadoActual_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 reset
+                            (input port)
+  Destination:            FSM_sequential_estadoActual_reg[1]/CLR
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.513ns  (logic 0.163ns (31.825%)  route 0.350ns (68.175%))
+  Logic Levels:           1  (IBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V13                                               0.000     0.000 f  reset (IN)
+                         net (fo=0)                   0.000     0.000    reset
+    V13                  IBUF (Prop_ibuf_I_O)         0.163     0.163 f  reset_IBUF_inst/O
+                         net (fo=2, routed)           0.350     0.513    reset_IBUF
+    SLICE_X0Y2           FDCE                                         f  FSM_sequential_estadoActual_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_sequential_estadoActual_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Foutq
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.736ns  (logic 1.343ns (77.394%)  route 0.392ns (22.606%))
+  Logic Levels:           3  (FDCE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y2           FDCE                         0.000     0.000 r  FSM_sequential_estadoActual_reg[1]/C
+    SLICE_X0Y2           FDCE (Prop_fdce_C_Q)         0.128     0.128 r  FSM_sequential_estadoActual_reg[1]/Q
+                         net (fo=3, routed)           0.075     0.203    estadoActual[1]
+    SLICE_X0Y2           LUT2 (Prop_lut2_I1_O)        0.099     0.302 r  Foutq_OBUF_inst_i_1/O
+                         net (fo=1, routed)           0.317     0.619    Foutq_OBUF
+    U14                  OBUF (Prop_obuf_I_O)         1.116     1.736 r  Foutq_OBUF_inst/O
+                         net (fo=0)                   0.000     1.736    Foutq
+    U14                                                               r  Foutq (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
